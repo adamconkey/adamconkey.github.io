@@ -12,6 +12,14 @@
     
     <url>
     
+      <loc>/project/robot_interface/</loc>
+      <lastmod>2018-09-29T15:10:32-06:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/project/rt_robot_control/</loc>
       <lastmod>2018-09-29T15:30:42-06:00</lastmod>
     </url>
@@ -20,16 +28,8 @@
     
     <url>
     
-      <loc>/project/teleop/</loc>
-      <lastmod>2018-09-29T15:31:16-06:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/project/trajectory_viz/</loc>
-      <lastmod>2018-09-29T15:30:58-06:00</lastmod>
+      <loc>/project/logger/</loc>
+      <lastmod>2018-09-29T15:31:38-06:00</lastmod>
     </url>
     
   
@@ -44,16 +44,16 @@
     
     <url>
     
-      <loc>/project/robot_interface/</loc>
-      <lastmod>2018-09-29T15:10:32-06:00</lastmod>
+      <loc>/project/trajectory_viz/</loc>
+      <lastmod>2018-09-29T15:30:58-06:00</lastmod>
     </url>
     
   
     
     <url>
     
-      <loc>/project/logger/</loc>
-      <lastmod>2018-09-29T15:31:38-06:00</lastmod>
+      <loc>/project/teleop/</loc>
+      <lastmod>2018-09-29T15:31:16-06:00</lastmod>
     </url>
     
   

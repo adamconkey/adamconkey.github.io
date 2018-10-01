@@ -14,8 +14,6 @@
   
   
   
-    
-  
   <meta name="description" content="PhD Student in Robotics">
 
   
@@ -23,10 +21,6 @@
 
   
 
-
-  
-
-  
 
   
 
@@ -41,7 +35,7 @@
   
   
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
@@ -68,7 +62,7 @@
 
   
   
-  <link rel="stylesheet" href=//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
   
 
   <link rel="stylesheet" href="/styles.css">
@@ -95,10 +89,6 @@
   <meta property="og:url" content="/">
   <meta property="og:title" content="Adam Conkey">
   <meta property="og:description" content="PhD Student in Robotics">
-  
-  
-    
-  <meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="og:updated_time" content="2018-09-29T13:59:00-06:00">
@@ -113,24 +103,29 @@
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71" >
 
-<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
   <div class="container">
 
     
-      <a class="navbar-brand" href="/">Adam Conkey</a>
+    <div class="navbar-header">
       
-      <button type="button" class="navbar-toggler" data-toggle="collapse"
-              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span><i class="fas fa-bars"></i></span>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
       </button>
       
+      <a class="navbar-brand" href="/">Adam Conkey</a>
+    </div>
 
     
-    <div class="collapse navbar-collapse" id="navbar">
+    <div class="collapse navbar-collapse">
 
       
       
-      <ul class="navbar-nav ml-auto">
+      <ul class="nav navbar-nav navbar-right">
         
 
         
@@ -142,7 +137,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link" href="/#about" data-target="#about">
+          <a href="/#about" data-target="#about">
             
             <span>Home</span>
             
@@ -161,7 +156,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link" href="/#projects" data-target="#projects">
+          <a href="/#projects" data-target="#projects">
             
             <span>Code Projects</span>
             
@@ -180,7 +175,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link" href="/#blog" data-target="#blog">
+          <a href="/#blog" data-target="#blog">
             
             <span>Blog</span>
             
@@ -189,12 +184,9 @@
 
         
         
-
       
 
-        
-
-        
+      
       </ul>
 
     </div>
@@ -222,11 +214,12 @@
 
 
 <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person-email">
-  <div class="col-12 col-lg-4">
+  <div class="col-xs-12 col-md-4">
     <div id="profile">
 
       
-      <img class="portrait" src="/img/adam.jpg" itemprop="image">
+      <div class="portrait" style="background-image: url('/img/adam.jpg');"></div>
+      <meta itemprop="image" content="/img/adam.jpg">
       
 
       <div class="portrait-title">
@@ -317,7 +310,7 @@
 
     </div>
   </div>
-  <div class="col-12 col-lg-8" itemprop="description">
+  <div class="col-xs-12 col-md-8" itemprop="description">
 
     
 
@@ -331,9 +324,7 @@
     <div class="row">
 
       
-
-      
-      <div class="col-md-7">
+      <div class="col-sm-6">
         <h3>Education</h3>
         <ul class="ul-edu fa-ul">
           
@@ -365,6 +356,31 @@
       </div>
       
 
+      
+      <div class="col-sm-6">
+        <h3>Employment</h3>
+        <ul class="ul-edu fa-ul">
+          
+          <li>
+            <i class="fa-li fas fa-briefcase"></i>
+            <div class="description">
+              <p class="employer">Accenture, 2015-2016</p>
+              <p class="position">Associate Software Engineer</p>
+            </div>
+          </li>
+          
+          <li>
+            <i class="fa-li fas fa-briefcase"></i>
+            <div class="description">
+              <p class="employer">USPTO, 2012-2013</p>
+              <p class="position">Patent Examiner in Computer Science</p>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+      
+
     </div>
   </div>
 </div>
@@ -383,11 +399,14 @@
 
 
 <div class="row">
-  <div class="col-12 col-lg-4 section-heading">
+  <div class="col-xs-12 col-md-4 section-heading">
     <h1>Code Projects</h1>
     <p>If you are interested in any of my code, find bugs, or want additional features, please <a href="mailto:adam.conkey@gmail.com" target="_blank">contact me</a>. Not all of it is actively maintained, but if there is something you want to use, I am happy to pick up development on it again.</p>
   </div>
-  <div class="col-12 col-lg-8">
+  <div class="col-xs-12 col-md-8">
+    
+
+    
     
 
     
@@ -400,7 +419,7 @@
       
       
       
-      <div class="col-12 col-md-6 col-lg-4 project-item isotope-item ">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item ">
         <div class="card">
           
           <a href="/project/robot_control/" title="" class="card-image hover-overlay"
@@ -420,7 +439,22 @@
       
       
       
-      <div class="col-12 col-md-6 col-lg-4 project-item isotope-item ">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item ">
+        <div class="card">
+          
+          <div class="card-text">
+            <h4><a href="/project/robot_interface/" >Robot Interface</a></h4>
+            <div class="card-desription">
+              <p>Abstraction layer for controlling robots in a unified manner while accounting for robot platform-specific needs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item ">
         <div class="card">
           
           <a href="/project/rt_robot_control/" title="" class="card-image hover-overlay"
@@ -440,18 +474,13 @@
       
       
       
-      <div class="col-12 col-md-6 col-lg-4 project-item isotope-item ">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item ">
         <div class="card">
           
-          <a href="/project/teleop/" title="" class="card-image hover-overlay"
-             >
-            <img src="/img/teleop.png" alt="" class="img-responsive">
-          </a>
-          
           <div class="card-text">
-            <h4><a href="/project/teleop/" >Teleoperation Mediated by Virtual Environment</a></h4>
+            <h4><a href="/project/logger/" >Data Logging</a></h4>
             <div class="card-desription">
-              <p>A kinematic simulator with force rendering created with rViz to provide a training ground to learn robot policies from demonstration using a Phantom Omni haptic input device. The learned policy can then be executed on a real robot (or a simulated robot in Gazebo).</p>
+              <p>Two data logging frameworks for recording robot and sensor data. One uses HDF5 files with an h5py interface, and the other post-processes rosbag data into Pandas dataframes.</p>
             </div>
           </div>
         </div>
@@ -460,27 +489,7 @@
       
       
       
-      <div class="col-12 col-md-6 col-lg-4 project-item isotope-item ">
-        <div class="card">
-          
-          <a href="/project/trajectory_viz/" title="" class="card-image hover-overlay"
-             >
-            <img src="/img/kuka_viz.png" alt="" class="img-responsive">
-          </a>
-          
-          <div class="card-text">
-            <h4><a href="/project/trajectory_viz/" >rViz Trajectory Visualization</a></h4>
-            <div class="card-desription">
-              <p>Package for generating trajectory visualizations in rViz, including dynamic real-time visualizations showing a customizable trace of the robot&rsquo;s end-effector.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      
-      
-      
-      <div class="col-12 col-md-6 col-lg-4 project-item isotope-item ">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item ">
         <div class="card">
           
           <a href="/project/baxter_record/" title="" class="card-image hover-overlay"
@@ -500,13 +509,18 @@
       
       
       
-      <div class="col-12 col-md-6 col-lg-4 project-item isotope-item ">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item ">
         <div class="card">
           
+          <a href="/project/trajectory_viz/" title="" class="card-image hover-overlay"
+             >
+            <img src="/img/kuka_viz.png" alt="" class="img-responsive">
+          </a>
+          
           <div class="card-text">
-            <h4><a href="/project/robot_interface/" >Robot Interface</a></h4>
+            <h4><a href="/project/trajectory_viz/" >rViz Trajectory Visualization</a></h4>
             <div class="card-desription">
-              <p>Abstraction layer for controlling robots in a unified manner while accounting for robot platform-specific needs.</p>
+              <p>Package for generating trajectory visualizations in rViz, including dynamic real-time visualizations showing a customizable trace of the robot&rsquo;s end-effector.</p>
             </div>
           </div>
         </div>
@@ -515,13 +529,18 @@
       
       
       
-      <div class="col-12 col-md-6 col-lg-4 project-item isotope-item ">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item ">
         <div class="card">
           
+          <a href="/project/teleop/" title="" class="card-image hover-overlay"
+             >
+            <img src="/img/teleop.png" alt="" class="img-responsive">
+          </a>
+          
           <div class="card-text">
-            <h4><a href="/project/logger/" >Data Logging</a></h4>
+            <h4><a href="/project/teleop/" >Teleoperation Mediated by Virtual Environment</a></h4>
             <div class="card-desription">
-              <p>Two data logging frameworks for recording robot and sensor data. One uses HDF5 files with an h5py interface, and the other post-processes rosbag data into Pandas dataframes.</p>
+              <p>A kinematic simulator with force rendering created with rViz to provide a training ground to learn robot policies from demonstration using a Phantom Omni haptic input device. The learned policy can then be executed on a real robot (or a simulated robot in Gazebo).</p>
             </div>
           </div>
         </div>
@@ -530,7 +549,7 @@
       
       
       
-      <div class="col-12 col-md-6 col-lg-4 project-item isotope-item ">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item ">
         <div class="card">
           
           <div class="card-text">
@@ -564,11 +583,11 @@
 
 <div class="row">
   
-  <div class="col-12 col-lg-4 section-heading">
+  <div class="col-xs-12 col-md-4 section-heading">
     <h1>Blog</h1>
     
   </div>
-  <div class="col-12 col-lg-8">
+  <div class="col-xs-12 col-md-8">
     
 
 <h2 id="coming-soon">Coming Soon!</h2>
@@ -585,49 +604,47 @@
 
 
 
-<div class="container">
-  <footer class="site-footer">
-  
-
-  <p class="powered-by">
-    &copy; Adam Conkey 2018 &middot; 
-
-    Powered by the
-    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
-    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+<footer class="site-footer">
+  <div class="container">
 
     
-    <span class="float-right" aria-hidden="true">
-      <a href="#" id="back_to_top">
-        <span class="button_icon">
-          <i class="fas fa-chevron-up fa-2x"></i>
-        </span>
-      </a>
-    </span>
-    
-  </p>
+
+    <p class="powered-by">
+
+      &copy; Adam Conkey 2018 &middot; 
+
+      Powered by the
+      <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fas fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
 </footer>
-
-</div>
 
 
 <div id="modal" class="modal fade" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Cite</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Cite</h4>
       </div>
-      <div class="modal-body">
-        <pre><code class="tex hljs"></code></pre>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
       </div>
       <div class="modal-footer">
-        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
           <i class="fas fa-copy"></i> Copy
         </a>
-        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
           <i class="fas fa-download"></i> Download
         </a>
         <div id="modal-error"></div>
@@ -644,9 +661,9 @@
     
     
     
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
 
@@ -681,7 +698,6 @@
       const search_index_filename = "/index.json";
       const i18n = {
         'placeholder': "Search...",
-        'results': "Search Results",
         'no_results': "No results found"
       };
       const content_type = {
@@ -690,24 +706,6 @@
         'publication' : "Publications",
         'talk' : "Talks"
         };
-    </script>
-    
-
-    
-    
-
-    
-    
-    <script id="search-hit-fuse-template" type="text/x-template">
-      <div class="search-hit" id="summary-{{key}}">
-      <div class="search-hit-content">
-        <div class="search-hit-name">
-          <a href="{{relpermalink}}">{{title}}</a>
-          <div class="article-metadata search-hit-type">{{type}}</div>
-          <p class="search-hit-description">{{snippet}}</p>
-        </div>
-      </div>
-      </div>
     </script>
     
 
