@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications on Adam Conkey</title>
-    <link>/publication/</link>
+    <link>https://adamconkey.github.io/publication/</link>
     <description>Recent content in Publications on Adam Conkey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Adam Conkey 2018</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0700</lastBuildDate>
     
-	<atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://adamconkey.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

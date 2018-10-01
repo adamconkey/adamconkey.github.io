@@ -2,141 +2,141 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Homes on Adam Conkey</title>
-    <link>/home/</link>
+    <link>https://adamconkey.github.io/home/</link>
     <description>Recent content in Homes on Adam Conkey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Adam Conkey 2018</copyright>
     <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0600</lastBuildDate>
     
-	<atom:link href="/home/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://adamconkey.github.io/home/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>/home/hero_carousel/</link>
+      <link>https://adamconkey.github.io/home/hero_carousel/</link>
       <pubDate>Sun, 15 Oct 2017 00:00:00 -0600</pubDate>
       
-      <guid>/home/hero_carousel/</guid>
+      <guid>https://adamconkey.github.io/home/hero_carousel/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>/home/about/</link>
+      <link>https://adamconkey.github.io/home/about/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0600</pubDate>
       
-      <guid>/home/about/</guid>
+      <guid>https://adamconkey.github.io/home/about/</guid>
       <description>Biography I am a PhD student in the School of Computing at the University of Utah in the robotics track of the Utah Robotics Center. I work in the Utah Learning Lab for Manipulation Autonomy (LL4MA) and am advised by Dr. Tucker Hermans. My research focuses on learning manipulation tasks from human demonstration with a targeted application to the problem of robust teleoperation over large latency.
 I am looking for internship opportunities for Summer 2019 in robotics, machine learning, or software development.</description>
     </item>
     
     <item>
       <title>Selected Publications</title>
-      <link>/home/publications_selected/</link>
+      <link>https://adamconkey.github.io/home/publications_selected/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0600</pubDate>
       
-      <guid>/home/publications_selected/</guid>
+      <guid>https://adamconkey.github.io/home/publications_selected/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>/home/skills/</link>
+      <link>https://adamconkey.github.io/home/skills/</link>
       <pubDate>Wed, 20 Sep 2017 00:00:00 -0600</pubDate>
       
-      <guid>/home/skills/</guid>
+      <guid>https://adamconkey.github.io/home/skills/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recent Publications</title>
-      <link>/home/publications/</link>
+      <link>https://adamconkey.github.io/home/publications/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0600</pubDate>
       
-      <guid>/home/publications/</guid>
+      <guid>https://adamconkey.github.io/home/publications/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Selected Talks</title>
-      <link>/home/talks_selected/</link>
+      <link>https://adamconkey.github.io/home/talks_selected/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0600</pubDate>
       
-      <guid>/home/talks_selected/</guid>
+      <guid>https://adamconkey.github.io/home/talks_selected/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recent &amp; Upcoming Talks</title>
-      <link>/home/talks/</link>
+      <link>https://adamconkey.github.io/home/talks/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0600</pubDate>
       
-      <guid>/home/talks/</guid>
+      <guid>https://adamconkey.github.io/home/talks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recent Posts</title>
-      <link>/home/posts/</link>
+      <link>https://adamconkey.github.io/home/posts/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0600</pubDate>
       
-      <guid>/home/posts/</guid>
+      <guid>https://adamconkey.github.io/home/posts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Code Projects</title>
-      <link>/home/projects/</link>
+      <link>https://adamconkey.github.io/home/projects/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0600</pubDate>
       
-      <guid>/home/projects/</guid>
+      <guid>https://adamconkey.github.io/home/projects/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Custom Section</title>
-      <link>/home/teaching/</link>
+      <link>https://adamconkey.github.io/home/teaching/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0600</pubDate>
       
-      <guid>/home/teaching/</guid>
+      <guid>https://adamconkey.github.io/home/teaching/</guid>
       <description>This is an example of using the custom widget to create your own homepage section.
 To remove this section, either delete content/home/teaching.md or edit the frontmatter of the file to deactivate the widget by setting active = false.</description>
     </item>
     
     <item>
       <title>Tags</title>
-      <link>/home/tags/</link>
+      <link>https://adamconkey.github.io/home/tags/</link>
       <pubDate>Wed, 20 Sep 2017 00:00:00 -0600</pubDate>
       
-      <guid>/home/tags/</guid>
+      <guid>https://adamconkey.github.io/home/tags/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Search</title>
-      <link>/home/search/</link>
+      <link>https://adamconkey.github.io/home/search/</link>
       <pubDate>Mon, 23 Jul 2018 00:00:00 -0600</pubDate>
       
-      <guid>/home/search/</guid>
+      <guid>https://adamconkey.github.io/home/search/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>/home/contact/</link>
+      <link>https://adamconkey.github.io/home/contact/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0600</pubDate>
       
-      <guid>/home/contact/</guid>
+      <guid>https://adamconkey.github.io/home/contact/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Blog</title>
-      <link>/home/blog/</link>
+      <link>https://adamconkey.github.io/home/blog/</link>
       <pubDate>Sun, 30 Sep 2018 17:23:16 -0600</pubDate>
       
-      <guid>/home/blog/</guid>
+      <guid>https://adamconkey.github.io/home/blog/</guid>
       <description>Coming Soon! I am hoping to start a blog about some of the things I encounter in my research that others might benefit from. Topics will be in the areas of robotics, machine learning, ROS, and coding. These things are hard to maintain and keep up to date, but I want to try! So, stay tuned.</description>
     </item>
     
