@@ -12,14 +12,6 @@
     
     <url>
     
-      <loc>https://adamconkey.github.io/project/robot_interface/</loc>
-      <lastmod>2018-09-29T15:10:32-06:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>https://adamconkey.github.io/project/rt_robot_control/</loc>
       <lastmod>2018-09-29T15:30:42-06:00</lastmod>
     </url>
@@ -28,16 +20,8 @@
     
     <url>
     
-      <loc>https://adamconkey.github.io/project/logger/</loc>
-      <lastmod>2018-09-29T15:31:38-06:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://adamconkey.github.io/project/baxter_record/</loc>
-      <lastmod>2018-09-29T15:31:32-06:00</lastmod>
+      <loc>https://adamconkey.github.io/project/teleop/</loc>
+      <lastmod>2018-09-29T15:31:16-06:00</lastmod>
     </url>
     
   
@@ -52,8 +36,24 @@
     
     <url>
     
-      <loc>https://adamconkey.github.io/project/teleop/</loc>
-      <lastmod>2018-09-29T15:31:16-06:00</lastmod>
+      <loc>https://adamconkey.github.io/project/baxter_record/</loc>
+      <lastmod>2018-09-29T15:31:32-06:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://adamconkey.github.io/project/robot_interface/</loc>
+      <lastmod>2018-09-29T15:10:32-06:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://adamconkey.github.io/project/logger/</loc>
+      <lastmod>2018-09-29T15:31:38-06:00</lastmod>
     </url>
     
   

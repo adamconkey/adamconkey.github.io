@@ -22,15 +22,6 @@
     </item>
     
     <item>
-      <title>Robot Interface</title>
-      <link>https://adamconkey.github.io/project/robot_interface/</link>
-      <pubDate>Sat, 29 Sep 2018 15:10:32 -0600</pubDate>
-      
-      <guid>https://adamconkey.github.io/project/robot_interface/</guid>
-      <description>Different robots have different communication requirements for control and diagnostics. In ROS, this can mean different message types, different topic names, different interfaces for a robot in simulation versus reality, and so on. This can greatly complicate things as you end up having to create separate controllers and monitoring nodes for each platform. I created a robot interface abstraction layer to try to mitigate these issues. The idea is that each robot has its own interface that implements the requirements particular to that platform, and each interface inherits from a common interface.</description>
-    </item>
-    
-    <item>
       <title>Real-Time Robot Control</title>
       <link>https://adamconkey.github.io/project/rt_robot_control/</link>
       <pubDate>Sat, 29 Sep 2018 15:30:42 -0600</pubDate>
@@ -41,12 +32,21 @@ I have added to this framework by writing a controller manager that allows safe 
     </item>
     
     <item>
-      <title>Data Logging</title>
-      <link>https://adamconkey.github.io/project/logger/</link>
-      <pubDate>Sat, 29 Sep 2018 15:31:38 -0600</pubDate>
+      <title>Teleoperation Mediated by Virtual Environment</title>
+      <link>https://adamconkey.github.io/project/teleop/</link>
+      <pubDate>Sat, 29 Sep 2018 15:31:16 -0600</pubDate>
       
-      <guid>https://adamconkey.github.io/project/logger/</guid>
-      <description>I created a logging framework for recording robot data (e.g. robot joint states, force/torque sensor readings, end-effector pose, annotations on the data, etc.). I originally developed a C++ logger for HDF5 format and a Python interface to the database using H5py. However, I started having issues with data corruption/synchronization and sometimes my data would get completely wiped out. I therefore switched to using rosbag and wrote a rosbag converter to extract the data into a Pandas dataframe and pickle the resulting dataframe.</description>
+      <guid>https://adamconkey.github.io/project/teleop/</guid>
+      <description>An application for my research that I am very interested in pursuing is the problem of teleoperation over large communication latency (e.g. teleoperating a robot on Mars from your couch). I have set up a simple virtual environment for the purpose of testing some ideas. I use rViz for the visualization of the virtual environment, and a Phantom Omni (re-branded as the Sensable Geomagic Touch) haptic input device to control the robot.</description>
+    </item>
+    
+    <item>
+      <title>rViz Trajectory Visualization</title>
+      <link>https://adamconkey.github.io/project/trajectory_viz/</link>
+      <pubDate>Sat, 29 Sep 2018 15:30:58 -0600</pubDate>
+      
+      <guid>https://adamconkey.github.io/project/trajectory_viz/</guid>
+      <description>Currently this package primarily offers customizable traces for task space trajectories in rViz. It uses Marker display types to show the end-effector position (or any other task space position) as it traverses through space. It&amp;rsquo;s somewhat configurable in that you can choose the color and line style of the trace (solid or dotted). It also allows you to visualize many trajectories at once, e.g. if you have samples from a distribution of trajectories.</description>
     </item>
     
     <item>
@@ -60,21 +60,21 @@ I have added to this framework by writing a controller manager that allows safe 
     </item>
     
     <item>
-      <title>rViz Trajectory Visualization</title>
-      <link>https://adamconkey.github.io/project/trajectory_viz/</link>
-      <pubDate>Sat, 29 Sep 2018 15:30:58 -0600</pubDate>
+      <title>Robot Interface</title>
+      <link>https://adamconkey.github.io/project/robot_interface/</link>
+      <pubDate>Sat, 29 Sep 2018 15:10:32 -0600</pubDate>
       
-      <guid>https://adamconkey.github.io/project/trajectory_viz/</guid>
-      <description>Currently this package primarily offers customizable traces for task space trajectories in rViz. It uses Marker display types to show the end-effector position (or any other task space position) as it traverses through space. It&amp;rsquo;s somewhat configurable in that you can choose the color and line style of the trace (solid or dotted). It also allows you to visualize many trajectories at once, e.g. if you have samples from a distribution of trajectories.</description>
+      <guid>https://adamconkey.github.io/project/robot_interface/</guid>
+      <description>Different robots have different communication requirements for control and diagnostics. In ROS, this can mean different message types, different topic names, different interfaces for a robot in simulation versus reality, and so on. This can greatly complicate things as you end up having to create separate controllers and monitoring nodes for each platform. I created a robot interface abstraction layer to try to mitigate these issues. The idea is that each robot has its own interface that implements the requirements particular to that platform, and each interface inherits from a common interface.</description>
     </item>
     
     <item>
-      <title>Teleoperation Mediated by Virtual Environment</title>
-      <link>https://adamconkey.github.io/project/teleop/</link>
-      <pubDate>Sat, 29 Sep 2018 15:31:16 -0600</pubDate>
+      <title>Data Logging</title>
+      <link>https://adamconkey.github.io/project/logger/</link>
+      <pubDate>Sat, 29 Sep 2018 15:31:38 -0600</pubDate>
       
-      <guid>https://adamconkey.github.io/project/teleop/</guid>
-      <description>An application for my research that I am very interested in pursuing is the problem of teleoperation over large communication latency (e.g. teleoperating a robot on Mars from your couch). I have set up a simple virtual environment for the purpose of testing some ideas. I use rViz for the visualization of the virtual environment, and a Phantom Omni (re-branded as the Sensable Geomagic Touch) haptic input device to control the robot.</description>
+      <guid>https://adamconkey.github.io/project/logger/</guid>
+      <description>I created a logging framework for recording robot data (e.g. robot joint states, force/torque sensor readings, end-effector pose, annotations on the data, etc.). I originally developed a C++ logger for HDF5 format and a Python interface to the database using H5py. However, I started having issues with data corruption/synchronization and sometimes my data would get completely wiped out. I therefore switched to using rosbag and wrote a rosbag converter to extract the data into a Pandas dataframe and pickle the resulting dataframe.</description>
     </item>
     
     <item>
