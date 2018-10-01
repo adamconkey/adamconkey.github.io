@@ -15,10 +15,10 @@
   
     
   
-  <meta name="description" content="PhD Student in Robotics">
+  <meta name="description" content="A kinematic simulator with force rendering created with rViz to provide a training ground to learn robot policies from demonstration using a Phantom Omni haptic input device. The learned policy can then be executed on a real robot (or a simulated robot in Gazebo).">
 
   
-  <link rel="alternate" hreflang="en-us" href="">
+  <link rel="alternate" hreflang="en-us" href="/project/teleop/">
 
   
 
@@ -86,28 +86,30 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="">
+  <link rel="canonical" href="/project/teleop/">
 
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Adam Conkey">
-  <meta property="og:url" content="">
-  <meta property="og:title" content="404 Page not found | Adam Conkey">
-  <meta property="og:description" content="PhD Student in Robotics">
+  <meta property="og:url" content="/project/teleop/">
+  <meta property="og:title" content="Teleoperation Mediated by Virtual Environment | Adam Conkey">
+  <meta property="og:description" content="A kinematic simulator with force rendering created with rViz to provide a training ground to learn robot policies from demonstration using a Phantom Omni haptic input device. The learned policy can then be executed on a real robot (or a simulated robot in Gazebo).">
   
   
     
-  <meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:image" content="/img/teleop.png">
   <meta property="og:locale" content="en-us">
   
+  <meta property="article:published_time" content="2018-09-29T15:31:16-06:00">
   
+  <meta property="article:modified_time" content="2018-09-29T15:31:16-06:00">
+  
+
   
 
   
 
-  
-
-  <title>404 Page not found | Adam Conkey</title>
+  <title>Teleoperation Mediated by Virtual Environment | Adam Conkey</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -200,47 +202,136 @@
   </div>
 </nav>
 
-<div class="container">
 
-  <h1>Page not found</h1>
-  <p>Perhaps you were looking for one of these?</p>
+<article class="article article-project" itemscope itemtype="http://schema.org/Article">
 
   
+
+
+
+<div class="article-header">
+  
+  
+    <img src="/img/teleop.png" class="article-banner" itemprop="image">
   
 
   
-  
-
-  
-  
-
-  
-  
-  <h2>Projects</h2>
-  
-  <ul>
-    <li><a href="/project/robot_control/">Robot Control in Gazebo</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="/project/robot_interface/">Robot Interface</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="/project/rt_robot_control/">Real-Time Robot Control</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="/project/logger/">Data Logging</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="/project/baxter_record/">Baxter Demonstration Recorder</a></li>
-  </ul>
-  
-  
-
 </div>
+
+
+
+  <div class="article-container">
+
+    <div class="pub-title">
+      <h1 itemprop="name">Teleoperation Mediated by Virtual Environment</h1>
+      <span class="pub-authors" itemprop="author">&nbsp;</span>
+      <span class="float-right">
+        
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Teleoperation%20Mediated%20by%20Virtual%20Environment&amp;url=%2fproject%2fteleop%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=%2fproject%2fteleop%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fproject%2fteleop%2f&amp;title=Teleoperation%20Mediated%20by%20Virtual%20Environment"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=%2fproject%2fteleop%2f&amp;title=Teleoperation%20Mediated%20by%20Virtual%20Environment"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Teleoperation%20Mediated%20by%20Virtual%20Environment&amp;body=%2fproject%2fteleop%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+      </span>
+    </div>
+
+    
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<p>An application for my research that I am very interested in pursuing is the problem of teleoperation over large communication latency (e.g. teleoperating a robot on Mars from your couch). I have set up a simple virtual environment for the purpose of testing some ideas. I use rViz for the visualization of the virtual environment, and a Phantom Omni (re-branded as the <a href="https://www.3dsystems.com/haptics-devices/touch" target="_blank">Sensable Geomagic Touch</a>) haptic input device to control the robot. I track the relative change in pose of the haptic device stylus and interpret that as a change in pose in the robot&rsquo;s end-effector. I need joint angles to render the robot arm in rViz, so I use the pseudoinverse of the manipulator Jacobian to get the corresponding joint angles. I then simply publish these to a topic that rViz picks up on to render the visualization - it is a purely kinematic simulator (i.e. no physics engine is active).</p>
+
+<p>I created a simple GUI using <a href="https://wiki.python.org/moin/TkInter" target="_blank">Tkinter</a> to enable/disable task space dimensions selectively. Sliders are used to scale how sensitive movement is in each dimension, which is useful if you want to move a large amount or you want finer control when you&rsquo;re close to an object. I have created a more advanced version of this GUI that allows you to give multiple demonstrations, learn a policy (e.g. a Dynamic Movement Primitive), and execute that policy on a real robot or a robot in a Gazebo simulation. I&rsquo;ve also done direct trajectory playback, i.e. just record a demo in the rViz simulator and then send it directly to a Gazebo robot. However, I have disabled these features for now as the packages it relied on changed significantly since I was using this package, and I need to do some re-integration to make it work again.</p>
+
+<p>I have also set up force rendering in this environment by using the force feedback of the haptic device and rendering forces as a function of the penetration depth the end-effector has with an object. By setting the parameters differently, you can make objects feel &ldquo;squishy&rdquo; or very stiff. I have to admit, it&rsquo;s amazingly fun feeling like you&rsquo;re physically touching an object that is purely virtual. This feedback can be enabled/disabled via the GUI as seen in the video:</p>
+
+<p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/S0RFufFrDa0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p></p>
+
+<p>I have also used this purely in Gazebo (without being mediated through the kinematic simulator). Here is a video of it here I&rsquo;ve augmented the GUI to display the forces being applied in each dimension as registered by a simulated force sensor (using Gazebo&rsquo;s force sensor plugin):</p>
+
+<p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/SlULZfQPwRg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p></p>
+
+<p>The code for this package is hosted on the LL4MA Lab&rsquo;s bitbucket page <a href="https://bitbucket.org/robot-learning/ll4ma_teleop" target="_blank">here</a>.</p>
+
+<h2 id="future-directions">Future Directions</h2>
+
+<p>I would like to move away from Tkinter for the GUIs. They are nice for workshopping ideas quickly, but since I am already using rViz for the visualizations, I would really like to create an integrated environment with an rViz plugin. I have played around with the plugins a bit, and they are not so hard to create, so I will be porting to a better implementation at some point.</p>
+
+    </div>
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+      
+      
+      
+      
+
+      
+      
+      
+      
+    
+
+  </div>
+</article>
+
+
+
 <div class="container">
   <footer class="site-footer">
   

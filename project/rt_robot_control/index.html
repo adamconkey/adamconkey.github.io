@@ -15,10 +15,10 @@
   
     
   
-  <meta name="description" content="PhD Student in Robotics">
+  <meta name="description" content="Real-time Orocos controllers for the KUKA LBR4&#43; robot. Includes a controller switching framework for safely swapping controllers at runtime, and a simulated FRI (Fast Research Interface) component that allows Orocos components to be tested Gazebo.">
 
   
-  <link rel="alternate" hreflang="en-us" href="">
+  <link rel="alternate" hreflang="en-us" href="/project/rt_robot_control/">
 
   
 
@@ -86,28 +86,30 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="">
+  <link rel="canonical" href="/project/rt_robot_control/">
 
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Adam Conkey">
-  <meta property="og:url" content="">
-  <meta property="og:title" content="404 Page not found | Adam Conkey">
-  <meta property="og:description" content="PhD Student in Robotics">
+  <meta property="og:url" content="/project/rt_robot_control/">
+  <meta property="og:title" content="Real-Time Robot Control | Adam Conkey">
+  <meta property="og:description" content="Real-time Orocos controllers for the KUKA LBR4&#43; robot. Includes a controller switching framework for safely swapping controllers at runtime, and a simulated FRI (Fast Research Interface) component that allows Orocos components to be tested Gazebo.">
   
   
     
-  <meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:image" content="/img/rt_control.png">
   <meta property="og:locale" content="en-us">
   
+  <meta property="article:published_time" content="2018-09-29T15:30:42-06:00">
   
+  <meta property="article:modified_time" content="2018-09-29T15:30:42-06:00">
+  
+
   
 
   
 
-  
-
-  <title>404 Page not found | Adam Conkey</title>
+  <title>Real-Time Robot Control | Adam Conkey</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -200,47 +202,120 @@
   </div>
 </nav>
 
-<div class="container">
 
-  <h1>Page not found</h1>
-  <p>Perhaps you were looking for one of these?</p>
+<article class="article article-project" itemscope itemtype="http://schema.org/Article">
 
   
+
+
+
+<div class="article-header">
+  
+  
+    <img src="/img/rt_control.png" class="article-banner" itemprop="image">
   
 
   
-  
-
-  
-  
-
-  
-  
-  <h2>Projects</h2>
-  
-  <ul>
-    <li><a href="/project/robot_control/">Robot Control in Gazebo</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="/project/robot_interface/">Robot Interface</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="/project/rt_robot_control/">Real-Time Robot Control</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="/project/logger/">Data Logging</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="/project/baxter_record/">Baxter Demonstration Recorder</a></li>
-  </ul>
-  
-  
-
 </div>
+
+
+
+  <div class="article-container">
+
+    <div class="pub-title">
+      <h1 itemprop="name">Real-Time Robot Control</h1>
+      <span class="pub-authors" itemprop="author">&nbsp;</span>
+      <span class="float-right">
+        
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Real-Time%20Robot%20Control&amp;url=%2fproject%2frt_robot_control%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=%2fproject%2frt_robot_control%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fproject%2frt_robot_control%2f&amp;title=Real-Time%20Robot%20Control"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=%2fproject%2frt_robot_control%2f&amp;title=Real-Time%20Robot%20Control"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Real-Time%20Robot%20Control&amp;body=%2fproject%2frt_robot_control%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+      </span>
+    </div>
+
+    
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<p>We use the <a href="http://www.orocos.org/rtt" target="_blank">Orocos Real-Time Toolkit</a> to control our KUKA LBR4+ arm, which ensures that our controllers meet the real-time requirements for the LBR4. The base implementation our lab started with comes from the <a href="https://github.com/kuka-isir/lwr_hardware" target="_blank">lwr_hardware</a> package from the <a href="http://www.isir.upmc.fr/index.php?op=view_equipe&amp;id=4&amp;lang=fr" target="_blank">Institut des Systèmes Intelligents et de Robotique (ISIR)</a>.</p>
+
+<p>I have added to this framework by writing a controller manager that allows safe swapping of controllers at runtime. I use this to rapidly record kinesthetic demonstrations on the robot by switching between a gravity compensation controller (for moving the arm kinesthetically), a high stiffness joint controller (for keeping the robot stationary), a joint PD controller (for moving the robot to a nominal starting position), and a task space inverse dynamics controller (for executing task space policies).</p>
+
+<p>The LBR4+ comes with a <a href="https://cs.stanford.edu/people/tkr/fri/html/" target="_blank">Fast Research Interface (FRI)</a>, which allows us to run our custom controllers and read the robot state through ROS. Something I didn&rsquo;t like was having to work out bugs in my controllers and controller manager on the real robot. So, I created a simulated FRI so that I could run our Orocos controllers in Gazebo before going live on the real robot. The simulation FRI hooks into the Gazebo simulation directly to read the robot state, and accepts the torque command output from our controllers to interface with the ROS control hardware interfaces.</p>
+
+<p>The code for this package is hosted on the LL4MA Lab&rsquo;s bitbucket page <a href="https://bitbucket.org/robot-learning/lwr_hardware" target="_blank">here</a>. You should look at the <code>adam_dev</code> branch, as that is where I develop my features until they are stable enough to merge to master.</p>
+
+<h2 id="future-direction">Future Direction</h2>
+
+<p>Some more work is needed for the simulated FRI component to make it truly replicate all the behavior of the actual FRI. I have only implemented what I needed, which is mainly exposing the joint state and torque commands.</p>
+
+    </div>
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+      
+      
+      
+      
+
+      
+      
+      
+      
+    
+
+  </div>
+</article>
+
+
+
 <div class="container">
   <footer class="site-footer">
   

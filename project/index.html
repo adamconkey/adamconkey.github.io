@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
@@ -18,7 +20,7 @@
   <meta name="description" content="PhD Student in Robotics">
 
   
-  <link rel="alternate" hreflang="en-us" href="">
+  <link rel="alternate" hreflang="en-us" href="/project/">
 
   
 
@@ -78,21 +80,21 @@
   
 
   
-  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Adam Conkey">
-  <link rel="feed" href="/index.xml" type="application/rss+xml" title="Adam Conkey">
+  <link rel="alternate" href="/project/index.xml" type="application/rss+xml" title="Adam Conkey">
+  <link rel="feed" href="/project/index.xml" type="application/rss+xml" title="Adam Conkey">
   
 
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="">
+  <link rel="canonical" href="/project/">
 
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Adam Conkey">
-  <meta property="og:url" content="">
-  <meta property="og:title" content="404 Page not found | Adam Conkey">
+  <meta property="og:url" content="/project/">
+  <meta property="og:title" content="Projects | Adam Conkey">
   <meta property="og:description" content="PhD Student in Robotics">
   
   
@@ -100,14 +102,14 @@
   <meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  
-  
-
+  <meta property="og:updated_time" content="2018-09-29T13:59:00-06:00">
   
 
   
 
-  <title>404 Page not found | Adam Conkey</title>
+  
+
+  <title>Projects | Adam Conkey</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -200,44 +202,93 @@
   </div>
 </nav>
 
-<div class="container">
 
-  <h1>Page not found</h1>
-  <p>Perhaps you were looking for one of these?</p>
 
-  
-  
 
-  
-  
 
-  
+
+
+
+<div class="universal-wrapper">
+  <h1>Projects</h1>
+
   
 
   
   
-  <h2>Projects</h2>
+  <div>
+    <h2><a href="/project/robot_control/">Robot Control in Gazebo</a></h2>
+    <div class="article-style">
+      
+      Robot control framework for simulations in Gazebo. It is designed to be extensible, allowing easy addition of new controllers, and it works in conjunction with my robot interface package to decouple the controllers from the particular robot you're using.
+      
+    </div>
+  </div>
   
-  <ul>
-    <li><a href="/project/robot_control/">Robot Control in Gazebo</a></li>
-  </ul>
+  <div>
+    <h2><a href="/project/robot_interface/">Robot Interface</a></h2>
+    <div class="article-style">
+      
+      Abstraction layer for controlling robots in a unified manner while accounting for robot platform-specific needs.
+      
+    </div>
+  </div>
   
-  <ul>
-    <li><a href="/project/robot_interface/">Robot Interface</a></li>
-  </ul>
+  <div>
+    <h2><a href="/project/rt_robot_control/">Real-Time Robot Control</a></h2>
+    <div class="article-style">
+      
+      Real-time Orocos controllers for the KUKA LBR4+ robot. Includes a controller switching framework for safely swapping controllers at runtime, and a simulated FRI (Fast Research Interface) component that allows Orocos components to be tested Gazebo.
+      
+    </div>
+  </div>
   
-  <ul>
-    <li><a href="/project/rt_robot_control/">Real-Time Robot Control</a></li>
-  </ul>
+  <div>
+    <h2><a href="/project/logger/">Data Logging</a></h2>
+    <div class="article-style">
+      
+      Two data logging frameworks for recording robot and sensor data. One uses HDF5 files with an h5py interface, and the other post-processes rosbag data into Pandas dataframes.
+      
+    </div>
+  </div>
   
-  <ul>
-    <li><a href="/project/logger/">Data Logging</a></li>
-  </ul>
+  <div>
+    <h2><a href="/project/baxter_record/">Baxter Demonstration Recorder</a></h2>
+    <div class="article-style">
+      
+      A demonstration recorder for the Baxter robot utilizing the button and display interfaces to make it easier to record demonstrations when operating Baxter in gravity compensation mode.
+      
+    </div>
+  </div>
   
-  <ul>
-    <li><a href="/project/baxter_record/">Baxter Demonstration Recorder</a></li>
-  </ul>
+  <div>
+    <h2><a href="/project/trajectory_viz/">rViz Trajectory Visualization</a></h2>
+    <div class="article-style">
+      
+      Package for generating trajectory visualizations in rViz, including dynamic real-time visualizations showing a customizable trace of the robot's end-effector.
+      
+    </div>
+  </div>
   
+  <div>
+    <h2><a href="/project/teleop/">Teleoperation Mediated by Virtual Environment</a></h2>
+    <div class="article-style">
+      
+      A kinematic simulator with force rendering created with rViz to provide a training ground to learn robot policies from demonstration using a Phantom Omni haptic input device. The learned policy can then be executed on a real robot (or a simulated robot in Gazebo).
+      
+    </div>
+  </div>
+  
+  <div>
+    <h2><a href="/project/baxter_multimaster/">Baxter Multimaster</a></h2>
+    <div class="article-style">
+      
+      A fork of the multimaster package which I augmented to allow teleoperation of a slave Baxter robot by moving the limbs of master Baxter robot in gravity compensation mode.
+      
+    </div>
+  </div>
+  
+
   
 
 </div>
@@ -379,4 +430,6 @@
 
   </body>
 </html>
+
+
 

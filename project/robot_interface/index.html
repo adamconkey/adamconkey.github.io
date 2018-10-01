@@ -15,10 +15,10 @@
   
     
   
-  <meta name="description" content="PhD Student in Robotics">
+  <meta name="description" content="Abstraction layer for controlling robots in a unified manner while accounting for robot platform-specific needs.">
 
   
-  <link rel="alternate" hreflang="en-us" href="">
+  <link rel="alternate" hreflang="en-us" href="/project/robot_interface/">
 
   
 
@@ -86,28 +86,30 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="">
+  <link rel="canonical" href="/project/robot_interface/">
 
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Adam Conkey">
-  <meta property="og:url" content="">
-  <meta property="og:title" content="404 Page not found | Adam Conkey">
-  <meta property="og:description" content="PhD Student in Robotics">
+  <meta property="og:url" content="/project/robot_interface/">
+  <meta property="og:title" content="Robot Interface | Adam Conkey">
+  <meta property="og:description" content="Abstraction layer for controlling robots in a unified manner while accounting for robot platform-specific needs.">
   
   
     
   <meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
+  <meta property="article:published_time" content="2018-09-29T15:10:32-06:00">
   
+  <meta property="article:modified_time" content="2018-09-29T15:10:32-06:00">
+  
+
   
 
   
 
-  
-
-  <title>404 Page not found | Adam Conkey</title>
+  <title>Robot Interface | Adam Conkey</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -200,47 +202,114 @@
   </div>
 </nav>
 
-<div class="container">
 
-  <h1>Page not found</h1>
-  <p>Perhaps you were looking for one of these?</p>
+<article class="article article-project" itemscope itemtype="http://schema.org/Article">
 
   
-  
 
-  
-  
 
-  
-  
 
-  
-  
-  <h2>Projects</h2>
-  
-  <ul>
-    <li><a href="/project/robot_control/">Robot Control in Gazebo</a></li>
+
+
+  <div class="article-container">
+
+    <div class="pub-title">
+      <h1 itemprop="name">Robot Interface</h1>
+      <span class="pub-authors" itemprop="author">&nbsp;</span>
+      <span class="float-right">
+        
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Robot%20Interface&amp;url=%2fproject%2frobot_interface%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=%2fproject%2frobot_interface%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fproject%2frobot_interface%2f&amp;title=Robot%20Interface"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=%2fproject%2frobot_interface%2f&amp;title=Robot%20Interface"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Robot%20Interface&amp;body=%2fproject%2frobot_interface%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
   </ul>
-  
-  <ul>
-    <li><a href="/project/robot_interface/">Robot Interface</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="/project/rt_robot_control/">Real-Time Robot Control</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="/project/logger/">Data Logging</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="/project/baxter_record/">Baxter Demonstration Recorder</a></li>
-  </ul>
-  
-  
-
 </div>
+
+
+      </span>
+    </div>
+
+    
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<p>Different robots have different communication requirements for control and diagnostics. In ROS, this can mean different message types, different topic names, different interfaces for a robot in simulation versus reality, and so on. This can greatly complicate things as you end up having to create separate controllers and monitoring nodes for each platform. I created a robot interface abstraction layer to try to mitigate these issues. The idea is that each robot has its own interface that implements the requirements particular to that platform, and each interface inherits from a common interface. I have implemented a number of controllers in my <a href="https://bitbucket.org/robot-learning/ll4ma_robot_control" target="_blank">controller package</a> that use the common interface, such that the controllers are agnostic to the robot being controlled, and they can be instantiated with any interface in this package.</p>
+
+<p>I have implemented interfaces for the KUKA LBR4+ (simulation), Baxter (real and simulation), and the Righthand Robotics ReFlex hand (simulation). <a href="https://balakumar-s.github.io/" target="_blank">Balakumar Sundaralingam</a> has implemented an interface for the real and simulated Allegro hand.</p>
+
+<p>The code is hosted on the LL4MA Lab&rsquo;s bitbucket page <a href="https://bitbucket.org/robot-learning/ll4ma_robot_interface" target="_blank">here</a>.</p>
+
+<h2 id="future-direction">Future Direction</h2>
+
+<p>The goal is to build up these interfaces so that every platform can be seamlessly operated in both simulation and the real world. I have gotten away from the development a bit because making progress on research is more important right now. But, here are the current things to be added:</p>
+
+<ul>
+<li>Integrate the KUKA LBR4+ interface with our <a href="/project/rt_robot_control">real-time Orocos controllers</a></li>
+<li>Add real-robot support for the ReFlex interface</li>
+</ul>
+
+    </div>
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+      
+      
+      
+      
+
+      
+      
+      
+      
+    
+
+  </div>
+</article>
+
+
+
 <div class="container">
   <footer class="site-footer">
   

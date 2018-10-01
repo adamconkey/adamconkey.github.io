@@ -15,10 +15,10 @@
   
     
   
-  <meta name="description" content="PhD Student in Robotics">
+  <meta name="description" content="Package for generating trajectory visualizations in rViz, including dynamic real-time visualizations showing a customizable trace of the robot&#39;s end-effector.">
 
   
-  <link rel="alternate" hreflang="en-us" href="">
+  <link rel="alternate" hreflang="en-us" href="/project/trajectory_viz/">
 
   
 
@@ -86,28 +86,30 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="">
+  <link rel="canonical" href="/project/trajectory_viz/">
 
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Adam Conkey">
-  <meta property="og:url" content="">
-  <meta property="og:title" content="404 Page not found | Adam Conkey">
-  <meta property="og:description" content="PhD Student in Robotics">
+  <meta property="og:url" content="/project/trajectory_viz/">
+  <meta property="og:title" content="rViz Trajectory Visualization | Adam Conkey">
+  <meta property="og:description" content="Package for generating trajectory visualizations in rViz, including dynamic real-time visualizations showing a customizable trace of the robot&#39;s end-effector.">
   
   
     
-  <meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:image" content="/img/kuka_viz.png">
   <meta property="og:locale" content="en-us">
   
+  <meta property="article:published_time" content="2018-09-29T15:30:58-06:00">
   
+  <meta property="article:modified_time" content="2018-09-29T15:30:58-06:00">
+  
+
   
 
   
 
-  
-
-  <title>404 Page not found | Adam Conkey</title>
+  <title>rViz Trajectory Visualization | Adam Conkey</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -200,47 +202,121 @@
   </div>
 </nav>
 
-<div class="container">
 
-  <h1>Page not found</h1>
-  <p>Perhaps you were looking for one of these?</p>
+<article class="article article-project" itemscope itemtype="http://schema.org/Article">
 
   
+
+
+
+<div class="article-header">
+  
+  
+    <img src="/img/kuka_viz.png" class="article-banner" itemprop="image">
   
 
   
-  
-
-  
-  
-
-  
-  
-  <h2>Projects</h2>
-  
-  <ul>
-    <li><a href="/project/robot_control/">Robot Control in Gazebo</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="/project/robot_interface/">Robot Interface</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="/project/rt_robot_control/">Real-Time Robot Control</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="/project/logger/">Data Logging</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="/project/baxter_record/">Baxter Demonstration Recorder</a></li>
-  </ul>
-  
-  
-
 </div>
+
+
+
+  <div class="article-container">
+
+    <div class="pub-title">
+      <h1 itemprop="name">rViz Trajectory Visualization</h1>
+      <span class="pub-authors" itemprop="author">&nbsp;</span>
+      <span class="float-right">
+        
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=rViz%20Trajectory%20Visualization&amp;url=%2fproject%2ftrajectory_viz%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=%2fproject%2ftrajectory_viz%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fproject%2ftrajectory_viz%2f&amp;title=rViz%20Trajectory%20Visualization"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=%2fproject%2ftrajectory_viz%2f&amp;title=rViz%20Trajectory%20Visualization"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=rViz%20Trajectory%20Visualization&amp;body=%2fproject%2ftrajectory_viz%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+      </span>
+    </div>
+
+    
+
+    <div class="article-style" itemprop="articleBody">
+      <p>Currently this package primarily offers customizable traces for task space trajectories in rViz. It uses <a href="http://wiki.ros.org/rviz/DisplayTypes/Marker" target="_blank">Marker</a> display types to show the end-effector position (or any other task space position) as it traverses through space. It&rsquo;s somewhat configurable in that you can choose the color and line style of the trace (solid or dotted). It also allows you to visualize many trajectories at once, e.g. if you have samples from a distribution of trajectories. I have also implemented visualization of a full pose so that a Cartesian frame shows the pose over time, and also a static trace of poses so the entire pose trajectory can be seen at once.</p>
+
+<p>This package additionally has some action servers/clients (joint and task space) for commanding trajectories. These can be used to track the status of a trajectory being executed and publish interpolated waypoints to a low-level controller.</p>
+
+<p>I will say the code in this repo is far from stable - many of the pieces came from different repos so they are not all fully integrated and there may easily be some bugs from that transition process. Please let me know if you find things that aren&rsquo;t working, I will be quick to fix them.</p>
+
+<p>Here is a video of a couple different visualization styles:
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/yFKEfv2nIZA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p>
+
+<p>The code can be found on the LL4MA Lab&rsquo;s bitbucket page <a href="https://bitbucket.org/robot-learning/ll4ma_trajectory_util" target="_blank">here</a>.</p>
+
+    </div>
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+      
+      
+      
+      
+
+      
+      
+      
+      
+    
+
+  </div>
+</article>
+
+
+
 <div class="container">
   <footer class="site-footer">
   
