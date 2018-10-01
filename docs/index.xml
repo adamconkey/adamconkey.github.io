@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Adam Conkey on Adam Conkey</title>
+    <link>/</link>
+    <description>Recent content in Adam Conkey on Adam Conkey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Adam Conkey 2018</copyright>
+    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0600</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Robot_control</title>
+      <link>/robot_control/</link>
+      <pubDate>Sat, 29 Sep 2018 13:57:59 -0600</pubDate>
+      
+      <guid>/robot_control/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
