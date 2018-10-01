@@ -20,14 +20,6 @@
     
     <url>
     
-      <loc>/project/robot_interface/</loc>
-      <lastmod>2018-09-29T15:10:32-06:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/project/teleop/</loc>
       <lastmod>2018-09-29T15:31:16-06:00</lastmod>
     </url>
@@ -46,6 +38,14 @@
     
       <loc>/project/baxter_record/</loc>
       <lastmod>2018-09-29T15:31:32-06:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/project/robot_interface/</loc>
+      <lastmod>2018-09-29T15:10:32-06:00</lastmod>
     </url>
     
   

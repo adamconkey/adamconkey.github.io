@@ -69,31 +69,6 @@
     </item>
     
     <item>
-      <title>Robot Interface</title>
-      <link>/project/robot_interface/</link>
-      <pubDate>Sat, 29 Sep 2018 15:10:32 -0600</pubDate>
-      
-      <guid>/project/robot_interface/</guid>
-      <description>
-
-&lt;p&gt;Different robots have different communication requirements for control and diagnostics. In ROS, this can mean different message types, different topic names, different interfaces for a robot in simulation versus reality, and so on. This can greatly complicate things as you end up having to create separate controllers and monitoring nodes for each platform. I created a robot interface abstraction layer to try to mitigate these issues. The idea is that each robot has its own interface that implements the requirements particular to that platform, and each interface inherits from a common interface. I have implemented a number of controllers in my &lt;a href=&#34;https://bitbucket.org/robot-learning/ll4ma_robot_control&#34; target=&#34;_blank&#34;&gt;controller package&lt;/a&gt; that use the common interface, such that the controllers are agnostic to the robot being controlled, and they can be instantiated with any interface in this package.&lt;/p&gt;
-
-&lt;p&gt;I have implemented interfaces for the KUKA LBR4+ (simulation), Baxter (real and simulation), and the Righthand Robotics ReFlex hand (simulation). &lt;a href=&#34;https://balakumar-s.github.io/&#34; target=&#34;_blank&#34;&gt;Balakumar Sundaralingam&lt;/a&gt; has implemented an interface for the real and simulated Allegro hand.&lt;/p&gt;
-
-&lt;p&gt;The code is hosted on the LL4MA Lab&amp;rsquo;s bitbucket page &lt;a href=&#34;https://bitbucket.org/robot-learning/ll4ma_robot_interface&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;future-direction&#34;&gt;Future Direction&lt;/h2&gt;
-
-&lt;p&gt;The goal is to build up these interfaces so that every platform can be seamlessly operated in both simulation and the real world. I have gotten away from the development a bit because making progress on research is more important right now. But, here are the current things to be added:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Integrate the KUKA LBR4+ interface with our &lt;a href=&#34;/project/rt_robot_control&#34;&gt;real-time Orocos controllers&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Add real-robot support for the ReFlex interface&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Teleoperation Mediated by Virtual Environment</title>
       <link>/project/teleop/</link>
       <pubDate>Sat, 29 Sep 2018 15:31:16 -0600</pubDate>
@@ -177,6 +152,31 @@
   &lt;iframe src=&#34;//www.youtube.com/embed/weBPQOT4Ymg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
+</description>
+    </item>
+    
+    <item>
+      <title>Robot Interface</title>
+      <link>/project/robot_interface/</link>
+      <pubDate>Sat, 29 Sep 2018 15:10:32 -0600</pubDate>
+      
+      <guid>/project/robot_interface/</guid>
+      <description>
+
+&lt;p&gt;Different robots have different communication requirements for control and diagnostics. In ROS, this can mean different message types, different topic names, different interfaces for a robot in simulation versus reality, and so on. This can greatly complicate things as you end up having to create separate controllers and monitoring nodes for each platform. I created a robot interface abstraction layer to try to mitigate these issues. The idea is that each robot has its own interface that implements the requirements particular to that platform, and each interface inherits from a common interface. I have implemented a number of controllers in my &lt;a href=&#34;https://bitbucket.org/robot-learning/ll4ma_robot_control&#34; target=&#34;_blank&#34;&gt;controller package&lt;/a&gt; that use the common interface, such that the controllers are agnostic to the robot being controlled, and they can be instantiated with any interface in this package.&lt;/p&gt;
+
+&lt;p&gt;I have implemented interfaces for the KUKA LBR4+ (simulation), Baxter (real and simulation), and the Righthand Robotics ReFlex hand (simulation). &lt;a href=&#34;https://balakumar-s.github.io/&#34; target=&#34;_blank&#34;&gt;Balakumar Sundaralingam&lt;/a&gt; has implemented an interface for the real and simulated Allegro hand.&lt;/p&gt;
+
+&lt;p&gt;The code is hosted on the LL4MA Lab&amp;rsquo;s bitbucket page &lt;a href=&#34;https://bitbucket.org/robot-learning/ll4ma_robot_interface&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;future-direction&#34;&gt;Future Direction&lt;/h2&gt;
+
+&lt;p&gt;The goal is to build up these interfaces so that every platform can be seamlessly operated in both simulation and the real world. I have gotten away from the development a bit because making progress on research is more important right now. But, here are the current things to be added:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Integrate the KUKA LBR4+ interface with our &lt;a href=&#34;/project/rt_robot_control&#34;&gt;real-time Orocos controllers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add real-robot support for the ReFlex interface&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
