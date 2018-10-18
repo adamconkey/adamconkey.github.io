@@ -132,6 +132,15 @@ To remove this section, either delete content/home/teaching.md or edit the front
     </item>
     
     <item>
+      <title>Expertise</title>
+      <link>https://adamconkey.github.io/home/expertise/</link>
+      <pubDate>Wed, 17 Oct 2018 22:29:55 -0600</pubDate>
+      
+      <guid>https://adamconkey.github.io/home/expertise/</guid>
+      <description> Software  Robot Operating System (ROS) Gazebo V-REP Orocos Real-Time Toolkit Orocos Kinematics and Dynamics Library (KDL) Eigen ArUco Fiducial Markers  Research Implementations  Dynamic Movement Primitives Probabilistic Movement Primitives Operational Space Controllers (with null space resolution) Force/Position Controllers  Hardware  KUKA LBR4+ Robot Arm Baxter Research Robot RightHand Robotics ReFlex TakkTile Hand Optoforce HEX-E 6-Axis Force/Torque Sensor ASUS Xtion Pro RGB-D Camera  </description>
+    </item>
+    
+    <item>
       <title>Blog</title>
       <link>https://adamconkey.github.io/home/blog/</link>
       <pubDate>Sun, 30 Sep 2018 17:23:16 -0600</pubDate>
