@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Adam Conkey on Adam Conkey</title>
+    <title>Adam Conkey</title>
     <link>https://adamconkey.github.io/</link>
-    <description>Recent content in Adam Conkey on Adam Conkey</description>
+    <description>Recent content on Adam Conkey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Adam Conkey 2018</copyright>
-    <lastBuildDate>Sat, 29 Sep 2018 13:59:00 -0600</lastBuildDate>
-    <atom:link href="/" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Oct 2018 22:29:55 -0600</lastBuildDate>
+    
+	<atom:link href="https://adamconkey.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Robot Control in Gazebo</title>
@@ -16,34 +18,16 @@
       <pubDate>Sat, 29 Sep 2018 13:59:00 -0600</pubDate>
       
       <guid>https://adamconkey.github.io/project/robot_control/</guid>
-      <description>
-
-&lt;p&gt;I have developed a robot controller framework that uses my &lt;a href=&#34;https://adamconkey.github.io/project/robot_interface&#34;&gt;robot interface package&lt;/a&gt; to abstract away the particular requirements of each robot platform. As such, the controllers in this package should be useful for controlling any robot that has communication needs satisfied by one of the interfaces in the interface package. These controllers work for Gazebo simulations, and are written to inherit from an interface that mimics the &lt;a href=&#34;http://www.orocos.org/stable/documentation/rtt/v2.x/api/html/classRTT_1_1TaskContext.html&#34; target=&#34;_blank&#34;&gt;Orocos RTT::TaskContext&lt;/a&gt;, with the intention that these controllers can be easily ported for real-time control on a physical robot (see our &lt;a href=&#34;https://adamconkey.github.io/project/rt_robot_control&#34;&gt;real-time controller package&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;The current supported controllers are a joint space PD controller and a task space inverse dynamics controller. I have also implemented an operational space hybrid force/position controller and used it both in simulation and on a real Baxter robot. However, I have deprecated the force controller for now as the code design changed sufficiently from when I was using that controller, and am waiting until it is needed to update.&lt;/p&gt;
-
-&lt;p&gt;Here is a video of the KUKA LBR4+ arm in Gazebo using a joint space controller:
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;//www.youtube.com/embed/THkC697oesQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/p&gt;
-
-&lt;p&gt;Here is a video of the ReFlex hand in Gazebo:&lt;/p&gt;
-
-&lt;p&gt;
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;//www.youtube.com/embed/2HQql-W8Lys&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;The code for this package is hosted on the LL4MA Lab&amp;rsquo;s bitbucket page &lt;a href=&#34;https://bitbucket.org/robot-learning/ll4ma_robot_control&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;future-direction&#34;&gt;Future Direction&lt;/h2&gt;
-
-&lt;p&gt;Between this package, the real-time robot control package, and the robot interface, I think there is a better structure to enforce, but it will take maybe more development than it&amp;rsquo;s worth right now. I think the control laws themselves should be made more portable, such that they can just be passed to a simulation controller or a real-time controller, without all the overhead in the simulation version. These packages may be jointly revamped at some point.&lt;/p&gt;
-</description>
+      <description>Robot control framework for simulations in Gazebo. It is designed to be extensible, allowing easy addition of new controllers, and it works in conjunction with my robot interface package to decouple the controllers from the particular robot you&amp;rsquo;re using.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://adamconkey.github.io/home/hero_carousel/</link>
+      <pubDate>Sun, 15 Oct 2017 00:00:00 -0400</pubDate>
+      
+      <guid>https://adamconkey.github.io/home/hero_carousel/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -52,20 +36,7 @@
       <pubDate>Sat, 29 Sep 2018 15:30:42 -0600</pubDate>
       
       <guid>https://adamconkey.github.io/project/rt_robot_control/</guid>
-      <description>
-
-&lt;p&gt;We use the &lt;a href=&#34;http://www.orocos.org/rtt&#34; target=&#34;_blank&#34;&gt;Orocos Real-Time Toolkit&lt;/a&gt; to control our KUKA LBR4+ arm, which ensures that our controllers meet the real-time requirements for the LBR4. The base implementation our lab started with comes from the &lt;a href=&#34;https://github.com/kuka-isir/lwr_hardware&#34; target=&#34;_blank&#34;&gt;lwr_hardware&lt;/a&gt; package from the &lt;a href=&#34;http://www.isir.upmc.fr/index.php?op=view_equipe&amp;amp;id=4&amp;amp;lang=fr&#34; target=&#34;_blank&#34;&gt;Institut des Systèmes Intelligents et de Robotique (ISIR)&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I have added to this framework by writing a controller manager that allows safe swapping of controllers at runtime. I use this to rapidly record kinesthetic demonstrations on the robot by switching between a gravity compensation controller (for moving the arm kinesthetically), a high stiffness joint controller (for keeping the robot stationary), a joint PD controller (for moving the robot to a nominal starting position), and a task space inverse dynamics controller (for executing task space policies).&lt;/p&gt;
-
-&lt;p&gt;The LBR4+ comes with a &lt;a href=&#34;https://cs.stanford.edu/people/tkr/fri/html/&#34; target=&#34;_blank&#34;&gt;Fast Research Interface (FRI)&lt;/a&gt;, which allows us to run our custom controllers and read the robot state through ROS. Something I didn&amp;rsquo;t like was having to work out bugs in my controllers and controller manager on the real robot. So, I created a simulated FRI so that I could run our Orocos controllers in Gazebo before going live on the real robot. The simulation FRI hooks into the Gazebo simulation directly to read the robot state, and accepts the torque command output from our controllers to interface with the ROS control hardware interfaces.&lt;/p&gt;
-
-&lt;p&gt;The code for this package is hosted on the LL4MA Lab&amp;rsquo;s bitbucket page &lt;a href=&#34;https://bitbucket.org/robot-learning/lwr_hardware&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;. You should look at the &lt;code&gt;adam_dev&lt;/code&gt; branch, as that is where I develop my features until they are stable enough to merge to master.&lt;/p&gt;
-
-&lt;h2 id=&#34;future-direction&#34;&gt;Future Direction&lt;/h2&gt;
-
-&lt;p&gt;Some more work is needed for the simulated FRI component to make it truly replicate all the behavior of the actual FRI. I have only implemented what I needed, which is mainly exposing the joint state and torque commands.&lt;/p&gt;
-</description>
+      <description>Real-time Orocos controllers for the KUKA LBR4+ robot. Includes a controller switching framework for safely swapping controllers at runtime, and a simulated FRI (Fast Research Interface) component that allows Orocos components to be tested Gazebo.</description>
     </item>
     
     <item>
@@ -74,36 +45,7 @@
       <pubDate>Sat, 29 Sep 2018 15:31:16 -0600</pubDate>
       
       <guid>https://adamconkey.github.io/project/teleop/</guid>
-      <description>
-
-&lt;p&gt;An application for my research that I am very interested in pursuing is the problem of teleoperation over large communication latency (e.g. teleoperating a robot on Mars from your couch). I have set up a simple virtual environment for the purpose of testing some ideas. I use rViz for the visualization of the virtual environment, and a Phantom Omni (re-branded as the &lt;a href=&#34;https://www.3dsystems.com/haptics-devices/touch&#34; target=&#34;_blank&#34;&gt;Sensable Geomagic Touch&lt;/a&gt;) haptic input device to control the robot. I track the relative change in pose of the haptic device stylus and interpret that as a change in pose in the robot&amp;rsquo;s end-effector. I need joint angles to render the robot arm in rViz, so I use the pseudoinverse of the manipulator Jacobian to get the corresponding joint angles. I then simply publish these to a topic that rViz picks up on to render the visualization - it is a purely kinematic simulator (i.e. no physics engine is active).&lt;/p&gt;
-
-&lt;p&gt;I created a simple GUI using &lt;a href=&#34;https://wiki.python.org/moin/TkInter&#34; target=&#34;_blank&#34;&gt;Tkinter&lt;/a&gt; to enable/disable task space dimensions selectively. Sliders are used to scale how sensitive movement is in each dimension, which is useful if you want to move a large amount or you want finer control when you&amp;rsquo;re close to an object. I have created a more advanced version of this GUI that allows you to give multiple demonstrations, learn a policy (e.g. a Dynamic Movement Primitive), and execute that policy on a real robot or a robot in a Gazebo simulation. I&amp;rsquo;ve also done direct trajectory playback, i.e. just record a demo in the rViz simulator and then send it directly to a Gazebo robot. However, I have disabled these features for now as the packages it relied on changed significantly since I was using this package, and I need to do some re-integration to make it work again.&lt;/p&gt;
-
-&lt;p&gt;I have also set up force rendering in this environment by using the force feedback of the haptic device and rendering forces as a function of the penetration depth the end-effector has with an object. By setting the parameters differently, you can make objects feel &amp;ldquo;squishy&amp;rdquo; or very stiff. I have to admit, it&amp;rsquo;s amazingly fun feeling like you&amp;rsquo;re physically touching an object that is purely virtual. This feedback can be enabled/disabled via the GUI as seen in the video:&lt;/p&gt;
-
-&lt;p&gt;
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;//www.youtube.com/embed/S0RFufFrDa0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;I have also used this purely in Gazebo (without being mediated through the kinematic simulator). Here is a video of it here I&amp;rsquo;ve augmented the GUI to display the forces being applied in each dimension as registered by a simulated force sensor (using Gazebo&amp;rsquo;s force sensor plugin):&lt;/p&gt;
-
-&lt;p&gt;
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;//www.youtube.com/embed/SlULZfQPwRg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;The code for this package is hosted on the LL4MA Lab&amp;rsquo;s bitbucket page &lt;a href=&#34;https://bitbucket.org/robot-learning/ll4ma_teleop&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;future-directions&#34;&gt;Future Directions&lt;/h2&gt;
-
-&lt;p&gt;I would like to move away from Tkinter for the GUIs. They are nice for workshopping ideas quickly, but since I am already using rViz for the visualizations, I would really like to create an integrated environment with an rViz plugin. I have played around with the plugins a bit, and they are not so hard to create, so I will be porting to a better implementation at some point.&lt;/p&gt;
-</description>
+      <description>A kinematic simulator with force rendering created with rViz to provide a training ground to learn robot policies from demonstration using a Phantom Omni haptic input device. The learned policy can then be executed on a real robot (or a simulated robot in Gazebo).</description>
     </item>
     
     <item>
@@ -112,21 +54,7 @@
       <pubDate>Sat, 29 Sep 2018 15:30:58 -0600</pubDate>
       
       <guid>https://adamconkey.github.io/project/trajectory_viz/</guid>
-      <description>&lt;p&gt;Currently this package primarily offers customizable traces for task space trajectories in rViz. It uses &lt;a href=&#34;http://wiki.ros.org/rviz/DisplayTypes/Marker&#34; target=&#34;_blank&#34;&gt;Marker&lt;/a&gt; display types to show the end-effector position (or any other task space position) as it traverses through space. It&amp;rsquo;s somewhat configurable in that you can choose the color and line style of the trace (solid or dotted). It also allows you to visualize many trajectories at once, e.g. if you have samples from a distribution of trajectories. I have also implemented visualization of a full pose so that a Cartesian frame shows the pose over time, and also a static trace of poses so the entire pose trajectory can be seen at once.&lt;/p&gt;
-
-&lt;p&gt;This package additionally has some action servers/clients (joint and task space) for commanding trajectories. These can be used to track the status of a trajectory being executed and publish interpolated waypoints to a low-level controller.&lt;/p&gt;
-
-&lt;p&gt;I will say the code in this repo is far from stable - many of the pieces came from different repos so they are not all fully integrated and there may easily be some bugs from that transition process. Please let me know if you find things that aren&amp;rsquo;t working, I will be quick to fix them.&lt;/p&gt;
-
-&lt;p&gt;Here is a video of a couple different visualization styles:
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;//www.youtube.com/embed/yFKEfv2nIZA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/p&gt;
-
-&lt;p&gt;The code can be found on the LL4MA Lab&amp;rsquo;s bitbucket page &lt;a href=&#34;https://bitbucket.org/robot-learning/ll4ma_trajectory_util&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>Package for generating trajectory visualizations in rViz, including dynamic real-time visualizations showing a customizable trace of the robot&amp;rsquo;s end-effector.</description>
     </item>
     
     <item>
@@ -135,24 +63,7 @@
       <pubDate>Sat, 29 Sep 2018 15:31:32 -0600</pubDate>
       
       <guid>https://adamconkey.github.io/project/baxter_record/</guid>
-      <description>&lt;p&gt;I created a demonstration recorder for the Baxter robot to make it easier to capture sessions for my research in learning from demonstration. Everything is controlled from the robot using the button and display interfaces, allowing the teacher to rapidly give demonstrations without having to go back and forth between the robot and the computer. Current features include:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Starting/stopping recording of robot and sensor data (e.g. joint states, end-effector pose, force sensor readings, etc.) using my &lt;a href=&#34;https://adamconkey.github.io/project/logger&#34;&gt;logging framework&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Moving arm back to a nominal starting position.&lt;/li&gt;
-&lt;li&gt;Changing the nominal starting position.&lt;/li&gt;
-&lt;li&gt;Zeroing out a mounted force/torque wrist sensor.&lt;/li&gt;
-&lt;li&gt;Showing current status on the head display, and swiveling the head display to the left or right automatically depending on which arm is in use.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The code is hosted on the LL4MA Lab&amp;rsquo;s bitbucket page &lt;a href=&#34;https://bitbucket.org/robot-learning/baxter_util&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;. Here is a short video showing off the features:&lt;/p&gt;
-
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;//www.youtube.com/embed/weBPQOT4Ymg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
+      <description>A demonstration recorder for the Baxter robot utilizing the button and display interfaces to make it easier to record demonstrations when operating Baxter in gravity compensation mode.</description>
     </item>
     
     <item>
@@ -161,23 +72,16 @@
       <pubDate>Sat, 29 Sep 2018 15:10:32 -0600</pubDate>
       
       <guid>https://adamconkey.github.io/project/robot_interface/</guid>
-      <description>
-
-&lt;p&gt;Different robots have different communication requirements for control and diagnostics. In ROS, this can mean different message types, different topic names, different interfaces for a robot in simulation versus reality, and so on. This can greatly complicate things as you end up having to create separate controllers and monitoring nodes for each platform. I created a robot interface abstraction layer to try to mitigate these issues. The idea is that each robot has its own interface that implements the requirements particular to that platform, and each interface inherits from a common interface. I have implemented a number of controllers in my &lt;a href=&#34;https://bitbucket.org/robot-learning/ll4ma_robot_control&#34; target=&#34;_blank&#34;&gt;controller package&lt;/a&gt; that use the common interface, such that the controllers are agnostic to the robot being controlled, and they can be instantiated with any interface in this package.&lt;/p&gt;
-
-&lt;p&gt;I have implemented interfaces for the KUKA LBR4+ (simulation), Baxter (real and simulation), and the Righthand Robotics ReFlex hand (simulation). &lt;a href=&#34;https://balakumar-s.github.io/&#34; target=&#34;_blank&#34;&gt;Balakumar Sundaralingam&lt;/a&gt; has implemented an interface for the real and simulated Allegro hand.&lt;/p&gt;
-
-&lt;p&gt;The code is hosted on the LL4MA Lab&amp;rsquo;s bitbucket page &lt;a href=&#34;https://bitbucket.org/robot-learning/ll4ma_robot_interface&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;future-direction&#34;&gt;Future Direction&lt;/h2&gt;
-
-&lt;p&gt;The goal is to build up these interfaces so that every platform can be seamlessly operated in both simulation and the real world. I have gotten away from the development a bit because making progress on research is more important right now. But, here are the current things to be added:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Integrate the KUKA LBR4+ interface with our &lt;a href=&#34;https://adamconkey.github.io/project/rt_robot_control&#34;&gt;real-time Orocos controllers&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Add real-robot support for the ReFlex interface&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>Abstraction layer for controlling robots in a unified manner while accounting for robot platform-specific needs.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://adamconkey.github.io/home/about/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://adamconkey.github.io/home/about/</guid>
+      <description>Biography I am a PhD student in the School of Computing at the University of Utah in the robotics track of the Utah Robotics Center. I work in the Utah Learning Lab for Manipulation Autonomy (LL4MA) and am advised by Dr. Tucker Hermans. My research focuses on learning manipulation tasks from human demonstration with a targeted application to the problem of robust teleoperation over large latency.</description>
     </item>
     
     <item>
@@ -186,10 +90,16 @@
       <pubDate>Sat, 29 Sep 2018 15:31:38 -0600</pubDate>
       
       <guid>https://adamconkey.github.io/project/logger/</guid>
-      <description>&lt;p&gt;I created a logging framework for recording robot data (e.g. robot joint states, force/torque sensor readings, end-effector pose, annotations on the data, etc.). I originally developed a C++ logger for &lt;a href=&#34;https://support.hdfgroup.org/HDF5/whatishdf5.html&#34; target=&#34;_blank&#34;&gt;HDF5 format&lt;/a&gt; and a Python interface to the database using &lt;a href=&#34;https://www.h5py.org/&#34; target=&#34;_blank&#34;&gt;H5py&lt;/a&gt;. However, I started having issues with data corruption/synchronization and sometimes my data would get completely wiped out. I therefore switched to using &lt;a href=&#34;http://wiki.ros.org/rosbag&#34; target=&#34;_blank&#34;&gt;rosbag&lt;/a&gt; and wrote a rosbag converter to extract the data into a &lt;a href=&#34;https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html&#34; target=&#34;_blank&#34;&gt;Pandas dataframe&lt;/a&gt; and &lt;a href=&#34;https://docs.python.org/3/library/pickle.html&#34; target=&#34;_blank&#34;&gt;pickle&lt;/a&gt; the resulting dataframe. Both implemementations are still in the repository since there&amp;rsquo;s some useful code in the HDF5 version and it took a lot of effort on my end, but the rosbag/Pandas version is the one I actively use.&lt;/p&gt;
-
-&lt;p&gt;The code is hosted on the LL4MA Lab&amp;rsquo;s bitbucket page &lt;a href=&#34;https://bitbucket.org/robot-learning/ll4ma_logger&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>Two data logging frameworks for recording robot and sensor data. One uses HDF5 files with an h5py interface, and the other post-processes rosbag data into Pandas dataframes.</description>
+    </item>
+    
+    <item>
+      <title>Selected Publications</title>
+      <link>https://adamconkey.github.io/home/publications_selected/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://adamconkey.github.io/home/publications_selected/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -198,10 +108,116 @@
       <pubDate>Sat, 29 Sep 2018 15:32:15 -0600</pubDate>
       
       <guid>https://adamconkey.github.io/project/baxter_multimaster/</guid>
-      <description>&lt;p&gt;This package is a fork of the &lt;a href=&#34;http://wiki.ros.org/multimaster&#34; target=&#34;_blank&#34;&gt;multimaster package&lt;/a&gt; adapted to allow you to control one Baxter robot by moving the limbs of another Baxter robot. The purpose is to use one Baxter as a master teleoperation device to control a slave Baxter, where the slave is either a physical Baxter robot or a simulation. The joint states of the master Baxter are interpreted as commands to the slave Baxter, with appropriate namespacing so there is no conflict between the two.&lt;/p&gt;
-
-&lt;p&gt;The code for this package is hosted on the LL4MA Lab&amp;rsquo;s bitbucket page &lt;a href=&#34;https://bitbucket.org/robot-learning/baxter_multimaster&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>A fork of the multimaster package which I augmented to allow teleoperation of a slave Baxter robot by moving the limbs of master Baxter robot in gravity compensation mode.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://adamconkey.github.io/home/skills/</link>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 -0400</pubDate>
+      
+      <guid>https://adamconkey.github.io/home/skills/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent Publications</title>
+      <link>https://adamconkey.github.io/home/publications/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://adamconkey.github.io/home/publications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Selected Talks</title>
+      <link>https://adamconkey.github.io/home/talks_selected/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://adamconkey.github.io/home/talks_selected/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent &amp; Upcoming Talks</title>
+      <link>https://adamconkey.github.io/home/talks/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://adamconkey.github.io/home/talks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent Posts</title>
+      <link>https://adamconkey.github.io/home/posts/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://adamconkey.github.io/home/posts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Code Projects</title>
+      <link>https://adamconkey.github.io/home/projects/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://adamconkey.github.io/home/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Custom Section</title>
+      <link>https://adamconkey.github.io/home/teaching/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://adamconkey.github.io/home/teaching/</guid>
+      <description>This is an example of using the custom widget to create your own homepage section.
+To remove this section, either delete content/home/teaching.md or edit the frontmatter of the file to deactivate the widget by setting active = false.</description>
+    </item>
+    
+    <item>
+      <title>Tags</title>
+      <link>https://adamconkey.github.io/home/tags/</link>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 -0400</pubDate>
+      
+      <guid>https://adamconkey.github.io/home/tags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Search</title>
+      <link>https://adamconkey.github.io/home/search/</link>
+      <pubDate>Mon, 23 Jul 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://adamconkey.github.io/home/search/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://adamconkey.github.io/home/contact/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://adamconkey.github.io/home/contact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Expertise</title>
+      <link>https://adamconkey.github.io/home/expertise/</link>
+      <pubDate>Wed, 17 Oct 2018 22:29:55 -0600</pubDate>
+      
+      <guid>https://adamconkey.github.io/home/expertise/</guid>
+      <description> Software  Robot Operating System (ROS) for Linux Gazebo V-REP Orocos Real-Time Toolkit Orocos Kinematics and Dynamics Library (KDL) Eigen ArUco Fiducial Markers  Research Implementations  Dynamic Movement Primitives Probabilistic Movement Primitives Operational Space Controllers (with null space resolution) Force/Position Controllers  Hardware  KUKA LBR4+ Robot Arm Baxter Research Robot RightHand Robotics ReFlex TakkTile Hand Optoforce HEX-E 6-Axis Force/Torque Sensor Sensable Phantom Omni Haptic Input Device ASUS Xtion Pro RGB-D Camera  </description>
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>https://adamconkey.github.io/home/blog/</link>
+      <pubDate>Sun, 30 Sep 2018 17:23:16 -0600</pubDate>
+      
+      <guid>https://adamconkey.github.io/home/blog/</guid>
+      <description>Coming Soon! I am hoping to start a blog about some of the things I encounter in my research that others might benefit from. Topics will be in the areas of robotics, machine learning, ROS, and coding. These things are hard to maintain and keep up to date, but I want to try! So, stay tuned.</description>
     </item>
     
   </channel>

@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Adam Conkey 2018</copyright>
-    <lastBuildDate>Sat, 29 Sep 2018 13:59:00 -0600</lastBuildDate>
+    <lastBuildDate>Sat, 29 Sep 2018 15:32:15 -0600</lastBuildDate>
     
 	<atom:link href="https://adamconkey.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     
@@ -18,7 +18,7 @@
       <pubDate>Sat, 29 Sep 2018 13:59:00 -0600</pubDate>
       
       <guid>https://adamconkey.github.io/project/robot_control/</guid>
-      <description>I have developed a robot controller framework that uses my robot interface package to abstract away the particular requirements of each robot platform. As such, the controllers in this package should be useful for controlling any robot that has communication needs satisfied by one of the interfaces in the interface package. These controllers work for Gazebo simulations, and are written to inherit from an interface that mimics the Orocos RTT::TaskContext, with the intention that these controllers can be easily ported for real-time control on a physical robot (see our real-time controller package).</description>
+      <description>Robot control framework for simulations in Gazebo. It is designed to be extensible, allowing easy addition of new controllers, and it works in conjunction with my robot interface package to decouple the controllers from the particular robot you&amp;rsquo;re using.</description>
     </item>
     
     <item>
@@ -27,8 +27,7 @@
       <pubDate>Sat, 29 Sep 2018 15:30:42 -0600</pubDate>
       
       <guid>https://adamconkey.github.io/project/rt_robot_control/</guid>
-      <description>We use the Orocos Real-Time Toolkit to control our KUKA LBR4+ arm, which ensures that our controllers meet the real-time requirements for the LBR4. The base implementation our lab started with comes from the lwr_hardware package from the Institut des Systèmes Intelligents et de Robotique (ISIR).
-I have added to this framework by writing a controller manager that allows safe swapping of controllers at runtime. I use this to rapidly record kinesthetic demonstrations on the robot by switching between a gravity compensation controller (for moving the arm kinesthetically), a high stiffness joint controller (for keeping the robot stationary), a joint PD controller (for moving the robot to a nominal starting position), and a task space inverse dynamics controller (for executing task space policies).</description>
+      <description>Real-time Orocos controllers for the KUKA LBR4+ robot. Includes a controller switching framework for safely swapping controllers at runtime, and a simulated FRI (Fast Research Interface) component that allows Orocos components to be tested Gazebo.</description>
     </item>
     
     <item>
@@ -37,7 +36,7 @@ I have added to this framework by writing a controller manager that allows safe 
       <pubDate>Sat, 29 Sep 2018 15:31:16 -0600</pubDate>
       
       <guid>https://adamconkey.github.io/project/teleop/</guid>
-      <description>An application for my research that I am very interested in pursuing is the problem of teleoperation over large communication latency (e.g. teleoperating a robot on Mars from your couch). I have set up a simple virtual environment for the purpose of testing some ideas. I use rViz for the visualization of the virtual environment, and a Phantom Omni (re-branded as the Sensable Geomagic Touch) haptic input device to control the robot.</description>
+      <description>A kinematic simulator with force rendering created with rViz to provide a training ground to learn robot policies from demonstration using a Phantom Omni haptic input device. The learned policy can then be executed on a real robot (or a simulated robot in Gazebo).</description>
     </item>
     
     <item>
@@ -46,7 +45,7 @@ I have added to this framework by writing a controller manager that allows safe 
       <pubDate>Sat, 29 Sep 2018 15:30:58 -0600</pubDate>
       
       <guid>https://adamconkey.github.io/project/trajectory_viz/</guid>
-      <description>Currently this package primarily offers customizable traces for task space trajectories in rViz. It uses Marker display types to show the end-effector position (or any other task space position) as it traverses through space. It&amp;rsquo;s somewhat configurable in that you can choose the color and line style of the trace (solid or dotted). It also allows you to visualize many trajectories at once, e.g. if you have samples from a distribution of trajectories.</description>
+      <description>Package for generating trajectory visualizations in rViz, including dynamic real-time visualizations showing a customizable trace of the robot&amp;rsquo;s end-effector.</description>
     </item>
     
     <item>
@@ -55,8 +54,7 @@ I have added to this framework by writing a controller manager that allows safe 
       <pubDate>Sat, 29 Sep 2018 15:31:32 -0600</pubDate>
       
       <guid>https://adamconkey.github.io/project/baxter_record/</guid>
-      <description>I created a demonstration recorder for the Baxter robot to make it easier to capture sessions for my research in learning from demonstration. Everything is controlled from the robot using the button and display interfaces, allowing the teacher to rapidly give demonstrations without having to go back and forth between the robot and the computer. Current features include:
- Starting/stopping recording of robot and sensor data (e.g. joint states, end-effector pose, force sensor readings, etc.</description>
+      <description>A demonstration recorder for the Baxter robot utilizing the button and display interfaces to make it easier to record demonstrations when operating Baxter in gravity compensation mode.</description>
     </item>
     
     <item>
@@ -65,7 +63,7 @@ I have added to this framework by writing a controller manager that allows safe 
       <pubDate>Sat, 29 Sep 2018 15:10:32 -0600</pubDate>
       
       <guid>https://adamconkey.github.io/project/robot_interface/</guid>
-      <description>Different robots have different communication requirements for control and diagnostics. In ROS, this can mean different message types, different topic names, different interfaces for a robot in simulation versus reality, and so on. This can greatly complicate things as you end up having to create separate controllers and monitoring nodes for each platform. I created a robot interface abstraction layer to try to mitigate these issues. The idea is that each robot has its own interface that implements the requirements particular to that platform, and each interface inherits from a common interface.</description>
+      <description>Abstraction layer for controlling robots in a unified manner while accounting for robot platform-specific needs.</description>
     </item>
     
     <item>
@@ -74,7 +72,7 @@ I have added to this framework by writing a controller manager that allows safe 
       <pubDate>Sat, 29 Sep 2018 15:31:38 -0600</pubDate>
       
       <guid>https://adamconkey.github.io/project/logger/</guid>
-      <description>I created a logging framework for recording robot data (e.g. robot joint states, force/torque sensor readings, end-effector pose, annotations on the data, etc.). I originally developed a C++ logger for HDF5 format and a Python interface to the database using H5py. However, I started having issues with data corruption/synchronization and sometimes my data would get completely wiped out. I therefore switched to using rosbag and wrote a rosbag converter to extract the data into a Pandas dataframe and pickle the resulting dataframe.</description>
+      <description>Two data logging frameworks for recording robot and sensor data. One uses HDF5 files with an h5py interface, and the other post-processes rosbag data into Pandas dataframes.</description>
     </item>
     
     <item>
@@ -83,7 +81,7 @@ I have added to this framework by writing a controller manager that allows safe 
       <pubDate>Sat, 29 Sep 2018 15:32:15 -0600</pubDate>
       
       <guid>https://adamconkey.github.io/project/baxter_multimaster/</guid>
-      <description>This package is a fork of the multimaster package adapted to allow you to control one Baxter robot by moving the limbs of another Baxter robot. The purpose is to use one Baxter as a master teleoperation device to control a slave Baxter, where the slave is either a physical Baxter robot or a simulation. The joint states of the master Baxter are interpreted as commands to the slave Baxter, with appropriate namespacing so there is no conflict between the two.</description>
+      <description>A fork of the multimaster package which I augmented to allow teleoperation of a slave Baxter robot by moving the limbs of master Baxter robot in gravity compensation mode.</description>
     </item>
     
   </channel>
