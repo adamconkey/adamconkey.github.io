@@ -8,11 +8,6 @@
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/home/hero_carousel/</loc>
-    <lastmod>2017-10-15T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://adamconkey.github.io/project/rt_robot_control/</loc>
     <lastmod>2018-09-29T15:30:42-06:00</lastmod>
   </url>
@@ -38,18 +33,8 @@
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/home/about/</loc>
-    <lastmod>2016-04-20T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://adamconkey.github.io/project/logger/</loc>
     <lastmod>2018-09-29T15:31:38-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://adamconkey.github.io/home/publications_selected/</loc>
-    <lastmod>2016-04-20T00:00:00-04:00</lastmod>
   </url>
   
   <url>
@@ -58,73 +43,8 @@
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/home/skills/</loc>
-    <lastmod>2017-09-20T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://adamconkey.github.io/home/publications/</loc>
-    <lastmod>2016-04-20T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://adamconkey.github.io/home/talks_selected/</loc>
-    <lastmod>2016-04-20T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://adamconkey.github.io/home/talks/</loc>
-    <lastmod>2016-04-20T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://adamconkey.github.io/home/posts/</loc>
-    <lastmod>2016-04-20T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://adamconkey.github.io/home/projects/</loc>
-    <lastmod>2016-04-20T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://adamconkey.github.io/home/teaching/</loc>
-    <lastmod>2016-04-20T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://adamconkey.github.io/home/tags/</loc>
-    <lastmod>2017-09-20T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://adamconkey.github.io/home/search/</loc>
-    <lastmod>2018-07-23T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://adamconkey.github.io/home/contact/</loc>
-    <lastmod>2016-04-20T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://adamconkey.github.io/home/expertise/</loc>
-    <lastmod>2018-10-17T22:29:55-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://adamconkey.github.io/</loc>
-    <lastmod>2018-10-17T22:29:55-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://adamconkey.github.io/home/</loc>
-    <lastmod>2018-10-17T22:29:55-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://adamconkey.github.io/home/blog/</loc>
-    <lastmod>2018-09-30T17:23:16-06:00</lastmod>
+    <lastmod>2018-09-29T15:32:15-06:00</lastmod>
   </url>
   
   <url>
@@ -133,18 +53,11 @@
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/post/</loc>
-    <lastmod>2017-01-01T00:00:00-05:00</lastmod>
+    <loc>https://adamconkey.github.io/authors/admin/</loc>
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/publication/</loc>
-    <lastmod>2017-01-01T00:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://adamconkey.github.io/talk/</loc>
-    <lastmod>2017-01-01T00:00:00-05:00</lastmod>
+    <loc>https://adamconkey.github.io/authors/</loc>
   </url>
   
   <url>
@@ -152,7 +65,19 @@
   </url>
   
   <url>
+    <loc>https://adamconkey.github.io/post/</loc>
+  </url>
+  
+  <url>
     <loc>https://adamconkey.github.io/publication_types/</loc>
+  </url>
+  
+  <url>
+    <loc>https://adamconkey.github.io/publication/</loc>
+  </url>
+  
+  <url>
+    <loc>https://adamconkey.github.io/talk/</loc>
   </url>
   
   <url>

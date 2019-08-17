@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publications on Adam Conkey</title>
+    <title>Publications | Adam Conkey</title>
     <link>https://adamconkey.github.io/publication/</link>
-    <description>Recent content in Publications on Adam Conkey</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; Adam Conkey 2018</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0500</lastBuildDate>
-    
-	<atom:link href="https://adamconkey.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://adamconkey.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publications</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2019</copyright>
+    <image>
+      <url>https://adamconkey.github.io/img/files/adam.jpg</url>
+      <title>Publications</title>
+      <link>https://adamconkey.github.io/publication/</link>
+    </image>
     
   </channel>
 </rss>

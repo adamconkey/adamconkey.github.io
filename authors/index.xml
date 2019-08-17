@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors | Adam Conkey</title>
+    <link>https://adamconkey.github.io/authors/</link>
+      <atom:link href="https://adamconkey.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
+    <description>Authors</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2019</copyright>
+    <image>
+      <url>https://adamconkey.github.io/img/files/adam.jpg</url>
+      <title>Authors</title>
+      <link>https://adamconkey.github.io/authors/</link>
+    </image>
+    
+    <item>
+      <title></title>
+      <link>https://adamconkey.github.io/authors/admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://adamconkey.github.io/authors/admin/</guid>
+      <description>&lt;p&gt;I am a PhD student in the School of Computing at the University of Utah in the robotics track of the &lt;a href=&#34;http://robotics.coe.utah.edu/&#34; target=&#34;_blank&#34;&gt;Utah Robotics Center&lt;/a&gt;. I work in the &lt;a href=&#34;https://robot-learning.cs.utah.edu/&#34; target=&#34;_blank&#34;&gt;Utah Learning Lab for Manipulation Autonomy&lt;/a&gt; (LL4MA) and am advised by &lt;a href=&#34;https://www.cs.utah.edu/~thermans/&#34; target=&#34;_blank&#34;&gt;Dr. Tucker Hermans&lt;/a&gt;. My research focuses on learning manipulation tasks from human demonstration with a targeted application to the problem of robust teleoperation over large latency.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

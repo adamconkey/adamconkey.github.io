@@ -3,221 +3,53 @@
   <channel>
     <title>Adam Conkey</title>
     <link>https://adamconkey.github.io/</link>
-    <description>Recent content on Adam Conkey</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; Adam Conkey 2018</copyright>
-    <lastBuildDate>Wed, 17 Oct 2018 22:29:55 -0600</lastBuildDate>
-    
-	<atom:link href="https://adamconkey.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Robot Control in Gazebo</title>
-      <link>https://adamconkey.github.io/project/robot_control/</link>
-      <pubDate>Sat, 29 Sep 2018 13:59:00 -0600</pubDate>
-      
-      <guid>https://adamconkey.github.io/project/robot_control/</guid>
-      <description>Robot control framework for simulations in Gazebo. It is designed to be extensible, allowing easy addition of new controllers, and it works in conjunction with my robot interface package to decouple the controllers from the particular robot you&amp;rsquo;re using.</description>
-    </item>
+      <atom:link href="https://adamconkey.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <description>Adam Conkey</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2019</copyright><lastBuildDate>Sat, 29 Sep 2018 15:32:15 -0600</lastBuildDate>
+    <image>
+      <url>https://adamconkey.github.io/img/files/adam.jpg</url>
+      <title>Adam Conkey</title>
+      <link>https://adamconkey.github.io/</link>
+    </image>
     
     <item>
-      <title></title>
-      <link>https://adamconkey.github.io/home/hero_carousel/</link>
-      <pubDate>Sun, 15 Oct 2017 00:00:00 -0400</pubDate>
-      
-      <guid>https://adamconkey.github.io/home/hero_carousel/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Real-Time Robot Control</title>
-      <link>https://adamconkey.github.io/project/rt_robot_control/</link>
-      <pubDate>Sat, 29 Sep 2018 15:30:42 -0600</pubDate>
-      
-      <guid>https://adamconkey.github.io/project/rt_robot_control/</guid>
-      <description>Real-time Orocos controllers for the KUKA LBR4+ robot. Includes a controller switching framework for safely swapping controllers at runtime, and a simulated FRI (Fast Research Interface) component that allows Orocos components to be tested Gazebo.</description>
-    </item>
-    
-    <item>
-      <title>Teleoperation Mediated by Virtual Environment</title>
-      <link>https://adamconkey.github.io/project/teleop/</link>
-      <pubDate>Sat, 29 Sep 2018 15:31:16 -0600</pubDate>
-      
-      <guid>https://adamconkey.github.io/project/teleop/</guid>
-      <description>A kinematic simulator with force rendering created with rViz to provide a training ground to learn robot policies from demonstration using a Phantom Omni haptic input device. The learned policy can then be executed on a real robot (or a simulated robot in Gazebo).</description>
-    </item>
-    
-    <item>
-      <title>rViz Trajectory Visualization</title>
-      <link>https://adamconkey.github.io/project/trajectory_viz/</link>
-      <pubDate>Sat, 29 Sep 2018 15:30:58 -0600</pubDate>
-      
-      <guid>https://adamconkey.github.io/project/trajectory_viz/</guid>
-      <description>Package for generating trajectory visualizations in rViz, including dynamic real-time visualizations showing a customizable trace of the robot&amp;rsquo;s end-effector.</description>
-    </item>
-    
-    <item>
-      <title>Baxter Demonstration Recorder</title>
-      <link>https://adamconkey.github.io/project/baxter_record/</link>
-      <pubDate>Sat, 29 Sep 2018 15:31:32 -0600</pubDate>
-      
-      <guid>https://adamconkey.github.io/project/baxter_record/</guid>
-      <description>A demonstration recorder for the Baxter robot utilizing the button and display interfaces to make it easier to record demonstrations when operating Baxter in gravity compensation mode.</description>
-    </item>
-    
-    <item>
-      <title>Robot Interface</title>
-      <link>https://adamconkey.github.io/project/robot_interface/</link>
-      <pubDate>Sat, 29 Sep 2018 15:10:32 -0600</pubDate>
-      
-      <guid>https://adamconkey.github.io/project/robot_interface/</guid>
-      <description>Abstraction layer for controlling robots in a unified manner while accounting for robot platform-specific needs.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://adamconkey.github.io/home/about/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
-      
-      <guid>https://adamconkey.github.io/home/about/</guid>
-      <description>Biography I am a PhD student in the School of Computing at the University of Utah in the robotics track of the Utah Robotics Center. I work in the Utah Learning Lab for Manipulation Autonomy (LL4MA) and am advised by Dr. Tucker Hermans. My research focuses on learning manipulation tasks from human demonstration with a targeted application to the problem of robust teleoperation over large latency.</description>
-    </item>
-    
-    <item>
-      <title>Data Logging</title>
-      <link>https://adamconkey.github.io/project/logger/</link>
-      <pubDate>Sat, 29 Sep 2018 15:31:38 -0600</pubDate>
-      
-      <guid>https://adamconkey.github.io/project/logger/</guid>
-      <description>Two data logging frameworks for recording robot and sensor data. One uses HDF5 files with an h5py interface, and the other post-processes rosbag data into Pandas dataframes.</description>
-    </item>
-    
-    <item>
-      <title>Selected Publications</title>
-      <link>https://adamconkey.github.io/home/publications_selected/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
-      
-      <guid>https://adamconkey.github.io/home/publications_selected/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Baxter Multimaster</title>
-      <link>https://adamconkey.github.io/project/baxter_multimaster/</link>
+      <title>Projects</title>
+      <link>https://adamconkey.github.io/project/</link>
       <pubDate>Sat, 29 Sep 2018 15:32:15 -0600</pubDate>
-      
-      <guid>https://adamconkey.github.io/project/baxter_multimaster/</guid>
-      <description>A fork of the multimaster package which I augmented to allow teleoperation of a slave Baxter robot by moving the limbs of master Baxter robot in gravity compensation mode.</description>
+      <guid>https://adamconkey.github.io/project/</guid>
+      <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://adamconkey.github.io/home/skills/</link>
-      <pubDate>Wed, 20 Sep 2017 00:00:00 -0400</pubDate>
-      
-      <guid>https://adamconkey.github.io/home/skills/</guid>
+      <link></link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid></guid>
       <description></description>
     </item>
     
     <item>
-      <title>Recent Publications</title>
-      <link>https://adamconkey.github.io/home/publications/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
-      
-      <guid>https://adamconkey.github.io/home/publications/</guid>
+      <title>Posts</title>
+      <link>https://adamconkey.github.io/post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://adamconkey.github.io/post/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Selected Talks</title>
-      <link>https://adamconkey.github.io/home/talks_selected/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
-      
-      <guid>https://adamconkey.github.io/home/talks_selected/</guid>
+      <title>Publications</title>
+      <link>https://adamconkey.github.io/publication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://adamconkey.github.io/publication/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recent &amp; Upcoming Talks</title>
-      <link>https://adamconkey.github.io/home/talks/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
-      
-      <guid>https://adamconkey.github.io/home/talks/</guid>
+      <link>https://adamconkey.github.io/talk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://adamconkey.github.io/talk/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Recent Posts</title>
-      <link>https://adamconkey.github.io/home/posts/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
-      
-      <guid>https://adamconkey.github.io/home/posts/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Code Projects</title>
-      <link>https://adamconkey.github.io/home/projects/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
-      
-      <guid>https://adamconkey.github.io/home/projects/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Custom Section</title>
-      <link>https://adamconkey.github.io/home/teaching/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
-      
-      <guid>https://adamconkey.github.io/home/teaching/</guid>
-      <description>This is an example of using the custom widget to create your own homepage section.
-To remove this section, either delete content/home/teaching.md or edit the frontmatter of the file to deactivate the widget by setting active = false.</description>
-    </item>
-    
-    <item>
-      <title>Tags</title>
-      <link>https://adamconkey.github.io/home/tags/</link>
-      <pubDate>Wed, 20 Sep 2017 00:00:00 -0400</pubDate>
-      
-      <guid>https://adamconkey.github.io/home/tags/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Search</title>
-      <link>https://adamconkey.github.io/home/search/</link>
-      <pubDate>Mon, 23 Jul 2018 00:00:00 -0400</pubDate>
-      
-      <guid>https://adamconkey.github.io/home/search/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>https://adamconkey.github.io/home/contact/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
-      
-      <guid>https://adamconkey.github.io/home/contact/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Expertise</title>
-      <link>https://adamconkey.github.io/home/expertise/</link>
-      <pubDate>Wed, 17 Oct 2018 22:29:55 -0600</pubDate>
-      
-      <guid>https://adamconkey.github.io/home/expertise/</guid>
-      <description> Software  Robot Operating System (ROS) for Linux Gazebo V-REP Orocos Real-Time Toolkit Orocos Kinematics and Dynamics Library (KDL) Eigen ArUco Fiducial Markers  Research Implementations  Dynamic Movement Primitives Probabilistic Movement Primitives Operational Space Controllers (with null space resolution) Force/Position Controllers  Hardware  KUKA LBR4+ Robot Arm Baxter Research Robot RightHand Robotics ReFlex TakkTile Hand Optoforce HEX-E 6-Axis Force/Torque Sensor Sensable Phantom Omni Haptic Input Device ASUS Xtion Pro RGB-D Camera  </description>
-    </item>
-    
-    <item>
-      <title>Blog</title>
-      <link>https://adamconkey.github.io/home/blog/</link>
-      <pubDate>Sun, 30 Sep 2018 17:23:16 -0600</pubDate>
-      
-      <guid>https://adamconkey.github.io/home/blog/</guid>
-      <description>Coming Soon! I am hoping to start a blog about some of the things I encounter in my research that others might benefit from. Topics will be in the areas of robotics, machine learning, ROS, and coding. These things are hard to maintain and keep up to date, but I want to try! So, stay tuned.</description>
     </item>
     
   </channel>
