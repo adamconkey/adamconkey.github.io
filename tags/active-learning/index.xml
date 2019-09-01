@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Active Learning | Adam Conkey</title>
+    <link>https://adamconkey.github.io/tags/active-learning/</link>
+      <atom:link href="https://adamconkey.github.io/tags/active-learning/index.xml" rel="self" type="application/rss+xml" />
+    <description>Active Learning</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2019</copyright><lastBuildDate>Tue, 15 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://adamconkey.github.io/img/files/adam.jpg</url>
+      <title>Active Learning</title>
+      <link>https://adamconkey.github.io/tags/active-learning/</link>
+    </image>
+    
+    <item>
+      <title>Active Learning of Probabilistic Movement Primitives</title>
+      <link>https://adamconkey.github.io/publication/promp_active_learning/</link>
+      <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://adamconkey.github.io/publication/promp_active_learning/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

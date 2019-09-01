@@ -43,8 +43,73 @@
   </url>
   
   <url>
+    <loc>https://adamconkey.github.io/publication_types/1/</loc>
+    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://adamconkey.github.io/tags/active-learning/</loc>
+    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://adamconkey.github.io/publication/promp_active_learning/</loc>
+    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://adamconkey.github.io/</loc>
-    <lastmod>2018-09-29T15:32:15-06:00</lastmod>
+    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://adamconkey.github.io/authors/adam-conkey/</loc>
+    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://adamconkey.github.io/authors/</loc>
+    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://adamconkey.github.io/tags/force-conrol/</loc>
+    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://adamconkey.github.io/tags/learning-from-demonstration/</loc>
+    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://adamconkey.github.io/publication/dmp_hybrid_control/</loc>
+    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://adamconkey.github.io/tags/movement-primitives/</loc>
+    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://adamconkey.github.io/publication_types/</loc>
+    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://adamconkey.github.io/publication/</loc>
+    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://adamconkey.github.io/tags/</loc>
+    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://adamconkey.github.io/authors/tucker-hermans/</loc>
+    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -57,10 +122,6 @@
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/authors/</loc>
-  </url>
-  
-  <url>
     <loc>https://adamconkey.github.io/categories/</loc>
   </url>
   
@@ -69,19 +130,7 @@
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/publication_types/</loc>
-  </url>
-  
-  <url>
-    <loc>https://adamconkey.github.io/publication/</loc>
-  </url>
-  
-  <url>
     <loc>https://adamconkey.github.io/talk/</loc>
-  </url>
-  
-  <url>
-    <loc>https://adamconkey.github.io/tags/</loc>
   </url>
   
 </urlset>

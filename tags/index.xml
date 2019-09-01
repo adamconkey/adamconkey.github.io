@@ -5,12 +5,44 @@
     <link>https://adamconkey.github.io/tags/</link>
       <atom:link href="https://adamconkey.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2019</copyright>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2019</copyright><lastBuildDate>Tue, 15 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://adamconkey.github.io/img/files/adam.jpg</url>
       <title>Tags</title>
       <link>https://adamconkey.github.io/tags/</link>
     </image>
+    
+    <item>
+      <title>Active Learning</title>
+      <link>https://adamconkey.github.io/tags/active-learning/</link>
+      <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://adamconkey.github.io/tags/active-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Force Conrol</title>
+      <link>https://adamconkey.github.io/tags/force-conrol/</link>
+      <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://adamconkey.github.io/tags/force-conrol/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning from Demonstration</title>
+      <link>https://adamconkey.github.io/tags/learning-from-demonstration/</link>
+      <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://adamconkey.github.io/tags/learning-from-demonstration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Movement Primitives</title>
+      <link>https://adamconkey.github.io/tags/movement-primitives/</link>
+      <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://adamconkey.github.io/tags/movement-primitives/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

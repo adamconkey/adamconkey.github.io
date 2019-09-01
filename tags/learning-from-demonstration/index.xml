@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Learning from Demonstration | Adam Conkey</title>
+    <link>https://adamconkey.github.io/tags/learning-from-demonstration/</link>
+      <atom:link href="https://adamconkey.github.io/tags/learning-from-demonstration/index.xml" rel="self" type="application/rss+xml" />
+    <description>Learning from Demonstration</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2019</copyright><lastBuildDate>Tue, 15 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://adamconkey.github.io/img/files/adam.jpg</url>
+      <title>Learning from Demonstration</title>
+      <link>https://adamconkey.github.io/tags/learning-from-demonstration/</link>
+    </image>
+    
+    <item>
+      <title>Active Learning of Probabilistic Movement Primitives</title>
+      <link>https://adamconkey.github.io/publication/promp_active_learning/</link>
+      <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://adamconkey.github.io/publication/promp_active_learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning Task Constraints from Demonstration for Hybrid Force/Position Control</title>
+      <link>https://adamconkey.github.io/publication/dmp_hybrid_control/</link>
+      <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://adamconkey.github.io/publication/dmp_hybrid_control/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
