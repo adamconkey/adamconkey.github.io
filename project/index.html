@@ -115,7 +115,7 @@
   <meta property="og:description" content="PhD Candidate in Robotics"><meta property="og:image" content="https://adamconkey.github.io/img/files/adam.jpg">
   <meta property="twitter:image" content="https://adamconkey.github.io/img/files/adam.jpg"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2018-09-29T15:32:15-06:00">
+    <meta property="og:updated_time" content="2019-10-05T00:00:00&#43;00:00">
   
 
   
@@ -316,35 +316,6 @@
         
         
         
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#contact"><span>Contact</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
 
         <li class="nav-item">
           <a class="nav-link " href="/files/resume_conkey.pdf"><span>Resume</span></a>
@@ -420,43 +391,7 @@
     <h2><a href="/project/robot_control/">Robot Control in Gazebo</a></h2>
     <div class="article-style">
       
-      Robot control framework for simulations in Gazebo. It is designed to be extensible, allowing easy addition of new controllers, and it works in conjunction with my robot interface package to decouple the controllers from the particular robot you're using.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/project/rt_robot_control/">Real-Time Robot Control</a></h2>
-    <div class="article-style">
-      
-      Real-time Orocos controllers for the KUKA LBR4+ robot. Includes a controller switching framework for safely swapping controllers at runtime, and a simulated FRI (Fast Research Interface) component that allows Orocos components to be tested Gazebo.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/project/teleop/">Teleoperation Mediated by Virtual Environment</a></h2>
-    <div class="article-style">
-      
-      A kinematic simulator with force rendering created with rViz to provide a training ground to learn robot policies from demonstration using a Phantom Omni haptic input device. The learned policy can then be executed on a real robot (or a simulated robot in Gazebo).
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/project/trajectory_viz/">rViz Trajectory Visualization</a></h2>
-    <div class="article-style">
-      
-      Package for generating trajectory visualizations in rViz, including dynamic real-time visualizations showing a customizable trace of the robot's end-effector.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/project/baxter_record/">Baxter Demonstration Recorder</a></h2>
-    <div class="article-style">
-      
-      A demonstration recorder for the Baxter robot utilizing the button and display interfaces to make it easier to record demonstrations when operating Baxter in gravity compensation mode.
+      Robot control framework for simulations in Gazebo. Designed to be extensible for easily adding new controllers. Works in conjunction with my robot interface package to decouple the controllers from any particular robot.
       
     </div>
   </div>
@@ -471,19 +406,46 @@
   </div>
   
   <div>
-    <h2><a href="/project/logger/">Data Logging</a></h2>
+    <h2><a href="/project/rt_robot_control/">Real-Time Robot Control</a></h2>
     <div class="article-style">
       
-      Two data logging frameworks for recording robot and sensor data. One uses HDF5 files with an h5py interface, and the other post-processes rosbag data into Pandas dataframes.
+      Real-time Orocos controllers for the KUKA LBR4+ robot. Includes a controller switching framework for safely swapping controllers at runtime, and a simulated FRI component that allows Orocos components to be tested Gazebo.
       
     </div>
   </div>
   
   <div>
-    <h2><a href="/project/baxter_multimaster/">Baxter Multimaster</a></h2>
+    <h2><a href="/project/reflex_sensors/">ReFlex TakkTile in Gazebo Simulation</a></h2>
     <div class="article-style">
       
-      A fork of the multimaster package which I augmented to allow teleoperation of a slave Baxter robot by moving the limbs of master Baxter robot in gravity compensation mode.
+      An actuated version of the ReFlex TakkTile hand and Gazebo plugins for simulating contact and pressure sensors on the fingers.
+      
+    </div>
+  </div>
+  
+  <div>
+    <h2><a href="/project/teleop/">Simulator for Teleoperation</a></h2>
+    <div class="article-style">
+      
+      A lightweight simulator with force rendering created with rviz and DART. Provides a training ground for learning robust policies from demonstration with a haptic input device.
+      
+    </div>
+  </div>
+  
+  <div>
+    <h2><a href="/project/baxter_record/">Baxter Demo Recorder</a></h2>
+    <div class="article-style">
+      
+      A demonstration recorder for the Baxter robot utilizing the button and display interfaces to make it easier to record demonstrations when operating Baxter in gravity compensation mode.
+      
+    </div>
+  </div>
+  
+  <div>
+    <h2><a href="/project/trajectory_viz/">rviz Trajectory Visualization</a></h2>
+    <div class="article-style">
+      
+      Package for generating trajectory visualizations in rViz, including dynamic real-time visualizations showing a customizable trace of the robot's end-effector.
       
     </div>
   </div>

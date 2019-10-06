@@ -28,7 +28,7 @@
   
     
   
-  <meta name="description" content="A kinematic simulator with force rendering created with rViz to provide a training ground to learn robot policies from demonstration using a Phantom Omni haptic input device. The learned policy can then be executed on a real robot (or a simulated robot in Gazebo).">
+  <meta name="description" content="A lightweight simulator with force rendering created with rviz and DART. Provides a training ground for learning robust policies from demonstration with a haptic input device.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://adamconkey.github.io/project/teleop/">
@@ -109,14 +109,14 @@
   
   <meta property="og:site_name" content="Adam Conkey">
   <meta property="og:url" content="https://adamconkey.github.io/project/teleop/">
-  <meta property="og:title" content="Teleoperation Mediated by Virtual Environment | Adam Conkey">
-  <meta property="og:description" content="A kinematic simulator with force rendering created with rViz to provide a training ground to learn robot policies from demonstration using a Phantom Omni haptic input device. The learned policy can then be executed on a real robot (or a simulated robot in Gazebo)."><meta property="og:image" content="https://adamconkey.github.io/img/teleop.png">
-  <meta property="twitter:image" content="https://adamconkey.github.io/img/teleop.png"><meta property="og:locale" content="en-us">
+  <meta property="og:title" content="Simulator for Teleoperation | Adam Conkey">
+  <meta property="og:description" content="A lightweight simulator with force rendering created with rviz and DART. Provides a training ground for learning robust policies from demonstration with a haptic input device."><meta property="og:image" content="https://adamconkey.github.io/project/teleop/featured.png">
+  <meta property="twitter:image" content="https://adamconkey.github.io/project/teleop/featured.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2018-09-29T15:31:16-06:00">
+      <meta property="article:published_time" content="2019-10-05T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2018-09-29T15:31:16-06:00">
+    <meta property="article:modified_time" content="2019-10-05T00:00:00&#43;00:00">
   
 
   
@@ -128,7 +128,7 @@
 
 
 
-  <title>Teleoperation Mediated by Virtual Environment | Adam Conkey</title>
+  <title>Simulator for Teleoperation | Adam Conkey</title>
 
 </head>
 
@@ -317,35 +317,6 @@
         
         
         
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#contact"><span>Contact</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
 
         <li class="nav-item">
           <a class="nav-link " href="/files/resume_conkey.pdf"><span>Resume</span></a>
@@ -394,35 +365,34 @@
 
 
 
-<div class="article-header">
-  
-  
-  <img src="/img/teleop.png" class="article-banner" itemprop="image" alt="">
-  
-
-  
-</div>
 
 
 
 
-  
+
+
+
+
+
+
 
   
-  
-  
-<div class="article-container pt-3">
-  <h1 itemprop="name">Teleoperation Mediated by Virtual Environment</h1>
-
-  
-
   
     
+  
+
+
+<div class="article-container pt-3">
+  <h1 itemprop="name">Simulator for Teleoperation</h1>
+
+  
+
+  
 
 
 
-<meta content="2018-09-29 15:31:16 -0600 MDT" itemprop="datePublished">
-<meta content="2018-09-29 15:31:16 -0600 MDT" itemprop="dateModified">
+<meta content="2019-10-05 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2019-10-05 00:00:00 &#43;0000 UTC" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -435,7 +405,7 @@
     
       
     
-    <time>Sep 29, 2018</time>
+    <time>Oct 5, 2019</time>
   </span>
   
 
@@ -457,13 +427,23 @@
 
 </div>
 
-    
+  
 
 
 
 
 
 
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
 
 
 
@@ -473,6 +453,44 @@
 
 
   
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1" href="https://bitbucket.org/robot-learning/dart_ros/src/master/" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 430px;">
+  <div style="position: relative">
+    <img src="/project/teleop/featured_hu481f798be338738044f6aa2461017f7f_445321_720x0_resize_lanczos_2.png" alt="" class="featured-image">
+    
+  </div>
 </div>
 
 
@@ -480,13 +498,19 @@
   <div class="article-container">
 
     <div class="article-style" itemprop="articleBody">
-      
+      <p>I have effectively made rviz into a simulator. This was originally intended to be a lightweight simulator to serve as a training ground for learning robust policies in a large-latency teleoperation setting. If there is large communication between the remote robot and the operator (e.g. the robot is on Mars and the operator is on Earth), then direct teleoperation is infeasible, since the operator will have to wait several minutes to find out what effect their actions had at the remote site. The idea of this simulator is to use sensor data (e.g. object trackers based on camera feeds) to render a virtual environment that mimics the remote environment. Then the operator can give many demonstrations in the virtual environment, and a robust policy can be learned based on the collected demonstrations which can then be executed on the real robot.</p>
 
-<p>An application for my research that I am very interested in pursuing is the problem of teleoperation over large communication latency (e.g. teleoperating a robot on Mars from your couch). I have set up a simple virtual environment for the purpose of testing some ideas. I use rViz for the visualization of the virtual environment, and a Phantom Omni (re-branded as the <a href="https://www.3dsystems.com/haptics-devices/touch" target="_blank">Sensable Geomagic Touch</a>) haptic input device to control the robot. I track the relative change in pose of the haptic device stylus and interpret that as a change in pose in the robot&rsquo;s end-effector. I need joint angles to render the robot arm in rViz, so I use the pseudoinverse of the manipulator Jacobian to get the corresponding joint angles. I then simply publish these to a topic that rViz picks up on to render the visualization - it is a purely kinematic simulator (i.e. no physics engine is active).</p>
+<p>I used <a href="https://github.com/ros-visualization/rviz" target="_blank">rviz</a> to render the environment visually, and <a href="https://dartsim.github.io/" target="_blank">DART</a> to simulate physics on the environment. The robot motion is controlled with a haptic input device, in my case a Phantom Omni (re-branded as the <a href="https://www.3dsystems.com/haptics-devices/touch" target="_blank">Sensable Geomagic Touch</a>). The relative change in pose of the haptic device stylus is interpreted as a relative change in pose for the robot. Taking the pseudoinverse of the manipulator Jacobian and applying it to this change in pose results in a joint position update that is rendered in the simulator. Interaction forces in the environment are computed using DART, and these are rendered back to the user on the haptic device. The end result is the user can move the robot around, and when the robot makes contact with objects in the scene, the user feels the force as if they actually contacted the object in the real world with the haptic device stylus! The user also sees the force vector rendered in rviz.</p>
 
-<p>I created a simple GUI using <a href="https://wiki.python.org/moin/TkInter" target="_blank">Tkinter</a> to enable/disable task space dimensions selectively. Sliders are used to scale how sensitive movement is in each dimension, which is useful if you want to move a large amount or you want finer control when you&rsquo;re close to an object. I have created a more advanced version of this GUI that allows you to give multiple demonstrations, learn a policy (e.g. a Dynamic Movement Primitive), and execute that policy on a real robot or a robot in a Gazebo simulation. I&rsquo;ve also done direct trajectory playback, i.e. just record a demo in the rViz simulator and then send it directly to a Gazebo robot. However, I have disabled these features for now as the packages it relied on changed significantly since I was using this package, and I need to do some re-integration to make it work again.</p>
+<p>I created a simple rviz plugin that allows the user to enable/disable the robot motion and haptic feedback. It also provides the capability to reset the environment to its nominal state so that multiple demonstrations can be given on the same environment configuration. Here is a video of a simple interaction showing the features:
 
-<p>I have also set up force rendering in this environment by using the force feedback of the haptic device and rendering forces as a function of the penetration depth the end-effector has with an object. By setting the parameters differently, you can make objects feel &ldquo;squishy&rdquo; or very stiff. I have to admit, it&rsquo;s amazingly fun feeling like you&rsquo;re physically touching an object that is purely virtual. This feedback can be enabled/disabled via the GUI as seen in the video:</p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/PLEuahvvX5o" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p></p>
+
+<p>I have some older iterations that used the Baxter robot, and tKinter for the user GUI:</p>
 
 <p>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
@@ -495,7 +519,7 @@
 
 <p></p>
 
-<p>I have also used this purely in Gazebo (without being mediated through the kinematic simulator). Here is a video of it here I&rsquo;ve augmented the GUI to display the forces being applied in each dimension as registered by a simulated force sensor (using Gazebo&rsquo;s force sensor plugin):</p>
+<p>I have also used the previous iteration in Gazebo (without being mediated through any kinematic simulator). I had augmented the GUI to display the forces being applied in each dimension as registered by a simulated force sensor (using Gazebo&rsquo;s force sensor plugin):</p>
 
 <p>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
@@ -504,15 +528,23 @@
 
 <p></p>
 
-<p>The code for this package is hosted on the LL4MA Lab&rsquo;s bitbucket page <a href="https://bitbucket.org/robot-learning/ll4ma_teleop" target="_blank">here</a>.</p>
-
-<h2 id="future-directions">Future Directions</h2>
-
-<p>I would like to move away from Tkinter for the GUIs. They are nice for workshopping ideas quickly, but since I am already using rViz for the visualizations, I would really like to create an integrated environment with an rViz plugin. I have played around with the plugins a bit, and they are not so hard to create, so I will be porting to a better implementation at some point.</p>
-
     </div>
 
     
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/learning-from-demonstration/">Learning from Demonstration</a>
+  
+  <a class="badge badge-light" href="/tags/rviz/">rviz</a>
+  
+  <a class="badge badge-light" href="/tags/dart/">DART</a>
+  
+  <a class="badge badge-light" href="/tags/simulation/">Simulation</a>
+  
+  <a class="badge badge-light" href="/tags/haptics/">Haptics</a>
+  
+</div>
 
 
     
