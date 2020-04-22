@@ -82,7 +82,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/academic.min.301ab7eca2ca7d1311ed71a9afa2cc4f.css">
+  <link rel="stylesheet" href="/css/academic.min.a6f6dd5a1942278dd68bcc65b542d57e.css">
 
   
 
@@ -233,6 +233,35 @@
 
         <li class="nav-item">
           <a class="nav-link " href="/files/resume_conkey.pdf"><span>Resume</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#news"><span>News</span></a>
         </li>
 
         
@@ -496,24 +525,21 @@
   <div class="article-container">
 
     <div class="article-style" itemprop="articleBody">
-      <p>I have developed a robot controller framework that uses my <a href="/project/robot_interface">robot interface package</a> to abstract away the particular requirements of each robot platform. As such, the controllers in this package should be useful for controlling any robot that has communication needs satisfied by one of the interfaces in the interface package. These controllers work for Gazebo simulations, and are written to inherit from an interface that mimics the <a href="http://www.orocos.org/stable/documentation/rtt/v2.x/api/html/classRTT_1_1TaskContext.html" target="_blank">Orocos RTT::TaskContext</a>, with the intention that these controllers can be easily ported for real-time control on a physical robot (see our <a href="/project/rt_robot_control">real-time controller package</a>).</p>
-
+      <p>I have developed a robot controller framework that uses my <a href="/project/robot_interface">robot interface package</a> to abstract away the particular requirements of each robot platform. As such, the controllers in this package should be useful for controlling any robot that has communication needs satisfied by one of the interfaces in the interface package. These controllers work for Gazebo simulations, and are written to inherit from an interface that mimics the <a href="http://www.orocos.org/stable/documentation/rtt/v2.x/api/html/classRTT_1_1TaskContext.html">Orocos RTT::TaskContext</a>, with the intention that these controllers can be easily ported for real-time control on a physical robot (see our <a href="/project/rt_robot_control">real-time controller package</a>).</p>
 <p>The current supported controllers are a joint space PD controller and a task space inverse dynamics controller. I have also implemented an operational space hybrid force/position controller and used it both in simulation and on a real Baxter robot. However, I have deprecated the force controller for now as the code design changed sufficiently from when I was using that controller, and am waiting until it is needed to update.</p>
-
 <p>Here is a video of the KUKA LBR4+ arm in Gazebo using a joint space controller:
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/THkC697oesQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/THkC697oesQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 </p>
-
 <p>Here is a video of the ReFlex hand in Gazebo:
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/2HQql-W8Lys" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/2HQql-W8Lys" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
-
-<p></p>
+</p>
+<!-- raw HTML omitted -->
 
     </div>
 
@@ -807,7 +833,7 @@
   
 
   <p class="powered-by">
-    2019 &middot; 
+    2020 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for

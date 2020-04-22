@@ -82,7 +82,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/academic.min.301ab7eca2ca7d1311ed71a9afa2cc4f.css">
+  <link rel="stylesheet" href="/css/academic.min.a6f6dd5a1942278dd68bcc65b542d57e.css">
 
   
 
@@ -233,6 +233,35 @@
 
         <li class="nav-item">
           <a class="nav-link " href="/files/resume_conkey.pdf"><span>Resume</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#news"><span>News</span></a>
         </li>
 
         
@@ -496,9 +525,8 @@
   <div class="article-container">
 
     <div class="article-style" itemprop="articleBody">
-      <p>Different robots have different communication requirements for control and diagnostics. In ROS, this can mean different message types, different topic names, different interfaces for a robot in simulation versus reality, and so on. This can greatly complicate things as you end up having to create separate controllers and monitoring nodes for each platform. I created a robot interface abstraction layer to try to mitigate these issues. The idea is that each robot has its own interface that implements the requirements particular to that platform, and each interface inherits from a common interface. I have implemented a number of controllers in my <a href="https://bitbucket.org/robot-learning/ll4ma_robot_control" target="_blank">controller package</a> that use the common interface, such that the controllers are agnostic to the robot being controlled, and they can be instantiated with any interface in this package.</p>
-
-<p>I have implemented interfaces for the KUKA LBR4+ (simulation), Baxter (real and simulation), and the Righthand Robotics ReFlex hand (simulation). <a href="https://balakumar-s.github.io/" target="_blank">Balakumar Sundaralingam</a> has implemented an interface for the real and simulated Allegro hand.</p>
+      <p>Different robots have different communication requirements for control and diagnostics. In ROS, this can mean different message types, different topic names, different interfaces for a robot in simulation versus reality, and so on. This can greatly complicate things as you end up having to create separate controllers and monitoring nodes for each platform. I created a robot interface abstraction layer to try to mitigate these issues. The idea is that each robot has its own interface that implements the requirements particular to that platform, and each interface inherits from a common interface. I have implemented a number of controllers in my <a href="https://bitbucket.org/robot-learning/ll4ma_robot_control">controller package</a> that use the common interface, such that the controllers are agnostic to the robot being controlled, and they can be instantiated with any interface in this package.</p>
+<p>I have implemented interfaces for the KUKA LBR4+ (simulation), Baxter (real and simulation), and the Righthand Robotics ReFlex hand (simulation). <a href="https://balakumar-s.github.io/">Balakumar Sundaralingam</a> has implemented an interface for the real and simulated Allegro hand.</p>
 
     </div>
 
@@ -788,7 +816,7 @@
   
 
   <p class="powered-by">
-    2019 &middot; 
+    2020 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for

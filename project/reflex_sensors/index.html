@@ -82,7 +82,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/academic.min.301ab7eca2ca7d1311ed71a9afa2cc4f.css">
+  <link rel="stylesheet" href="/css/academic.min.a6f6dd5a1942278dd68bcc65b542d57e.css">
 
   
 
@@ -233,6 +233,35 @@
 
         <li class="nav-item">
           <a class="nav-link " href="/files/resume_conkey.pdf"><span>Resume</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#news"><span>News</span></a>
         </li>
 
         
@@ -496,22 +525,19 @@
   <div class="article-container">
 
     <div class="article-style" itemprop="articleBody">
-      <p>I&rsquo;ve done some work to get the <a href="https://www.labs.righthandrobotics.com/reflexhand" target="_blank">ReFlex TakkTile hand</a> working in Gazebo. The URDF provided by RightHand robotics was intended only for visualization in rviz. I added inertial and collision models, joint hardware interfaces, Gazebo materials for mesh rendering, and replaced the parallel kinematic structure in the fingers with a serial structure. I elaborate a bit on this process on this <a href="https://github.com/RightHandRobotics/reflex-ros-pkg/issues/38" target="_blank">Github issue</a>. These changes can be found <a href="https://bitbucket.org/robot-learning/ll4ma_robots_description/src/master/urdf/reflex/" target="_blank">here</a> and allow basic actuation of the ReFlex hand:
+      <p>I&rsquo;ve done some work to get the <a href="https://www.labs.righthandrobotics.com/reflexhand">ReFlex TakkTile hand</a> working in Gazebo. The URDF provided by RightHand robotics was intended only for visualization in rviz. I added inertial and collision models, joint hardware interfaces, Gazebo materials for mesh rendering, and replaced the parallel kinematic structure in the fingers with a serial structure. I elaborate a bit on this process on this <a href="https://github.com/RightHandRobotics/reflex-ros-pkg/issues/38">Github issue</a>. These changes can be found <a href="https://bitbucket.org/robot-learning/ll4ma_robots_description/src/master/urdf/reflex/">here</a> and allow basic actuation of the ReFlex hand:
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/2HQql-W8Lys" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/2HQql-W8Lys" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 </p>
+<p>I added <a href="http://gazebosim.org/tutorials?tut=contact_sensor&amp;cat=sensors">contact sensors</a> to the fingers to mimic the contact sensing offered by the real hand. Thank you to <a href="https://mabelzhang.wordpress.com/bio/">Mabel Zhang</a> for her advice in setting this up! Here is a video of contacts being detected by the ReFlex hand in Gazebo using the contact sensor plugin (each green square is a separate contact sensor):</p>
 
-<p>I added <a href="http://gazebosim.org/tutorials?tut=contact_sensor&amp;cat=sensors" target="_blank">contact sensors</a> to the fingers to mimic the contact sensing offered by the real hand. Thank you to <a href="https://mabelzhang.wordpress.com/bio/" target="_blank">Mabel Zhang</a> for her advice in setting this up! Here is a video of contacts being detected by the ReFlex hand in Gazebo using the contact sensor plugin (each green square is a separate contact sensor):</p>
-
-<p>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/oEuwmzLlE84" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/oEuwmzLlE84" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-<p></p>
-
+<!-- raw HTML omitted -->
 <p>I have also extended the basic contact sensing to also detect continuous pressure values. These are not yet fully functional yet though as they are not scaled correctly to the real hand. This is still an active area for development. I am also interested in eventually modeling the underactuated joints, and our lab is looking into the best way to handle this in Gazebo.</p>
 
     </div>
@@ -802,7 +828,7 @@
   
 
   <p class="powered-by">
-    2019 &middot; 
+    2020 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for

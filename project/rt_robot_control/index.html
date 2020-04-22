@@ -82,7 +82,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/academic.min.301ab7eca2ca7d1311ed71a9afa2cc4f.css">
+  <link rel="stylesheet" href="/css/academic.min.a6f6dd5a1942278dd68bcc65b542d57e.css">
 
   
 
@@ -233,6 +233,35 @@
 
         <li class="nav-item">
           <a class="nav-link " href="/files/resume_conkey.pdf"><span>Resume</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#news"><span>News</span></a>
         </li>
 
         
@@ -498,25 +527,21 @@
   <div class="article-container">
 
     <div class="article-style" itemprop="articleBody">
-      <p>We use the <a href="http://www.orocos.org/rtt" target="_blank">Orocos Real-Time Toolkit</a> to control our KUKA LBR4+ arm, which ensures that our controllers meet the real-time requirements for the LBR4. The base implementation our lab started with comes from the <a href="https://github.com/kuka-isir/lwr_hardware" target="_blank">lwr_hardware</a> package from the <a href="http://www.isir.upmc.fr/index.php?op=view_equipe&amp;id=4&amp;lang=fr" target="_blank">Institut des Systèmes Intelligents et de Robotique (ISIR)</a>.</p>
-
+      <p>We use the <a href="http://www.orocos.org/rtt">Orocos Real-Time Toolkit</a> to control our KUKA LBR4+ arm, which ensures that our controllers meet the real-time requirements for the LBR4. The base implementation our lab started with comes from the <a href="https://github.com/kuka-isir/lwr_hardware">lwr_hardware</a> package from the <a href="http://www.isir.upmc.fr/index.php?op=view_equipe&amp;id=4&amp;lang=fr">Institut des Systèmes Intelligents et de Robotique (ISIR)</a>.</p>
 <p>I have added to this framework by writing a controller manager that allows safe swapping of controllers at runtime. I use this to rapidly record kinesthetic demonstrations on the robot by switching between a gravity compensation controller (for moving the arm kinesthetically), a high stiffness joint controller (for keeping the robot stationary), a joint PD controller (for moving the robot to a nominal starting position), and a task space inverse dynamics controller (for executing task space policies).</p>
-
 <p>This video shows the various transitions between controllers in a learning from kinesthetic demonstration setting, where controller switching is initiated by button presses on an Xbox One controller:
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/kSb0eCdcpe4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/kSb0eCdcpe4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 </p>
-
 <p>Here is a video of fully autonomous execution of a learned Probabilistic Movement Primitive policy using the joint PD controller:
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/fwUz9QM-G7A" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/fwUz9QM-G7A" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 </p>
-
-<p>The LBR4+ comes with a <a href="https://cs.stanford.edu/people/tkr/fri/html/" target="_blank">Fast Research Interface (FRI)</a>, which allows us to run our custom controllers and read the robot state through ROS. Something I didn&rsquo;t like was having to work out bugs in my controllers and controller manager on the real robot. So, I created a simulated FRI so that I could run our Orocos controllers in Gazebo before going live on the real robot. The simulation FRI hooks into the Gazebo simulation directly to read the robot state, and accepts the torque command output from our controllers to interface with the ROS control hardware interfaces.</p>
+<p>The LBR4+ comes with a <a href="https://cs.stanford.edu/people/tkr/fri/html/">Fast Research Interface (FRI)</a>, which allows us to run our custom controllers and read the robot state through ROS. Something I didn&rsquo;t like was having to work out bugs in my controllers and controller manager on the real robot. So, I created a simulated FRI so that I could run our Orocos controllers in Gazebo before going live on the real robot. The simulation FRI hooks into the Gazebo simulation directly to read the robot state, and accepts the torque command output from our controllers to interface with the ROS control hardware interfaces.</p>
 
     </div>
 
@@ -802,7 +827,7 @@
   
 
   <p class="powered-by">
-    2019 &middot; 
+    2020 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
