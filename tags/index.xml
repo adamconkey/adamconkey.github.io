@@ -2,151 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags | Adam Conkey</title>
-    <link>https://adamconkey.github.io/tags/</link>
-      <atom:link href="https://adamconkey.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <link>/tags/</link>
+      <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020</copyright><lastBuildDate>Tue, 15 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 31 Oct 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://adamconkey.github.io/img/files/adam.jpg</url>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Tags</title>
-      <link>https://adamconkey.github.io/tags/</link>
+      <link>/tags/</link>
     </image>
-    
-    <item>
-      <title>Active Learning</title>
-      <link>https://adamconkey.github.io/tags/active-learning/</link>
-      <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://adamconkey.github.io/tags/active-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Force Conrol</title>
-      <link>https://adamconkey.github.io/tags/force-conrol/</link>
-      <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://adamconkey.github.io/tags/force-conrol/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Learning from Demonstration</title>
-      <link>https://adamconkey.github.io/tags/learning-from-demonstration/</link>
-      <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://adamconkey.github.io/tags/learning-from-demonstration/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Movement Primitives</title>
-      <link>https://adamconkey.github.io/tags/movement-primitives/</link>
-      <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://adamconkey.github.io/tags/movement-primitives/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Allegro</title>
-      <link>https://adamconkey.github.io/tags/allegro/</link>
-      <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://adamconkey.github.io/tags/allegro/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Baxter</title>
-      <link>https://adamconkey.github.io/tags/baxter/</link>
-      <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://adamconkey.github.io/tags/baxter/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>DART</title>
-      <link>https://adamconkey.github.io/tags/dart/</link>
-      <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://adamconkey.github.io/tags/dart/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Gazebo</title>
-      <link>https://adamconkey.github.io/tags/gazebo/</link>
-      <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://adamconkey.github.io/tags/gazebo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Haptics</title>
-      <link>https://adamconkey.github.io/tags/haptics/</link>
-      <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://adamconkey.github.io/tags/haptics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Human-Robot Interaction</title>
-      <link>https://adamconkey.github.io/tags/human-robot-interaction/</link>
-      <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://adamconkey.github.io/tags/human-robot-interaction/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>KUKA</title>
-      <link>https://adamconkey.github.io/tags/kuka/</link>
-      <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://adamconkey.github.io/tags/kuka/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ReFlex</title>
-      <link>https://adamconkey.github.io/tags/reflex/</link>
-      <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://adamconkey.github.io/tags/reflex/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Robot Control</title>
-      <link>https://adamconkey.github.io/tags/robot-control/</link>
-      <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://adamconkey.github.io/tags/robot-control/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>rviz</title>
-      <link>https://adamconkey.github.io/tags/rviz/</link>
-      <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://adamconkey.github.io/tags/rviz/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sensors</title>
-      <link>https://adamconkey.github.io/tags/sensors/</link>
-      <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://adamconkey.github.io/tags/sensors/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Simulation</title>
-      <link>https://adamconkey.github.io/tags/simulation/</link>
-      <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://adamconkey.github.io/tags/simulation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Visualization</title>
-      <link>https://adamconkey.github.io/tags/visualization/</link>
-      <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://adamconkey.github.io/tags/visualization/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>

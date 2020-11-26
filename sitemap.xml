@@ -3,194 +3,244 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://adamconkey.github.io/project/robot_control/</loc>
+    <loc>/project/robot_control/</loc>
     <lastmod>2019-10-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/project/robot_interface/</loc>
+    <loc>/project/robot_interface/</loc>
     <lastmod>2019-10-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/project/rt_robot_control/</loc>
+    <loc>/project/rt_robot_control/</loc>
     <lastmod>2019-10-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/project/reflex_sensors/</loc>
+    <loc>/project/reflex_sensors/</loc>
     <lastmod>2019-10-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/project/teleop/</loc>
+    <loc>/project/teleop/</loc>
     <lastmod>2019-10-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/project/baxter_record/</loc>
+    <loc>/project/baxter_record/</loc>
     <lastmod>2019-10-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/project/trajectory_viz/</loc>
+    <loc>/project/trajectory_viz/</loc>
     <lastmod>2019-10-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/publication_types/1/</loc>
+    <loc>/publication-type/3/</loc>
+    <lastmod>2020-10-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/adam-conkey/</loc>
+    <lastmod>2020-10-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-10-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/</loc>
+    <lastmod>2020-10-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/goal-distributions/</loc>
+    <lastmod>2020-10-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/kl-divergence/</loc>
+    <lastmod>2020-10-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/planning/</loc>
+    <lastmod>2020-10-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/kl_planning/</loc>
+    <lastmod>2020-10-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/</loc>
+    <lastmod>2020-10-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/</loc>
+    <lastmod>2020-10-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-10-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/tucker-hermans/</loc>
+    <lastmod>2020-10-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication-type/0/</loc>
+    <lastmod>2020-07-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/deep-learning/</loc>
+    <lastmod>2020-07-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/multisensory-perception/</loc>
+    <lastmod>2020-07-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/representation-learning/</loc>
+    <lastmod>2020-07-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/pioneers/</loc>
+    <lastmod>2020-07-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication-type/1/</loc>
     <lastmod>2019-10-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/tags/active-learning/</loc>
+    <loc>/tag/active-learning/</loc>
     <lastmod>2019-10-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/publication/promp_active_learning/</loc>
+    <loc>/publication/promp_active_learning/</loc>
     <lastmod>2019-10-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/authors/adam-conkey/</loc>
+    <loc>/tag/force-conrol/</loc>
     <lastmod>2019-10-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/</loc>
+    <loc>/tag/learning-from-demonstration/</loc>
     <lastmod>2019-10-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/authors/</loc>
+    <loc>/publication/dmp_hybrid_control/</loc>
     <lastmod>2019-10-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/tags/force-conrol/</loc>
+    <loc>/tag/movement-primitives/</loc>
     <lastmod>2019-10-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/tags/learning-from-demonstration/</loc>
-    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://adamconkey.github.io/publication/dmp_hybrid_control/</loc>
-    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://adamconkey.github.io/tags/movement-primitives/</loc>
-    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://adamconkey.github.io/publication_types/</loc>
-    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://adamconkey.github.io/publication/</loc>
-    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://adamconkey.github.io/tags/</loc>
-    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://adamconkey.github.io/authors/tucker-hermans/</loc>
-    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://adamconkey.github.io/tags/allegro/</loc>
+    <loc>/tag/allegro/</loc>
     <lastmod>2019-10-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/tags/baxter/</loc>
+    <loc>/tag/baxter/</loc>
     <lastmod>2019-10-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/tags/dart/</loc>
+    <loc>/tag/dart/</loc>
     <lastmod>2019-10-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/tags/gazebo/</loc>
+    <loc>/tag/gazebo/</loc>
     <lastmod>2019-10-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/tags/haptics/</loc>
+    <loc>/tag/haptics/</loc>
     <lastmod>2019-10-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/tags/human-robot-interaction/</loc>
+    <loc>/tag/human-robot-interaction/</loc>
     <lastmod>2019-10-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/tags/kuka/</loc>
+    <loc>/tag/kuka/</loc>
     <lastmod>2019-10-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/project/</loc>
+    <loc>/project/</loc>
     <lastmod>2019-10-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/tags/reflex/</loc>
+    <loc>/tag/reflex/</loc>
     <lastmod>2019-10-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/tags/robot-control/</loc>
+    <loc>/tag/robot-control/</loc>
     <lastmod>2019-10-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/tags/rviz/</loc>
+    <loc>/tag/rviz/</loc>
     <lastmod>2019-10-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/tags/sensors/</loc>
+    <loc>/tag/sensors/</loc>
     <lastmod>2019-10-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/tags/simulation/</loc>
+    <loc>/tag/simulation/</loc>
     <lastmod>2019-10-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/tags/visualization/</loc>
+    <loc>/tag/visualization/</loc>
     <lastmod>2019-10-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/authors/admin/</loc>
+    <loc>/author/adam-conkey/</loc>
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/categories/</loc>
+    <loc>/categories/</loc>
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/post/</loc>
+    <loc>/post/</loc>
   </url>
   
   <url>
-    <loc>https://adamconkey.github.io/talk/</loc>
+    <loc>/talk/</loc>
   </url>
   
 </urlset>

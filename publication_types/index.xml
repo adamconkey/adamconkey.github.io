@@ -2,23 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publication_types | Adam Conkey</title>
-    <link>https://adamconkey.github.io/publication_types/</link>
-      <atom:link href="https://adamconkey.github.io/publication_types/index.xml" rel="self" type="application/rss+xml" />
+    <link>/publication_types/</link>
+      <atom:link href="/publication_types/index.xml" rel="self" type="application/rss+xml" />
     <description>Publication_types</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020</copyright><lastBuildDate>Tue, 15 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 31 Oct 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://adamconkey.github.io/img/files/adam.jpg</url>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Publication_types</title>
-      <link>https://adamconkey.github.io/publication_types/</link>
+      <link>/publication_types/</link>
     </image>
-    
-    <item>
-      <title>1</title>
-      <link>https://adamconkey.github.io/publication_types/1/</link>
-      <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://adamconkey.github.io/publication_types/1/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>
