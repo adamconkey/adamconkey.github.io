@@ -75,7 +75,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous" media="print" onload="this.media='all'">
 
     
     
@@ -86,14 +86,14 @@
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
         
       
     
 
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" media="print" onload="this.media='all'">
     
 
     
@@ -231,8 +231,8 @@
   
     
       
-      
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
     
   
 
@@ -240,7 +240,8 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.min.8e43d31e888508b173bbc2cc83c6a116.css">
+  
+  <link rel="stylesheet" href="/css/wowchemy.e2920849fb741e15d3bb22967624b385.css">
 
   
 
@@ -261,7 +262,10 @@
   <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Adam Conkey">
   
 
+  
   <link rel="manifest" href="/index.webmanifest">
+  
+
   <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
@@ -329,9 +333,14 @@
   
   
   
-  <script src="/js/wowchemy-init.js"></script>
+  
+  
+  
+  <script src="/js/wowchemy-init.min.285803d21d0d9cbb186d08eed0a1bc9d.js"></script>
 
-  <aside class="search-results" id="search">
+  
+
+<aside class="search-modal" id="search">
   <div class="container">
     <section class="search-header">
 
@@ -340,16 +349,22 @@
           <h1>Search</h1>
         </div>
         <div class="col-6 col-search-close">
-          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
         </div>
       </div>
 
       <div id="search-box">
         
         <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
         
       </div>
+
+      
+      
+
+      
 
     </section>
     <section class="section-search-results">
@@ -361,6 +376,7 @@
     </section>
   </div>
 </aside>
+
 
 
   <div class="page-header">
@@ -378,7 +394,7 @@
 
 
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
-  <div class="container">
+  <div class="container-xl">
 
     
     <div class="d-none d-lg-inline-flex">
@@ -622,6 +638,38 @@
         
         
 
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/https:/adamconkey.medium.com" target="_blank" rel="noopener"><span>Blog</span></a>
+        </li>
+
+        
+        
+
       
 
         
@@ -629,6 +677,12 @@
     </div>
 
     <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+      
+
       
       
       <li class="nav-item">
@@ -680,6 +734,8 @@
   
   
   
+  
+
   
 
   
@@ -877,16 +933,19 @@
     
     <h1>About Me</h1>
 
-    <p>I am a PhD candidate in the School of Computing at the University of Utah in the robotics track of the <a href="http://robotics.coe.utah.edu/" target="_blank" rel="noopener">Utah Robotics Center</a>. I work in the <a href="https://robot-learning.cs.utah.edu/" target="_blank" rel="noopener">Utah Learning Lab for Manipulation Autonomy</a> (LL4MA) and am advised by <a href="https://www.cs.utah.edu/~thermans/" target="_blank" rel="noopener">Dr. Tucker Hermans</a>. My current research focuses on applying deep learning to problems in multisensory perception to better understand how sensory observations correspond to task-level events. I am also interested in investigating new methods for integrating perception and action for robotic agents.</p>
+    <div class="article-style">
+      <p>I am a PhD candidate in the School of Computing at the University of Utah in the robotics track of the <a href="http://robotics.coe.utah.edu/" target="_blank" rel="noopener">Utah Robotics Center</a>. I work in the <a href="https://robot-learning.cs.utah.edu/" target="_blank" rel="noopener">Utah Learning Lab for Manipulation Autonomy</a> (LL4MA) and am advised by <a href="https://www.cs.utah.edu/~thermans/" target="_blank" rel="noopener">Dr. Tucker Hermans</a>. My current research focuses on applying deep learning to problems in multisensory perception to better understand how sensory observations correspond to task-level events. I am also interested in investigating new methods for integrating perception and action for robotic agents.</p>
 <p>I have hands-on experience with a variety of robot platforms, sensors, and simulators. I am passionate about open source software development for robotics, particularly for the ROS framework and Linux. Please have a look at my <a href="files/resume_conkey.pdf">resume</a> and feel free to <a href="mailto:adam.conkey@gmail.com">contact me</a> if you would like to discuss future job opportunities. I expect to graduate Fall 2021.</p>
-<p>Away from my terminal you&rsquo;ll find me <a href="https://www.strava.com/athletes/53571430" target="_blank" rel="noopener">running</a> in the mountains, cycling, cooking, and playing guitar.</p>
+<p>I&rsquo;ve started a <a href="https://adamconkey.medium.com" target="_blank" rel="noopener">blog</a> to document some things I think other people might find useful related to robotics, AI, and machine learning. Check it out!</p>
+<p>In my free time I enjoy <a href="https://www.strava.com/athletes/53571430" target="_blank" rel="noopener">running</a> in the mountains, cycling, cooking, and playing guitar.</p>
 
+    </div>
 
     <div class="row">
 
       
       <div class="col-md-5">
-        <h3>Interests</h3>
+        <div class="section-subheading">Interests</div>
         <ul class="ul-interests">
           
           <li>Robotics</li>
@@ -907,7 +966,7 @@
 
       
       <div class="col-md-7">
-        <h3>Education</h3>
+        <div class="section-subheading">Education</div>
         <ul class="ul-edu fa-ul">
           
           <li>
@@ -960,6 +1019,8 @@
   
 
   
+
+  
     
     
   
@@ -994,7 +1055,7 @@
   
 
   
-  <section id="news" class="home-section wg-blank  " style="padding: 20px 0 20px 0;" >
+  <section id="news" class="home-section wg-blank light " style="padding: 20px 0 20px 0;" >
    <div class="home-section-bg " ></div>
     <div class="container">
 
@@ -1064,6 +1125,8 @@
   
   
   
+  
+
   
 
   
@@ -1150,8 +1213,8 @@
     <div class="col py-2">
       <div class="card">
         <div class="card-body">
-          <h4 class="card-title exp-title text-muted mt-0 mb-1">Research Scientist Intern - Advanced Robotics</h4>
-          <h4 class="card-title exp-company text-muted my-0"><a href="https://www.amazonrobotics.com/#/" target="_blank" rel="noopener">Amazon Robotics</a></h4>
+          <div class="section-subheading card-title exp-title text-muted mt-0 mb-1">Research Scientist Intern - Advanced Robotics</div>
+          <div class="section-subheading card-title exp-company text-muted my-0"><a href="https://www.amazonrobotics.com/#/" target="_blank" rel="noopener">Amazon Robotics</a></div>
           <div class="text-muted exp-meta">
             May 2019 –
             
@@ -1187,8 +1250,8 @@
     <div class="col py-2">
       <div class="card">
         <div class="card-body">
-          <h4 class="card-title exp-title text-muted mt-0 mb-1">Research Assistant</h4>
-          <h4 class="card-title exp-company text-muted my-0">Utah Learning Lab for Manipulation Autonomy (LL4MA)</h4>
+          <div class="section-subheading card-title exp-title text-muted mt-0 mb-1">Research Assistant</div>
+          <div class="section-subheading card-title exp-company text-muted my-0">Utah Learning Lab for Manipulation Autonomy (LL4MA)</div>
           <div class="text-muted exp-meta">
             Aug 2016 –
             
@@ -1224,8 +1287,8 @@
     <div class="col py-2">
       <div class="card">
         <div class="card-body">
-          <h4 class="card-title exp-title text-muted mt-0 mb-1">Associate Software Engineer</h4>
-          <h4 class="card-title exp-company text-muted my-0"><a href="https://www.accenture.com" target="_blank" rel="noopener">Accenture</a></h4>
+          <div class="section-subheading card-title exp-title text-muted mt-0 mb-1">Associate Software Engineer</div>
+          <div class="section-subheading card-title exp-company text-muted my-0"><a href="https://www.accenture.com" target="_blank" rel="noopener">Accenture</a></div>
           <div class="text-muted exp-meta">
             Apr 2015 –
             
@@ -1261,8 +1324,8 @@
     <div class="col py-2">
       <div class="card">
         <div class="card-body">
-          <h4 class="card-title exp-title text-muted mt-0 mb-1">Patent Examiner - Computer Science</h4>
-          <h4 class="card-title exp-company text-muted my-0"><a href="https://www.uspto.gov/" target="_blank" rel="noopener">United States Patent and Trademark Office</a></h4>
+          <div class="section-subheading card-title exp-title text-muted mt-0 mb-1">Patent Examiner - Computer Science</div>
+          <div class="section-subheading card-title exp-company text-muted my-0"><a href="https://www.uspto.gov/" target="_blank" rel="noopener">United States Patent and Trademark Office</a></div>
           <div class="text-muted exp-meta">
             May 2012 –
             
@@ -1293,6 +1356,8 @@
   
   
   
+  
+
   
 
   
@@ -1422,9 +1487,9 @@
 <div class="media stream-item">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0">
+    <div class="section-subheading article-title mb-0 mt-0">
       <a href="/publication/kl_planning/" >Planning under Uncertainty to Goal Distributions</a>
-    </h3>
+    </div>
 
     
     <a href="/publication/kl_planning/"  class="summary-link">
@@ -1442,8 +1507,9 @@
       <div>
         
 
-  
-  <span >Adam Conkey</span>, <span >Tucker Hermans</span>
+  <span >
+      <a href="/author/adam-conkey/">Adam Conkey</a></span>, <span >
+      <a href="/author/tucker-hermans/">Tucker Hermans</a></span>
       </div>
       
     </div>
@@ -1460,7 +1526,7 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/https:/arxiv.org/abs/2011.04782" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/https:/arxiv.org/abs/2011.04782" target="_blank" rel="noopener">
   Preprint
 </a>
 
@@ -1473,17 +1539,17 @@
 
 
 
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
         data-filename="/publication/kl_planning/cite.bib">
   Cite
-</button>
+</a>
 
 
   
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/https:/github.com/adamconkey/kl_planning" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/https:/github.com/adamconkey/kl_planning" target="_blank" rel="noopener">
   Code
 </a>
 
@@ -1500,7 +1566,7 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/https:/youtu.be/RD8wHHHdFk8" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/https:/youtu.be/RD8wHHHdFk8" target="_blank" rel="noopener">
   Video
 </a>
 
@@ -1550,9 +1616,9 @@
 <div class="media stream-item">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0">
+    <div class="section-subheading article-title mb-0 mt-0">
       <a href="/publication/pioneers/" >Representation Learning for Multisensory Perception and Planning</a>
-    </h3>
+    </div>
 
     
     <a href="/publication/pioneers/"  class="summary-link">
@@ -1570,8 +1636,8 @@
       <div>
         
 
-  
-  <span >Adam Conkey</span>
+  <span >
+      <a href="/author/adam-conkey/">Adam Conkey</a></span>
       </div>
       
     </div>
@@ -1593,7 +1659,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/https:/drive.google.com/uc?id=1nLjvhEIVO1X21Gvn9QoXYgMp4Zn5SUaU" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/https:/drive.google.com/uc?id=1nLjvhEIVO1X21Gvn9QoXYgMp4Zn5SUaU" target="_blank" rel="noopener">
   PDF
 </a>
 
@@ -1613,7 +1679,7 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/https:/youtu.be/1G949NW9WYk" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/https:/youtu.be/1G949NW9WYk" target="_blank" rel="noopener">
   Video
 </a>
 
@@ -1663,9 +1729,9 @@
 <div class="media stream-item">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0">
+    <div class="section-subheading article-title mb-0 mt-0">
       <a href="/publication/promp_active_learning/" >Active Learning of Probabilistic Movement Primitives</a>
-    </h3>
+    </div>
 
     
     <a href="/publication/promp_active_learning/"  class="summary-link">
@@ -1683,8 +1749,9 @@
       <div>
         
 
-  
-  <span >Adam Conkey</span>, <span >Tucker Hermans</span>
+  <span >
+      <a href="/author/adam-conkey/">Adam Conkey</a></span>, <span >
+      <a href="/author/tucker-hermans/">Tucker Hermans</a></span>
       </div>
       
     </div>
@@ -1706,23 +1773,23 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/https:/ieeexplore.ieee.org/document/9035026" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/https:/ieeexplore.ieee.org/document/9035026" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
         data-filename="/publication/promp_active_learning/cite.bib">
   Cite
-</button>
+</a>
 
 
   
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/http:/bit.ly/al_promp_code" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/http:/bit.ly/al_promp_code" target="_blank" rel="noopener">
   Code
 </a>
 
@@ -1731,7 +1798,7 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/http:/bit.ly/al_promp_data" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/http:/bit.ly/al_promp_data" target="_blank" rel="noopener">
   Dataset
 </a>
 
@@ -1747,7 +1814,7 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/https:/youtu.be/na91UyidDvE" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/https:/youtu.be/na91UyidDvE" target="_blank" rel="noopener">
   Video
 </a>
 
@@ -1797,9 +1864,9 @@
 <div class="media stream-item">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0">
+    <div class="section-subheading article-title mb-0 mt-0">
       <a href="/publication/dmp_hybrid_control/" >Learning Task Constraints from Demonstration for Hybrid Force/Position Control</a>
-    </h3>
+    </div>
 
     
     <a href="/publication/dmp_hybrid_control/"  class="summary-link">
@@ -1817,8 +1884,9 @@
       <div>
         
 
-  
-  <span >Adam Conkey</span>, <span >Tucker Hermans</span>
+  <span >
+      <a href="/author/adam-conkey/">Adam Conkey</a></span>, <span >
+      <a href="/author/tucker-hermans/">Tucker Hermans</a></span>
       </div>
       
     </div>
@@ -1840,23 +1908,23 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/https:/ieeexplore.ieee.org/document/9035013" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/https:/ieeexplore.ieee.org/document/9035013" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
         data-filename="/publication/dmp_hybrid_control/cite.bib">
   Cite
-</button>
+</a>
 
 
   
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/http:/bit.ly/dmp_hfpc_code" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/http:/bit.ly/dmp_hfpc_code" target="_blank" rel="noopener">
   Code
 </a>
 
@@ -1865,7 +1933,7 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/http:/bit.ly/dmp_hfpc_data" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/http:/bit.ly/dmp_hfpc_data" target="_blank" rel="noopener">
   Dataset
 </a>
 
@@ -1881,7 +1949,7 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/https:/youtu.be/WzDP78K6ptI" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="/https:/youtu.be/WzDP78K6ptI" target="_blank" rel="noopener">
   Video
 </a>
 
@@ -1926,6 +1994,8 @@
   
   
   
+  
+
   
 
   
@@ -1999,6 +2069,12 @@
   
 
   <div class=" row js-layout-row project-showcase mt-5">
+
+    
+    
+      
+    
+
     
 
       
@@ -2031,7 +2107,7 @@
 <div class="col-lg-12 project-item isotope-item js-id-Robot-Control js-id-Simulation js-id-Gazebo js-id-KUKA js-id-ReFlex js-id-Allegro">
   <div class="row align-items-center">
     <div class="col-12 col-md-6">
-      <h3 class="article-title mb-0 mt-0"><a href="/project/robot_control/" >Robot Control in Gazebo</a></h3>
+      <div class="section-subheading article-title mb-0 mt-0"><a href="/project/robot_control/" >Robot Control in Gazebo</a></div>
 
       
       <div class="article-style">
@@ -2060,7 +2136,7 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1" href="/https:/bitbucket.org/robot-learning/ll4ma_robot_control/src/version_2.0/" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header" href="/https:/bitbucket.org/robot-learning/ll4ma_robot_control/src/version_2.0/" target="_blank" rel="noopener">
   Code
 </a>
 
@@ -2128,7 +2204,7 @@
 <div class="col-lg-12 project-item isotope-item js-id-Robot-Control js-id-KUKA js-id-ReFlex js-id-Allegro">
   <div class="row align-items-center">
     <div class="col-12 col-md-6">
-      <h3 class="article-title mb-0 mt-0"><a href="/project/robot_interface/" >Robot Interface</a></h3>
+      <div class="section-subheading article-title mb-0 mt-0"><a href="/project/robot_interface/" >Robot Interface</a></div>
 
       
       <div class="article-style">
@@ -2157,7 +2233,7 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1" href="/https:/bitbucket.org/robot-learning/ll4ma_robot_interface" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header" href="/https:/bitbucket.org/robot-learning/ll4ma_robot_interface" target="_blank" rel="noopener">
   Code
 </a>
 
@@ -2225,7 +2301,7 @@
 <div class="col-lg-12 project-item isotope-item js-id-Robot-Control js-id-KUKA">
   <div class="row align-items-center">
     <div class="col-12 col-md-6">
-      <h3 class="article-title mb-0 mt-0"><a href="/project/rt_robot_control/" >Real-Time Robot Control</a></h3>
+      <div class="section-subheading article-title mb-0 mt-0"><a href="/project/rt_robot_control/" >Real-Time Robot Control</a></div>
 
       
       <div class="article-style">
@@ -2254,7 +2330,7 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1" href="/https:/bitbucket.org/robot-learning/lwr_hardware" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header" href="/https:/bitbucket.org/robot-learning/lwr_hardware" target="_blank" rel="noopener">
   Code
 </a>
 
@@ -2322,7 +2398,7 @@
 <div class="col-lg-12 project-item isotope-item js-id-Simulation js-id-Sensors js-id-Gazebo js-id-ReFlex">
   <div class="row align-items-center">
     <div class="col-12 col-md-6">
-      <h3 class="article-title mb-0 mt-0"><a href="/project/reflex_sensors/" >ReFlex TakkTile in Gazebo Simulation</a></h3>
+      <div class="section-subheading article-title mb-0 mt-0"><a href="/project/reflex_sensors/" >ReFlex TakkTile in Gazebo Simulation</a></div>
 
       
       <div class="article-style">
@@ -2351,7 +2427,7 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1" href="/https:/bitbucket.org/robot-learning/ll4ma_robots_description" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header" href="/https:/bitbucket.org/robot-learning/ll4ma_robots_description" target="_blank" rel="noopener">
   Code
 </a>
 
@@ -2419,7 +2495,7 @@
 <div class="col-lg-12 project-item isotope-item js-id-Learning-from-Demonstration js-id-rviz js-id-DART js-id-Simulation js-id-Haptics">
   <div class="row align-items-center">
     <div class="col-12 col-md-6">
-      <h3 class="article-title mb-0 mt-0"><a href="/project/teleop/" >Simulator for Teleoperation</a></h3>
+      <div class="section-subheading article-title mb-0 mt-0"><a href="/project/teleop/" >Simulator for Teleoperation</a></div>
 
       
       <div class="article-style">
@@ -2448,7 +2524,7 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1" href="/https:/bitbucket.org/robot-learning/dart_ros" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header" href="/https:/bitbucket.org/robot-learning/dart_ros" target="_blank" rel="noopener">
   Code
 </a>
 
@@ -2516,7 +2592,7 @@
 <div class="col-lg-12 project-item isotope-item js-id-Baxter js-id-Learning-from-Demonstration js-id-Human-Robot-Interaction">
   <div class="row align-items-center">
     <div class="col-12 col-md-6">
-      <h3 class="article-title mb-0 mt-0"><a href="/project/baxter_record/" >Baxter Demo Recorder</a></h3>
+      <div class="section-subheading article-title mb-0 mt-0"><a href="/project/baxter_record/" >Baxter Demo Recorder</a></div>
 
       
       <div class="article-style">
@@ -2545,7 +2621,7 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1" href="/https:/bitbucket.org/robot-learning/baxter_util" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header" href="/https:/bitbucket.org/robot-learning/baxter_util" target="_blank" rel="noopener">
   Code
 </a>
 
@@ -2613,7 +2689,7 @@
 <div class="col-lg-12 project-item isotope-item js-id-Visualization js-id-rviz">
   <div class="row align-items-center">
     <div class="col-12 col-md-6">
-      <h3 class="article-title mb-0 mt-0"><a href="/project/trajectory_viz/" >rviz Trajectory Visualization</a></h3>
+      <div class="section-subheading article-title mb-0 mt-0"><a href="/project/trajectory_viz/" >rviz Trajectory Visualization</a></div>
 
       
       <div class="article-style">
@@ -2642,7 +2718,7 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1" href="/https:/bitbucket.org/robot-learning/ll4ma_trajectory_util" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header" href="/https:/bitbucket.org/robot-learning/ll4ma_trajectory_util" target="_blank" rel="noopener">
   Code
 </a>
 
@@ -2718,7 +2794,7 @@
     
     
     Published with
-    <a href="https://wowchemy.com" target="_blank" rel="noopener">Wowchemy</a>  —
+    <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>  —
     the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
     open source</a> website builder that empowers creators.
     
@@ -2790,42 +2866,18 @@
 
     
     
-    <script>const code_highlighting = true;</script>
-    
-
-    
-    
-    
-    
-    
-    
-    <script>
-      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
-      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
-      const content_type = {
-        'post': "Posts",
-        'project': "Projects",
-        'publication' : "Publications",
-        'talk' : "Talks",
-        'slides' : "Slides"
-        };
-    </script>
-    
-
-    
-    
 
     
     
     <script id="search-hit-fuse-template" type="text/x-template">
       <div class="search-hit" id="summary-{{key}}">
-      <div class="search-hit-content">
-        <div class="search-hit-name">
-          <a href="{{relpermalink}}">{{title}}</a>
-          <div class="article-metadata search-hit-type">{{type}}</div>
-          <p class="search-hit-description">{{snippet}}</p>
+        <div class="search-hit-content">
+          <div class="search-hit-name">
+            <a href="{{relpermalink}}">{{title}}</a>
+            <div class="article-metadata search-hit-type">{{type}}</div>
+            <p class="search-hit-description">{{snippet}}</p>
+          </div>
         </div>
-      </div>
       </div>
     </script>
     
@@ -2836,6 +2888,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
     
 
+    
     
     
 
@@ -2863,6 +2916,18 @@
 
     
     
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
     
     
     
@@ -2871,11 +2936,10 @@
     
     
       
+      
     
     
-    
-    
-    <script src="/js/wowchemy.min.b927a5baa5aec671cc58767d251af68a.js"></script>
+    <script src="/en/js/wowchemy.min.6b3a97b06f91cfc657ed316014352724.js"></script>
 
     
 
