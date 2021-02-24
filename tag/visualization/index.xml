@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Visualization | Adam Conkey</title>
-    <link>/tag/visualization/</link>
-      <atom:link href="/tag/visualization/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://adamconkey.github.io/tag/visualization/</link>
+      <atom:link href="https://adamconkey.github.io/tag/visualization/index.xml" rel="self" type="application/rss+xml" />
     <description>Visualization</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 05 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://adamconkey.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Visualization</title>
-      <link>/tag/visualization/</link>
+      <link>https://adamconkey.github.io/tag/visualization/</link>
     </image>
     
     <item>
       <title>rviz Trajectory Visualization</title>
-      <link>/project/trajectory_viz/</link>
+      <link>https://adamconkey.github.io/project/trajectory_viz/</link>
       <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>/project/trajectory_viz/</guid>
+      <guid>https://adamconkey.github.io/project/trajectory_viz/</guid>
       <description>&lt;p&gt;This package offers customizable traces for task space trajectories in rViz. It uses &lt;a href=&#34;http://wiki.ros.org/rviz/DisplayTypes/Marker&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Marker&lt;/a&gt; display types to show the end-effector position (or any other task space position) as it traverses through space. It&amp;rsquo;s configurable in that you can choose the color and line style of the trace (solid or dotted). It also allows you to visualize many trajectories at once, e.g. if you have samples from a distribution of trajectories. I have also implemented visualization of a full pose so that a Cartesian frame shows the pose over time, and also a static trace of poses so the entire pose trajectory can be seen at once.&lt;/p&gt;
 &lt;p&gt;This package additionally has some action servers/clients (joint and task space) for commanding trajectories. These can be used to track the status of a trajectory being executed and publish interpolated waypoints to a low-level controller.&lt;/p&gt;
 &lt;p&gt;Here is a video of a couple different visualization styles:

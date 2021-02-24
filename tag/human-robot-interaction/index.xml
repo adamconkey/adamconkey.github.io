@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Human-Robot Interaction | Adam Conkey</title>
-    <link>/tag/human-robot-interaction/</link>
-      <atom:link href="/tag/human-robot-interaction/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://adamconkey.github.io/tag/human-robot-interaction/</link>
+      <atom:link href="https://adamconkey.github.io/tag/human-robot-interaction/index.xml" rel="self" type="application/rss+xml" />
     <description>Human-Robot Interaction</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 05 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://adamconkey.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Human-Robot Interaction</title>
-      <link>/tag/human-robot-interaction/</link>
+      <link>https://adamconkey.github.io/tag/human-robot-interaction/</link>
     </image>
     
     <item>
       <title>Baxter Demo Recorder</title>
-      <link>/project/baxter_record/</link>
+      <link>https://adamconkey.github.io/project/baxter_record/</link>
       <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>/project/baxter_record/</guid>
+      <guid>https://adamconkey.github.io/project/baxter_record/</guid>
       <description>&lt;p&gt;A demonstration recording framework for the Baxter robot to make it more efficient to collect kinesthetic demonstrations in a learning from demonstration setting. Everything is controlled from the robot using the button and display interfaces, allowing the teacher to rapidly give demonstrations without having to go back and forth between the robot and the computer. Current features include:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Starting/stopping recording of robot and sensor data (e.g. joint states, end-effector pose, force sensor readings, etc.) using my &lt;a href=&#34;/project/logger&#34;&gt;logging framework&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Starting/stopping recording of robot and sensor data (e.g. joint states, end-effector pose, force sensor readings, etc.) using my &lt;a href=&#34;https://adamconkey.github.io/project/logger&#34;&gt;logging framework&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Moving arm back to a nominal starting position.&lt;/li&gt;
 &lt;li&gt;Changing the nominal starting position.&lt;/li&gt;
 &lt;li&gt;Zeroing out a mounted force/torque wrist sensor.&lt;/li&gt;

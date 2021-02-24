@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sensors | Adam Conkey</title>
-    <link>/tag/sensors/</link>
-      <atom:link href="/tag/sensors/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://adamconkey.github.io/tag/sensors/</link>
+      <atom:link href="https://adamconkey.github.io/tag/sensors/index.xml" rel="self" type="application/rss+xml" />
     <description>Sensors</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 05 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://adamconkey.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Sensors</title>
-      <link>/tag/sensors/</link>
+      <link>https://adamconkey.github.io/tag/sensors/</link>
     </image>
     
     <item>
       <title>ReFlex TakkTile in Gazebo Simulation</title>
-      <link>/project/reflex_sensors/</link>
+      <link>https://adamconkey.github.io/project/reflex_sensors/</link>
       <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>/project/reflex_sensors/</guid>
+      <guid>https://adamconkey.github.io/project/reflex_sensors/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve done some work to get the &lt;a href=&#34;https://www.labs.righthandrobotics.com/reflexhand&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ReFlex TakkTile hand&lt;/a&gt; working in Gazebo. The URDF provided by RightHand robotics was intended only for visualization in rviz. I added inertial and collision models, joint hardware interfaces, Gazebo materials for mesh rendering, and replaced the parallel kinematic structure in the fingers with a serial structure. I elaborate a bit on this process on this &lt;a href=&#34;https://github.com/RightHandRobotics/reflex-ros-pkg/issues/38&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github issue&lt;/a&gt;. These changes can be found &lt;a href=&#34;https://bitbucket.org/robot-learning/ll4ma_robots_description/src/main/urdf/reflex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; and allow basic actuation of the ReFlex hand:
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
