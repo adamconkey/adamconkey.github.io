@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IsaacGym | Adam Conkey</title>
+    <link>https://adamconkey.github.io/tag/isaacgym/</link>
+      <atom:link href="https://adamconkey.github.io/tag/isaacgym/index.xml" rel="self" type="application/rss+xml" />
+    <description>IsaacGym</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 21 Nov 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://adamconkey.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>IsaacGym</title>
+      <link>https://adamconkey.github.io/tag/isaacgym/</link>
+    </image>
+    
+    <item>
+      <title>IsaacGym Data Collection</title>
+      <link>https://adamconkey.github.io/project/isaacgym_data_collection/</link>
+      <pubDate>Sun, 21 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://adamconkey.github.io/project/isaacgym_data_collection/</guid>
+      <description>&lt;p&gt;Lately I have been pursuing a research project requiring lots and lots of data for learning. In order to support this, I created a data collection framework for the NVIDIA IsaacGym simulator. I created a suite of hierarchical scripted behaviors that utilize MoveIt to generate motions, and simple heuristics to generate grasp and placement poses, e.g. selecting candidate poses from around the bounding box of the object.&lt;/p&gt;
+&lt;p&gt;Using the IsaacGym simulator, I&amp;rsquo;m able to run data collection for many environments at once (e.g. I can run 32 simulations at once and collect data for each of them). To support this, I also created a &lt;a href=&#34;https://bitbucket.org/robot-learning/ll4ma_moveit/src/main/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MoveIt interface package&lt;/a&gt; to make it easier to request plans for many different environments sequentially.&lt;/p&gt;
+&lt;p&gt;This work is still under heavy development as it is a component of my current research. I am working with other members in my lab to improve it and make it a more scalable option to collect interesting manipulation data to learn from.&lt;/p&gt;
+&lt;p&gt;Here are some clips from my current setup:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/kphwUBPt-ME&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/jg0iOBDnSRw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/aciRBM99QhY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/JEMtUXVSDnM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

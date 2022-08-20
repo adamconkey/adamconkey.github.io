@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Human-Robot Interaction | Adam Conkey</title>
+    <link>https://adamconkey.github.io/tag/human-robot-interaction/</link>
+      <atom:link href="https://adamconkey.github.io/tag/human-robot-interaction/index.xml" rel="self" type="application/rss+xml" />
+    <description>Human-Robot Interaction</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 05 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://adamconkey.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Human-Robot Interaction</title>
+      <link>https://adamconkey.github.io/tag/human-robot-interaction/</link>
+    </image>
+    
+    <item>
+      <title>Baxter Demo Recorder</title>
+      <link>https://adamconkey.github.io/project/baxter_record/</link>
+      <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://adamconkey.github.io/project/baxter_record/</guid>
+      <description>&lt;p&gt;A demonstration recording framework for the Baxter robot to make it more efficient to collect kinesthetic demonstrations in a learning from demonstration setting. Everything is controlled from the robot using the button and display interfaces, allowing the teacher to rapidly give demonstrations without having to go back and forth between the robot and the computer. Current features include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Starting/stopping recording of robot and sensor data (e.g. joint states, end-effector pose, force sensor readings, etc.) using my &lt;a href=&#34;https://adamconkey.github.io/project/logger&#34;&gt;logging framework&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Moving arm back to a nominal starting position.&lt;/li&gt;
+&lt;li&gt;Changing the nominal starting position.&lt;/li&gt;
+&lt;li&gt;Zeroing out a mounted force/torque wrist sensor.&lt;/li&gt;
+&lt;li&gt;Showing current status on the head display, and swiveling the head display to the left or right automatically depending on which arm is in use.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here is a short video showing off the features:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/weBPQOT4Ymg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+&lt;p&gt;Here is a video of it in action for recording a demonstration in an experiment:
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/KWZjVcdqVFE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

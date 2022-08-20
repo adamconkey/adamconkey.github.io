@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ReFlex | Adam Conkey</title>
+    <link>https://adamconkey.github.io/tag/reflex/</link>
+      <atom:link href="https://adamconkey.github.io/tag/reflex/index.xml" rel="self" type="application/rss+xml" />
+    <description>ReFlex</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 05 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://adamconkey.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>ReFlex</title>
+      <link>https://adamconkey.github.io/tag/reflex/</link>
+    </image>
+    
+    <item>
+      <title>Robot Control in Gazebo</title>
+      <link>https://adamconkey.github.io/project/robot_control/</link>
+      <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://adamconkey.github.io/project/robot_control/</guid>
+      <description>&lt;p&gt;I have developed a robot controller framework that uses my &lt;a href=&#34;https://adamconkey.github.io/project/robot_interface&#34;&gt;robot interface package&lt;/a&gt; to abstract away the particular requirements of each robot platform. As such, the controllers in this package should be useful for controlling any robot that has communication needs satisfied by one of the interfaces in the interface package. These controllers work for Gazebo simulations, and are written to inherit from an interface that mimics the &lt;a href=&#34;http://www.orocos.org/stable/documentation/rtt/v2.x/api/html/classRTT_1_1TaskContext.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Orocos RTT::TaskContext&lt;/a&gt;, with the intention that these controllers can be easily ported for real-time control on a physical robot (see our &lt;a href=&#34;https://adamconkey.github.io/project/rt_robot_control&#34;&gt;real-time controller package&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;The current supported controllers are a joint space PD controller and a task space inverse dynamics controller. I have also implemented an operational space hybrid force/position controller and used it both in simulation and on a real Baxter robot. However, I have deprecated the force controller for now as the code design changed sufficiently from when I was using that controller, and am waiting until it is needed to update.&lt;/p&gt;
+&lt;p&gt;Here is a video of the KUKA LBR4+ arm in Gazebo using a joint space controller:
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/THkC697oesQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;Here is a video of the ReFlex hand in Gazebo:
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/2HQql-W8Lys&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Robot Interface</title>
+      <link>https://adamconkey.github.io/project/robot_interface/</link>
+      <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://adamconkey.github.io/project/robot_interface/</guid>
+      <description>&lt;p&gt;Different robots have different communication requirements for control and diagnostics. In ROS, this can mean different message types, different topic names, different interfaces for a robot in simulation versus reality, and so on. This can greatly complicate things as you end up having to create separate controllers and monitoring nodes for each platform. I created a robot interface abstraction layer to try to mitigate these issues. The idea is that each robot has its own interface that implements the requirements particular to that platform, and each interface inherits from a common interface. I have implemented a number of controllers in my &lt;a href=&#34;https://bitbucket.org/robot-learning/ll4ma_robot_control&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;controller package&lt;/a&gt; that use the common interface, such that the controllers are agnostic to the robot being controlled, and they can be instantiated with any interface in this package.&lt;/p&gt;
+&lt;p&gt;I have implemented interfaces for the KUKA LBR4+ (simulation), Baxter (real and simulation), and the Righthand Robotics ReFlex hand (simulation). &lt;a href=&#34;https://balakumar-s.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Balakumar Sundaralingam&lt;/a&gt; has implemented an interface for the real and simulated Allegro hand.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ReFlex TakkTile in Gazebo Simulation</title>
+      <link>https://adamconkey.github.io/project/reflex_sensors/</link>
+      <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://adamconkey.github.io/project/reflex_sensors/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve done some work to get the &lt;a href=&#34;https://www.labs.righthandrobotics.com/reflexhand&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ReFlex TakkTile hand&lt;/a&gt; working in Gazebo. The URDF provided by RightHand robotics was intended only for visualization in rviz. I added inertial and collision models, joint hardware interfaces, Gazebo materials for mesh rendering, and replaced the parallel kinematic structure in the fingers with a serial structure. I elaborate a bit on this process on this &lt;a href=&#34;https://github.com/RightHandRobotics/reflex-ros-pkg/issues/38&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github issue&lt;/a&gt;. These changes can be found &lt;a href=&#34;https://bitbucket.org/robot-learning/ll4ma_robots_description/src/main/urdf/reflex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; and allow basic actuation of the ReFlex hand:
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/2HQql-W8Lys&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;I added &lt;a href=&#34;http://gazebosim.org/tutorials?tut=contact_sensor&amp;amp;cat=sensors&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;contact sensors&lt;/a&gt; to the fingers to mimic the contact sensing offered by the real hand. Thank you to &lt;a href=&#34;https://mabelzhang.wordpress.com/bio/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mabel Zhang&lt;/a&gt; for her advice in setting this up! Here is a video of contacts being detected by the ReFlex hand in Gazebo using the contact sensor plugin (each green square is a separate contact sensor):&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/oEuwmzLlE84&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+&lt;p&gt;I have also extended the basic contact sensing to also detect continuous pressure values. These are not yet fully functional yet though as they are not scaled correctly to the real hand. This is still an active area for development. I am also interested in eventually modeling the underactuated joints, and our lab is looking into the best way to handle this in Gazebo.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

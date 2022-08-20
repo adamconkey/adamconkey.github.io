@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Learning from Demonstration | Adam Conkey</title>
+    <link>https://adamconkey.github.io/tag/learning-from-demonstration/</link>
+      <atom:link href="https://adamconkey.github.io/tag/learning-from-demonstration/index.xml" rel="self" type="application/rss+xml" />
+    <description>Learning from Demonstration</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 15 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://adamconkey.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Learning from Demonstration</title>
+      <link>https://adamconkey.github.io/tag/learning-from-demonstration/</link>
+    </image>
+    
+    <item>
+      <title>Simulator for Teleoperation</title>
+      <link>https://adamconkey.github.io/project/teleop/</link>
+      <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://adamconkey.github.io/project/teleop/</guid>
+      <description>&lt;p&gt;I have effectively made rviz into a simulator. This was originally intended to be a lightweight simulator to serve as a training ground for learning robust policies in a large-latency teleoperation setting. If there is large communication between the remote robot and the operator (e.g. the robot is on Mars and the operator is on Earth), then direct teleoperation is infeasible, since the operator will have to wait several minutes to find out what effect their actions had at the remote site. The idea of this simulator is to use sensor data (e.g. object trackers based on camera feeds) to render a virtual environment that mimics the remote environment. Then the operator can give many demonstrations in the virtual environment, and a robust policy can be learned based on the collected demonstrations which can then be executed on the real robot.&lt;/p&gt;
+&lt;p&gt;I used &lt;a href=&#34;https://github.com/ros-visualization/rviz&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;rviz&lt;/a&gt; to render the environment visually, and &lt;a href=&#34;https://dartsim.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DART&lt;/a&gt; to simulate physics on the environment. The robot motion is controlled with a haptic input device, in my case a Phantom Omni (re-branded as the &lt;a href=&#34;https://www.3dsystems.com/haptics-devices/touch&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Sensable Geomagic Touch&lt;/a&gt;). The relative change in pose of the haptic device stylus is interpreted as a relative change in pose for the robot. Taking the pseudoinverse of the manipulator Jacobian and applying it to this change in pose results in a joint position update that is rendered in the simulator. Interaction forces in the environment are computed using DART, and these are rendered back to the user on the haptic device. The end result is the user can move the robot around, and when the robot makes contact with objects in the scene, the user feels the force as if they actually contacted the object in the real world with the haptic device stylus! The user also sees the force vector rendered in rviz.&lt;/p&gt;
+&lt;p&gt;I created a simple rviz plugin that allows the user to enable/disable the robot motion and haptic feedback. It also provides the capability to reset the environment to its nominal state so that multiple demonstrations can be given on the same environment configuration. Here is a video of a simple interaction showing the features:
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/PLEuahvvX5o&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;p&gt;I have some older iterations that used the Baxter robot, and tKinter for the user GUI:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/S0RFufFrDa0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+&lt;p&gt;I have also used the previous iteration in Gazebo (without being mediated through any kinematic simulator). I had augmented the GUI to display the forces being applied in each dimension as registered by a simulated force sensor (using Gazebo&amp;rsquo;s force sensor plugin):&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/SlULZfQPwRg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Baxter Demo Recorder</title>
+      <link>https://adamconkey.github.io/project/baxter_record/</link>
+      <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://adamconkey.github.io/project/baxter_record/</guid>
+      <description>&lt;p&gt;A demonstration recording framework for the Baxter robot to make it more efficient to collect kinesthetic demonstrations in a learning from demonstration setting. Everything is controlled from the robot using the button and display interfaces, allowing the teacher to rapidly give demonstrations without having to go back and forth between the robot and the computer. Current features include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Starting/stopping recording of robot and sensor data (e.g. joint states, end-effector pose, force sensor readings, etc.) using my &lt;a href=&#34;https://adamconkey.github.io/project/logger&#34;&gt;logging framework&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Moving arm back to a nominal starting position.&lt;/li&gt;
+&lt;li&gt;Changing the nominal starting position.&lt;/li&gt;
+&lt;li&gt;Zeroing out a mounted force/torque wrist sensor.&lt;/li&gt;
+&lt;li&gt;Showing current status on the head display, and swiveling the head display to the left or right automatically depending on which arm is in use.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here is a short video showing off the features:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/weBPQOT4Ymg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+&lt;p&gt;Here is a video of it in action for recording a demonstration in an experiment:
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/KWZjVcdqVFE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Active Learning of Probabilistic Movement Primitives</title>
+      <link>https://adamconkey.github.io/publication/promp_active_learning/</link>
+      <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://adamconkey.github.io/publication/promp_active_learning/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/na91UyidDvE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Learning Task Constraints from Demonstration for Hybrid Force/Position Control</title>
+      <link>https://adamconkey.github.io/publication/dmp_hybrid_control/</link>
+      <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://adamconkey.github.io/publication/dmp_hybrid_control/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/WzDP78K6ptI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

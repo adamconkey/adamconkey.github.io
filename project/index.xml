@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | Adam Conkey</title>
+    <link>https://adamconkey.github.io/project/</link>
+      <atom:link href="https://adamconkey.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 21 Nov 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://adamconkey.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Projects</title>
+      <link>https://adamconkey.github.io/project/</link>
+    </image>
+    
+    <item>
+      <title>IsaacGym Data Collection</title>
+      <link>https://adamconkey.github.io/project/isaacgym_data_collection/</link>
+      <pubDate>Sun, 21 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://adamconkey.github.io/project/isaacgym_data_collection/</guid>
+      <description>&lt;p&gt;Lately I have been pursuing a research project requiring lots and lots of data for learning. In order to support this, I created a data collection framework for the NVIDIA IsaacGym simulator. I created a suite of hierarchical scripted behaviors that utilize MoveIt to generate motions, and simple heuristics to generate grasp and placement poses, e.g. selecting candidate poses from around the bounding box of the object.&lt;/p&gt;
+&lt;p&gt;Using the IsaacGym simulator, I&amp;rsquo;m able to run data collection for many environments at once (e.g. I can run 32 simulations at once and collect data for each of them). To support this, I also created a &lt;a href=&#34;https://bitbucket.org/robot-learning/ll4ma_moveit/src/main/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MoveIt interface package&lt;/a&gt; to make it easier to request plans for many different environments sequentially.&lt;/p&gt;
+&lt;p&gt;This work is still under heavy development as it is a component of my current research. I am working with other members in my lab to improve it and make it a more scalable option to collect interesting manipulation data to learn from.&lt;/p&gt;
+&lt;p&gt;Here are some clips from my current setup:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/kphwUBPt-ME&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/jg0iOBDnSRw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/aciRBM99QhY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/JEMtUXVSDnM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Region Selector for Pointcloud Segmentation</title>
+      <link>https://adamconkey.github.io/project/pcd_segmentation/</link>
+      <pubDate>Sun, 21 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://adamconkey.github.io/project/pcd_segmentation/</guid>
+      <description>&lt;p&gt;Our lab has developed some code to do pointcloud segmentation that finds points associated with an object of interest from a tabletop. The user must define a box region over which the segmentation algorithm will run. Previously, this was a tedious process of guessing and checking to see if you defined the region correctly, or required the user to break out a tape measure everytime the region was to be changed.&lt;/p&gt;
+&lt;p&gt;I developed a tool for rviz using Markers and InteractiveMarkers that enables the user to set the segmentation region visually. The tool overlays a transparent cuboid on the pointcloud showing the region over which the segmentation algorithm will operate. The user can then change the bounds of the region by dragging the arrows attached to the object. Here is a video showing the user changing the region to segment either the left object or right object:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/wAG2wvpesjU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Robot Control in Gazebo</title>
+      <link>https://adamconkey.github.io/project/robot_control/</link>
+      <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://adamconkey.github.io/project/robot_control/</guid>
+      <description>&lt;p&gt;I have developed a robot controller framework that uses my &lt;a href=&#34;https://adamconkey.github.io/project/robot_interface&#34;&gt;robot interface package&lt;/a&gt; to abstract away the particular requirements of each robot platform. As such, the controllers in this package should be useful for controlling any robot that has communication needs satisfied by one of the interfaces in the interface package. These controllers work for Gazebo simulations, and are written to inherit from an interface that mimics the &lt;a href=&#34;http://www.orocos.org/stable/documentation/rtt/v2.x/api/html/classRTT_1_1TaskContext.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Orocos RTT::TaskContext&lt;/a&gt;, with the intention that these controllers can be easily ported for real-time control on a physical robot (see our &lt;a href=&#34;https://adamconkey.github.io/project/rt_robot_control&#34;&gt;real-time controller package&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;The current supported controllers are a joint space PD controller and a task space inverse dynamics controller. I have also implemented an operational space hybrid force/position controller and used it both in simulation and on a real Baxter robot. However, I have deprecated the force controller for now as the code design changed sufficiently from when I was using that controller, and am waiting until it is needed to update.&lt;/p&gt;
+&lt;p&gt;Here is a video of the KUKA LBR4+ arm in Gazebo using a joint space controller:
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/THkC697oesQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;Here is a video of the ReFlex hand in Gazebo:
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/2HQql-W8Lys&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Robot Interface</title>
+      <link>https://adamconkey.github.io/project/robot_interface/</link>
+      <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://adamconkey.github.io/project/robot_interface/</guid>
+      <description>&lt;p&gt;Different robots have different communication requirements for control and diagnostics. In ROS, this can mean different message types, different topic names, different interfaces for a robot in simulation versus reality, and so on. This can greatly complicate things as you end up having to create separate controllers and monitoring nodes for each platform. I created a robot interface abstraction layer to try to mitigate these issues. The idea is that each robot has its own interface that implements the requirements particular to that platform, and each interface inherits from a common interface. I have implemented a number of controllers in my &lt;a href=&#34;https://bitbucket.org/robot-learning/ll4ma_robot_control&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;controller package&lt;/a&gt; that use the common interface, such that the controllers are agnostic to the robot being controlled, and they can be instantiated with any interface in this package.&lt;/p&gt;
+&lt;p&gt;I have implemented interfaces for the KUKA LBR4+ (simulation), Baxter (real and simulation), and the Righthand Robotics ReFlex hand (simulation). &lt;a href=&#34;https://balakumar-s.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Balakumar Sundaralingam&lt;/a&gt; has implemented an interface for the real and simulated Allegro hand.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Real-Time Robot Control</title>
+      <link>https://adamconkey.github.io/project/rt_robot_control/</link>
+      <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://adamconkey.github.io/project/rt_robot_control/</guid>
+      <description>&lt;p&gt;We use the &lt;a href=&#34;http://www.orocos.org/rtt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Orocos Real-Time Toolkit&lt;/a&gt; to control our KUKA LBR4+ arm, which ensures that our controllers meet the real-time requirements for the LBR4. The base implementation our lab started with comes from the &lt;a href=&#34;https://github.com/kuka-isir/lwr_hardware&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;lwr_hardware&lt;/a&gt; package from the &lt;a href=&#34;http://www.isir.upmc.fr/index.php?op=view_equipe&amp;amp;id=4&amp;amp;lang=fr&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Institut des Systèmes Intelligents et de Robotique (ISIR)&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I have added to this framework by writing a controller manager that allows safe swapping of controllers at runtime. I use this to rapidly record kinesthetic demonstrations on the robot by switching between a gravity compensation controller (for moving the arm kinesthetically), a high stiffness joint controller (for keeping the robot stationary), a joint PD controller (for moving the robot to a nominal starting position), and a task space inverse dynamics controller (for executing task space policies).&lt;/p&gt;
+&lt;p&gt;This video shows the various transitions between controllers in a learning from kinesthetic demonstration setting, where controller switching is initiated by button presses on an Xbox One controller:
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/kSb0eCdcpe4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;Here is a video of fully autonomous execution of a learned Probabilistic Movement Primitive policy using the joint PD controller:
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/fwUz9QM-G7A&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;The LBR4+ comes with a &lt;a href=&#34;https://cs.stanford.edu/people/tkr/fri/html/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Fast Research Interface (FRI)&lt;/a&gt;, which allows us to run our custom controllers and read the robot state through ROS. Something I didn&amp;rsquo;t like was having to work out bugs in my controllers and controller manager on the real robot. So, I created a simulated FRI so that I could run our Orocos controllers in Gazebo before going live on the real robot. The simulation FRI hooks into the Gazebo simulation directly to read the robot state, and accepts the torque command output from our controllers to interface with the ROS control hardware interfaces.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ReFlex TakkTile in Gazebo Simulation</title>
+      <link>https://adamconkey.github.io/project/reflex_sensors/</link>
+      <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://adamconkey.github.io/project/reflex_sensors/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve done some work to get the &lt;a href=&#34;https://www.labs.righthandrobotics.com/reflexhand&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ReFlex TakkTile hand&lt;/a&gt; working in Gazebo. The URDF provided by RightHand robotics was intended only for visualization in rviz. I added inertial and collision models, joint hardware interfaces, Gazebo materials for mesh rendering, and replaced the parallel kinematic structure in the fingers with a serial structure. I elaborate a bit on this process on this &lt;a href=&#34;https://github.com/RightHandRobotics/reflex-ros-pkg/issues/38&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github issue&lt;/a&gt;. These changes can be found &lt;a href=&#34;https://bitbucket.org/robot-learning/ll4ma_robots_description/src/main/urdf/reflex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; and allow basic actuation of the ReFlex hand:
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/2HQql-W8Lys&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;I added &lt;a href=&#34;http://gazebosim.org/tutorials?tut=contact_sensor&amp;amp;cat=sensors&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;contact sensors&lt;/a&gt; to the fingers to mimic the contact sensing offered by the real hand. Thank you to &lt;a href=&#34;https://mabelzhang.wordpress.com/bio/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mabel Zhang&lt;/a&gt; for her advice in setting this up! Here is a video of contacts being detected by the ReFlex hand in Gazebo using the contact sensor plugin (each green square is a separate contact sensor):&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/oEuwmzLlE84&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+&lt;p&gt;I have also extended the basic contact sensing to also detect continuous pressure values. These are not yet fully functional yet though as they are not scaled correctly to the real hand. This is still an active area for development. I am also interested in eventually modeling the underactuated joints, and our lab is looking into the best way to handle this in Gazebo.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Simulator for Teleoperation</title>
+      <link>https://adamconkey.github.io/project/teleop/</link>
+      <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://adamconkey.github.io/project/teleop/</guid>
+      <description>&lt;p&gt;I have effectively made rviz into a simulator. This was originally intended to be a lightweight simulator to serve as a training ground for learning robust policies in a large-latency teleoperation setting. If there is large communication between the remote robot and the operator (e.g. the robot is on Mars and the operator is on Earth), then direct teleoperation is infeasible, since the operator will have to wait several minutes to find out what effect their actions had at the remote site. The idea of this simulator is to use sensor data (e.g. object trackers based on camera feeds) to render a virtual environment that mimics the remote environment. Then the operator can give many demonstrations in the virtual environment, and a robust policy can be learned based on the collected demonstrations which can then be executed on the real robot.&lt;/p&gt;
+&lt;p&gt;I used &lt;a href=&#34;https://github.com/ros-visualization/rviz&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;rviz&lt;/a&gt; to render the environment visually, and &lt;a href=&#34;https://dartsim.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DART&lt;/a&gt; to simulate physics on the environment. The robot motion is controlled with a haptic input device, in my case a Phantom Omni (re-branded as the &lt;a href=&#34;https://www.3dsystems.com/haptics-devices/touch&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Sensable Geomagic Touch&lt;/a&gt;). The relative change in pose of the haptic device stylus is interpreted as a relative change in pose for the robot. Taking the pseudoinverse of the manipulator Jacobian and applying it to this change in pose results in a joint position update that is rendered in the simulator. Interaction forces in the environment are computed using DART, and these are rendered back to the user on the haptic device. The end result is the user can move the robot around, and when the robot makes contact with objects in the scene, the user feels the force as if they actually contacted the object in the real world with the haptic device stylus! The user also sees the force vector rendered in rviz.&lt;/p&gt;
+&lt;p&gt;I created a simple rviz plugin that allows the user to enable/disable the robot motion and haptic feedback. It also provides the capability to reset the environment to its nominal state so that multiple demonstrations can be given on the same environment configuration. Here is a video of a simple interaction showing the features:
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/PLEuahvvX5o&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;p&gt;I have some older iterations that used the Baxter robot, and tKinter for the user GUI:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/S0RFufFrDa0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+&lt;p&gt;I have also used the previous iteration in Gazebo (without being mediated through any kinematic simulator). I had augmented the GUI to display the forces being applied in each dimension as registered by a simulated force sensor (using Gazebo&amp;rsquo;s force sensor plugin):&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/SlULZfQPwRg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Baxter Demo Recorder</title>
+      <link>https://adamconkey.github.io/project/baxter_record/</link>
+      <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://adamconkey.github.io/project/baxter_record/</guid>
+      <description>&lt;p&gt;A demonstration recording framework for the Baxter robot to make it more efficient to collect kinesthetic demonstrations in a learning from demonstration setting. Everything is controlled from the robot using the button and display interfaces, allowing the teacher to rapidly give demonstrations without having to go back and forth between the robot and the computer. Current features include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Starting/stopping recording of robot and sensor data (e.g. joint states, end-effector pose, force sensor readings, etc.) using my &lt;a href=&#34;https://adamconkey.github.io/project/logger&#34;&gt;logging framework&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Moving arm back to a nominal starting position.&lt;/li&gt;
+&lt;li&gt;Changing the nominal starting position.&lt;/li&gt;
+&lt;li&gt;Zeroing out a mounted force/torque wrist sensor.&lt;/li&gt;
+&lt;li&gt;Showing current status on the head display, and swiveling the head display to the left or right automatically depending on which arm is in use.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here is a short video showing off the features:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/weBPQOT4Ymg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+&lt;p&gt;Here is a video of it in action for recording a demonstration in an experiment:
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/KWZjVcdqVFE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;</description>
+    </item>
+    
+    <item>
+      <title>rviz Trajectory Visualization</title>
+      <link>https://adamconkey.github.io/project/trajectory_viz/</link>
+      <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://adamconkey.github.io/project/trajectory_viz/</guid>
+      <description>&lt;p&gt;This package offers customizable traces for task space trajectories in rViz. It uses &lt;a href=&#34;http://wiki.ros.org/rviz/DisplayTypes/Marker&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Marker&lt;/a&gt; display types to show the end-effector position (or any other task space position) as it traverses through space. It&amp;rsquo;s configurable in that you can choose the color and line style of the trace (solid or dotted). It also allows you to visualize many trajectories at once, e.g. if you have samples from a distribution of trajectories. I have also implemented visualization of a full pose so that a Cartesian frame shows the pose over time, and also a static trace of poses so the entire pose trajectory can be seen at once.&lt;/p&gt;
+&lt;p&gt;This package additionally has some action servers/clients (joint and task space) for commanding trajectories. These can be used to track the status of a trajectory being executed and publish interpolated waypoints to a low-level controller.&lt;/p&gt;
+&lt;p&gt;Here is a video of a couple different visualization styles:
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/yFKEfv2nIZA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;Here is a visualization of samples from a ProMP policy and one of the samples being executed with a mesh overlay of the robot:
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/CW9NLlCiT2Y&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

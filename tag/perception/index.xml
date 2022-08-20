@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Perception | Adam Conkey</title>
+    <link>https://adamconkey.github.io/tag/perception/</link>
+      <atom:link href="https://adamconkey.github.io/tag/perception/index.xml" rel="self" type="application/rss+xml" />
+    <description>Perception</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 21 Nov 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://adamconkey.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Perception</title>
+      <link>https://adamconkey.github.io/tag/perception/</link>
+    </image>
+    
+    <item>
+      <title>Region Selector for Pointcloud Segmentation</title>
+      <link>https://adamconkey.github.io/project/pcd_segmentation/</link>
+      <pubDate>Sun, 21 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://adamconkey.github.io/project/pcd_segmentation/</guid>
+      <description>&lt;p&gt;Our lab has developed some code to do pointcloud segmentation that finds points associated with an object of interest from a tabletop. The user must define a box region over which the segmentation algorithm will run. Previously, this was a tedious process of guessing and checking to see if you defined the region correctly, or required the user to break out a tape measure everytime the region was to be changed.&lt;/p&gt;
+&lt;p&gt;I developed a tool for rviz using Markers and InteractiveMarkers that enables the user to set the segmentation region visually. The tool overlays a transparent cuboid on the pointcloud showing the region over which the segmentation algorithm will operate. The user can then change the bounds of the region by dragging the arrows attached to the object. Here is a video showing the user changing the region to segment either the left object or right object:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/wAG2wvpesjU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
