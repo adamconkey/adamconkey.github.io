@@ -28,6 +28,20 @@
   <url>
     <loc>https://adamconkey.github.io/event/</loc><lastmod>2030-06-01T13:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
+    <loc>https://adamconkey.github.io/publication-type/1/</loc><lastmod>2023-05-30T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://adamconkey.github.io/tag/graph-neural-networks/</loc><lastmod>2023-05-30T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://adamconkey.github.io/tag/planning/</loc><lastmod>2023-05-30T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://adamconkey.github.io/publication/rdgnn/</loc><lastmod>2023-05-30T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://adamconkey.github.io/publication_types/</loc><lastmod>2023-05-30T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://adamconkey.github.io/publication/</loc><lastmod>2023-05-30T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://adamconkey.github.io/tags/</loc><lastmod>2023-05-30T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
     <loc>https://adamconkey.github.io/tag/isaacgym/</loc><lastmod>2021-11-21T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://adamconkey.github.io/tag/moveit/</loc><lastmod>2021-11-21T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
@@ -37,8 +51,6 @@
     <loc>https://adamconkey.github.io/project/</loc><lastmod>2021-11-21T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://adamconkey.github.io/tag/rviz/</loc><lastmod>2021-11-21T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://adamconkey.github.io/tags/</loc><lastmod>2021-11-21T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://adamconkey.github.io/tag/academic/</loc><lastmod>2020-12-13T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
@@ -60,13 +72,7 @@
   <url>
     <loc>https://adamconkey.github.io/tag/kl-divergence/</loc><lastmod>2020-10-31T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://adamconkey.github.io/tag/planning/</loc><lastmod>2020-10-31T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
     <loc>https://adamconkey.github.io/publication/kl_planning/</loc><lastmod>2020-10-31T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://adamconkey.github.io/publication_types/</loc><lastmod>2020-10-31T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://adamconkey.github.io/publication/</loc><lastmod>2020-10-31T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://adamconkey.github.io/publication-type/0/</loc><lastmod>2020-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
@@ -77,8 +83,6 @@
     <loc>https://adamconkey.github.io/tag/representation-learning/</loc><lastmod>2020-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://adamconkey.github.io/publication/pioneers/</loc><lastmod>2020-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://adamconkey.github.io/publication-type/1/</loc><lastmod>2019-10-15T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://adamconkey.github.io/tag/active-learning/</loc><lastmod>2019-10-15T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
