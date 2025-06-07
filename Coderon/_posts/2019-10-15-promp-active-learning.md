@@ -86,7 +86,6 @@ This also enabled me to set the pose of the table in environment so that I could
 ### Visualizations
 
 An important aspect of this project was having informative visualizations of the environment. I needed to place the object in random poses on the table for experiments and data collection. I wanted this to be unbiased, i.e. I didn't want to pick poses I thought were random, I wanted them to be truly randomly generated. I solved this using a method for random pose selection, and then rendering that pose in rviz using a coordinate frame together with a mesh of the object visualized in with a [Marker](http://wiki.ros.org/rviz/DisplayTypes/Marker). I also used Marker primitive shapes to overlay on the table to ensure my camera-to-environment calibration was correct.
-<!-- TODO add image here of marker visualization -->
 
 A cool feature is I used used a Bayesian object tracker [dbot_ros](https://github.com/bayesian-object-tracking/dbot_ros) from the folks at the [Max Planck Institute for Intelligent Systems](https://is.mpg.de/am/research_projects/probabilistic-object-tracking-using-a-depth-camera) to track the pose of the object in real-time. This made it extremely easy to put the object on the table and move adjust its pose until it matched the target pose.
 
@@ -99,16 +98,3 @@ I also had a desire to visualize trajectories generated from the ProMP policies.
 
 <p><iframe src="https://www.youtube.com/embed/CW9NLlCiT2Y?si=XlURKsIzGNMjK_ts" loading="lazy" frameborder="0" allowfullscreen></iframe></p>
  
-
-<!---->
-<!-- ![Games](/images/09-1.jpg) -->
-<!-- *Photo by [Branden Skeli](https://unsplash.com/@branden_skeli) on [Unsplash](https://unsplash.com/)* -->
-<!---->
-<!-- <div class="gallery-box"> -->
-<!--   <div class="gallery gallery-columns-2"> -->
-<!--     {% include img.html src ="/images/09-2.jpg" alt="Games" caption="Take a break from reality and dive into a game." %} -->
-<!--     {% include img.html src ="/images/09-3.jpg" alt="Games" caption="Games are the perfect partner for unwinding." %} -->
-<!--   </div> -->
-<!--   <p>A gallery of stunning shots</p> -->
-<!-- </div> -->
-
