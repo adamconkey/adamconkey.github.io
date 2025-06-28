@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Learning Task Constraints from Demonstration for Hybrid Force/Position Control
-description: 
+description: Approach to learning force-constrained robot manipulation tasks from human demonstrations.
 date: 2019-10-15
-image: '/images/dmp.png'
+image: '/images/dmp/dmp_cover.png'
 video_embed: 'https://www.youtube.com/embed/WzDP78K6ptI?si=ivyF3ei6VKCWg0ze'
 tags: [Publications]
 tags_color: '#4287f5'

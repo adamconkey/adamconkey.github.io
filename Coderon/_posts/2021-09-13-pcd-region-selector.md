@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Region Selector for Point Cloud Segmentation
-description: 
+description: Tool for interactively selecting 3D region in rviz for point cloud segmentation.
 date: 2021-09-13
-image: '/images/point_cloud_segmentation.jpeg'
+image: '/images/pcd_region_selector/pcd_cover.png'
 video_embed: 'https://www.youtube.com/embed/wAG2wvpesjU?si=pLj_Bw41PZdMpxXT'
 tags: [Perception]
 tags_color: '#e8ab02'

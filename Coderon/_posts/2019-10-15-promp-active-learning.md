@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Active Learning of Probabilistic Movement Primitives
-description: 
+description: New method of efficiently acquiring human demonstrations for robot manipulation tasks.
 date: 2019-10-15
-image: '/images/promp_preview_rviz.png'
+image: '/images/promp/promp_preview_rviz.png'
 video_embed: 'https://www.youtube.com/embed/na91UyidDvE?si=-vOdeKplyWey6Ite'
 tags: [Publications]
 tags_color: '#4287f5'
@@ -77,7 +77,7 @@ For experiments and data collection on the robot, I required a method to calibra
 
 My solution was simple and effective: Use an [ArUco fiducial marker](https://www.uco.es/investiga/grupos/ava/portfolio/aruco/) and a slightly modified version of an open source detector [simple_aruco_detector](https://github.com/vprooks/simple_aruco_detector) to perform the calibration. I placed a large ArUco marker in a known location with respect to the robot's base (I just manually measured the offset), ensured it was in view of the camera, and boom you can quickly determine the pose of the camera in the robot's base frame. I developed a package [robot_aruco_calibration](https://bitbucket.org/robot-learning/robot_aruco_calibration/src/main/) to make this process quick and painless, with an rviz visualizer for validating its correctness.
 
-<center><img src="/images/lbr4_aruco_calibration.png"></center>
+<center><img src="/images/promp/lbr4_aruco_calibration.png" style="padding: 0px 0px 30px 0px;"></center>
 
 The speed and ease of re-calibration proved crucial in my experiments. I could freely adjust the camera pose to get the best angle for my experiments and demo videos. An unfortunate issue I also had was that the robot would occasionally drop the object, which was a heavy drill, and it would bump the camera tripod and ruin my calibration! Thanks to my calibration approach, I just had to run a quick script to regain the calibration and I was back in business without any downtime. Had this happened with our old calibration approach, I would have to spend 20-30 minutes each time the calibration was disturbed.
 
