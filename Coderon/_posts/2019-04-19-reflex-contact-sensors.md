@@ -92,7 +92,7 @@ The macro was utilized within the finger macro [here](https://bitbucket.org/robo
 
 When `xacro` is executed to generate the final URDF, if the `sensor_type` arg is specified as either `contact` or `pressure` then it will include these sensor links! Note the two different modes, where `pressure` is a continuous value of pressure and `contact` is just 1 (contact) or 0 (no-contact). These two modes are supported on the real hardware, so we wanted them also in simulation. Luckily, Gazebo already had support of these kinds of sensors!
 
-## Contact/Pressure Sensing in Gazebo
+### Contact/Pressure Sensing in Gazebo
 
 In order to get the actual sensing capabilities associated with the sensor links, I utilized the pressure and contact sensing plugins provided by Gazebo which is simple to specify:
 ```xml
