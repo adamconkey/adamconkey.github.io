@@ -5,7 +5,7 @@ description: New method of efficiently acquiring human demonstrations for robot 
 date: 2019-10-15
 image: '/images/promp/promp_preview_rviz.png'
 video_embed: 'https://www.youtube.com/embed/na91UyidDvE?si=-vOdeKplyWey6Ite'
-tags: [Publications]
+tags: [Robot Learning]
 tags_color: '#4287f5'
 featured: true
 ---
