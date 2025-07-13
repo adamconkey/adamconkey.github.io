@@ -1,8 +1,8 @@
 ---
 layout: contact
 title: Get In Touch
-description: Coderon comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free.
+description: The best way to reach me is connecting on LinkedIn and sending me a message there. However, you're welcome to submit a message here and I should receive it. 
 permalink: /contact/
-image: '/images/40.jpg'
-image_caption: 'Photo by [Pablo Stanley](https://www.lummi.ai/creator/pablostanley) / [Lummi](https://www.lummi.ai/)'
+image: '/images/salt_flats.jpg'
+image_caption: 'Bonneville Salt Flats, UT'
 ---

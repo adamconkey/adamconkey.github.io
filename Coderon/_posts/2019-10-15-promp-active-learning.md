@@ -7,7 +7,7 @@ image: '/images/promp/promp_preview_rviz.png'
 video_embed: 'https://www.youtube.com/embed/na91UyidDvE?si=-vOdeKplyWey6Ite'
 tags: [Probabilistic Robotics]
 tags_color: '#890be3'
-featured: true
+featured: false
 ---
 This was a paper published during my Ph.D. which I presented at the [Humanoids 2019](http://humanoids2019.loria.fr) conference in Toronto, Canada.
 

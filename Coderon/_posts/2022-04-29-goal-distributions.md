@@ -7,7 +7,7 @@ image: '/images/goal_distributions/goal_distributions_cover.png'
 video_embed: 'https://www.youtube.com/embed/lqRkdR-sq_c?si=FV0KSq4qkSps3p1M'
 tags: [Probabilistic Robotics]
 tags_color: '#890be3'
-featured: true
+featured: false
 ---
 
 This was a paper I worked on during my Ph.D. I did not get it published, but it is up on [arXiv](https://arxiv.org/abs/2011.04782) and served as a culminating piece of my Ph.D. dissertation.

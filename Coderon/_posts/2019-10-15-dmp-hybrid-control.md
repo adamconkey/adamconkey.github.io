@@ -7,7 +7,7 @@ image: '/images/dmp/dmp_cover.png'
 video_embed: 'https://www.youtube.com/embed/WzDP78K6ptI?si=ivyF3ei6VKCWg0ze'
 tags: [Robot Learning]
 tags_color: '#4287f5'
-featured: true
+featured: false
 ---
 
 This was a paper published during my Ph.D. which I presented at the [Humanoids 2019](http://humanoids2019.loria.fr) conference in Toronto, Canada.

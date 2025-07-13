@@ -1,7 +1,7 @@
 #-------------------------------
 # Site Settings
 title: Adam Conkey
-description: Coderon is a super modern and unique Jekyll blog theme
+description: ''
 logo: # You can add own logo. For example '/images/logo.png'.
 logo_dark:
 
@@ -27,18 +27,8 @@ menu_settings:
       url: '/'
     - title: 'Resume'
       url: '/files/resume_conkey.pdf'
-    - title: 'Videos'
-      url: '/videos/'
-    - title: 'Pages'
-      submenu:
-      - url: '/about/'
-        title: 'About'
-      - url: '/contact/'
-        title: 'Contact'
-      - url: '/elements/'
-        title: 'Elements'
-
-
+    # - title: 'Contact'
+    #   url : '/contact'
 #-------------------------------
 # Author Settings
 author:
@@ -54,14 +44,14 @@ hero:
   hero_title: Adam Conkey
   hero_subtitle: Roboticist - Python Developer - Rust Enthusiast
   hero_description: |
-    I am a Senior Software Engineer at [Berkshire Grey](https://www.berkshiregrey.com). I'm passionate about robotics software development, particularly open source software for ROS and Linux. I'm excited about Rust - in my spare time, I am tinkering with an implementation of [computational geometry algorithms](https://github.com/adamconkey/geometer) from scratch in Rust.
+    I am a Senior Software Engineer at [Berkshire Grey](https://www.berkshiregrey.com). I'm passionate about robotics software development, particularly open source software for ROS and Linux. I'm excited about Rust - in my spare time, I am tinkering with implementing [computational geometry algorithms](https://github.com/adamconkey/geometer) from scratch in Rust.
 
     I received my Ph.D. in Computing and Robotics from the University of Utah under the supervision of [Dr. Tucker Hermans](https://robot-learning.cs.utah.edu/thermans) as a member of the [Utah Learning Lab for Manipulation Autonomy](https://robot-learning.cs.utah.edu/home). My dissertation work investigated skill planning under state and goal uncertainty for robot manipulations tasks.
 
   hero_image: /images/me.jpg
-  hero_image_caption: # My creative space, where masterpieces are born
-  hero_button_text: # Let’s Work Together
-  hero_button_link: # '/contact/'
+  hero_image_caption: #
+  hero_button_text: View my Resume
+  hero_button_link: '/files/resume_conkey.pdf'
 
 
 # Logos
@@ -91,7 +81,7 @@ blog:
 #-------------------------------
 # Tags Section Settings
 tags_section:
-  enable: true
+  enable: False
   tags_section_title: Hacker’s Haven
   tags:
     - tag: "Rust"
@@ -154,7 +144,6 @@ footer_description: Check out the projects I've worked on and my resume. If you'
 #-------------------------------
 # Social Settings
 social:
-- {icon: "fa-solid fa-circle-user", name: "GoogleScholar", link: "https://scholar.google.com/citations?user=oOzqufIAAAAJ&hl"}
 - {icon: "fa-brands fa-linkedin", name: "LinkedIn", link: "https://www.linkedin.com/in/adamconkey"}
 - {icon: "fa-brands fa-github", name: "Github", link: "https://github.com/adamconkey"}
 - {icon: "fa-brands fa-stack-exchange", name: "StackExchange", link: "https://stackexchange.com/users/4571737/adamconkey?tab=accounts"}
@@ -165,7 +154,7 @@ social:
 #-------------------------------
 # Contact Settings
 contact:
-  form_id: your@email.com # Add your form_id
+  form_id: adam.conkey@gmail.com # Add your form_id
   button_text: Send Now
 
 # NOTE
