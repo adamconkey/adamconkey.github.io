@@ -36,7 +36,7 @@ Please see the [paper](https://ieeexplore.ieee.org/document/9035013) ([arXiv ver
 
 ## Software Development
 
-This project was perhaps my most challenging project to get running on a real robot that I worked on during my PhD. It required executing force control policies on a variety of surfaces with different friction coefficients, and designing a control and hardware setup for safely executing policies on the robots was a real challenge (i.e. I needed to be sure the controller would not go unstable and damage the robot or sensor). Perhaps the most enjoyable piece was developing the demonstration interface on the Baxter robot, which provided a user-friendly way to give kinesthetic demonstrations of a task. 
+This project was perhaps my most challenging project to get running on a real robot that I worked on during my PhD. It required executing force control policies on a variety of surfaces with different friction coefficients, and designing a control and hardware setup for safely executing policies on the robot was a real challenge (i.e. I needed to be sure the controller would not go unstable and damage the robot or sensor). Perhaps the most enjoyable piece was developing the demonstration interface on the Baxter robot, which provided a user-friendly way to give kinesthetic demonstrations of a task. 
 
 | Repository | Description |
 |------------|-------------|
