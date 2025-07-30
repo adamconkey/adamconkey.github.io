@@ -5,7 +5,7 @@ description: My presentation at the 2020 RSS Pioneers Workshop about my research
 date: 2020-07-01
 image: '/images/rss_pioneers/multisensory_learning_cover.png'
 video_embed: 'https://www.youtube.com/embed/1G949NW9WYk?si=TbvXsZh6ajhypBzn'
-tags: [Robot Learning]
+tags: [RobotLearning]
 tags_color: '#4287f5'
 featured: true
 ---

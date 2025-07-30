@@ -5,7 +5,7 @@ description: New formalization of goals as distributions for robot planning unde
 date: 2022-04-29
 image: '/images/goal_distributions/goal_distributions_cover.png'
 video_embed: 'https://www.youtube.com/embed/lqRkdR-sq_c?si=FV0KSq4qkSps3p1M'
-tags: [Probabilistic Robotics]
+tags: [ProbabilisticRobotics]
 tags_color: '#890be3'
 featured: false
 ---

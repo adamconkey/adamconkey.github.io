@@ -5,7 +5,7 @@ description: Approach to learning force-constrained robot manipulation tasks fro
 date: 2019-10-15
 image: '/images/dmp/dmp_cover.png'
 video_embed: 'https://www.youtube.com/embed/WzDP78K6ptI?si=ivyF3ei6VKCWg0ze'
-tags: [Robot Learning]
+tags: [RobotLearning]
 tags_color: '#4287f5'
 featured: false
 ---
