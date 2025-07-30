@@ -69,11 +69,14 @@ Another fun aspect of this is the user interface. I initially developed a makesh
 4. Press a button to have the robot return to a home position
 ```
 
+<p><iframe src="https://www.youtube.com/embed/kSb0eCdcpe4?si=3BBDN7ADj8XddrAR" loading="lazy" frameborder="0" allowfullscreen></iframe></p>
+
+
 This enabled me to stay near the robot recording one demonstration after another without having to return to the PC, making it drastically more efficient to record the data I needed for testing and experiments.
 
 ### Environnment Calibration
 
-For experiments and data collection on the robot, I required a method to calibrate the pose of the camera with respect to the robot, i.e. calibrate the extrinsics of the camera. Our lab initially had a method for doing this that required attaching a calibration checkboard as the robot's end-effector, and manually jogging the robot through a sequence of about 20 different configurationsto determine the camera pose with respect to the robot. This process was unsatisfying because it would take about 20 minutes to perform, it would still require small manual adjustments after completion, you'd have to remove the robot hand and mount the checkerboard each time you do it, and if you accidentally bump the camera, you have to start all over! I needed a better way.
+For experiments and data collection on the robot, I required a method to calibrate the pose of the camera with respect to the robot, i.e. calibrate the extrinsics of the camera. Our lab initially had a method for doing this that required attaching a calibration checkboard as the robot's end-effector, and manually jogging the robot through a sequence of about 20 different configurations to determine the camera pose with respect to the robot. This process was unsatisfying because it would take about 20 minutes to perform, it would still require small manual adjustments after completion, you'd have to remove the robot hand and mount the checkerboard each time you do it, and if you accidentally bump the camera, you have to start all over! I needed a better way.
 
 My solution was simple and effective: Use an [ArUco fiducial marker](https://www.uco.es/investiga/grupos/ava/portfolio/aruco/) and a slightly modified version of an open source detector [simple_aruco_detector](https://github.com/vprooks/simple_aruco_detector) to perform the calibration. I placed a large ArUco marker in a known location with respect to the robot's base (I just manually measured the offset), ensured it was in view of the camera, and boom you can quickly determine the pose of the camera in the robot's base frame. I developed a package [robot_aruco_calibration](https://bitbucket.org/robot-learning/robot_aruco_calibration/src/main/) to make this process quick and painless, with an rviz visualizer for validating its correctness.
 
@@ -85,15 +88,15 @@ This also enabled me to set the pose of the table in environment so that I could
 
 ### Visualizations
 
-An important aspect of this project was having informative visualizations of the environment. I needed to place the object in random poses on the table for experiments and data collection. I wanted this to be unbiased, i.e. I didn't want to pick poses I thought were random, I wanted them to be truly randomly generated. I solved this using a method for random pose selection, and then rendering that pose in rviz using a coordinate frame together with a mesh of the object visualized in with a [Marker](http://wiki.ros.org/rviz/DisplayTypes/Marker). I also used Marker primitive shapes to overlay on the table to ensure my camera-to-environment calibration was correct.
+An important aspect of this project was having informative visualizations of the environment. I needed to place the object in random poses on the table for experiments and data collection. I wanted this to be unbiased, i.e. I didn't want to pick poses I thought were random, I wanted them to be truly randomly generated. I solved this using a method for random pose selection, and then rendering that pose in rviz using a coordinate frame together with a mesh of the object visualized with a [Marker](http://wiki.ros.org/rviz/DisplayTypes/Marker). I also used Marker primitive shapes to overlay on the table to ensure my camera-to-environment calibration was correct.
 
-A cool feature is I used used a Bayesian object tracker [dbot_ros](https://github.com/bayesian-object-tracking/dbot_ros) from the folks at the [Max Planck Institute for Intelligent Systems](https://is.mpg.de/am/research_projects/probabilistic-object-tracking-using-a-depth-camera) to track the pose of the object in real-time. This made it extremely easy to put the object on the table and move adjust its pose until it matched the target pose.
+A cool feature is I used an open source Bayesian object tracker [dbot_ros](https://github.com/bayesian-object-tracking/dbot_ros) from the talented folks at the [Max Planck Institute for Intelligent Systems](https://is.mpg.de/am/research_projects/probabilistic-object-tracking-using-a-depth-camera) to track the pose of the object in real-time. This made it extremely easy to put the object on the table and move it around until its pose matched the target pose.
 
 
 <p><iframe src="https://www.youtube.com/embed/7s2I1kNrZyE?si=11D6P_XfIRoYmWg5" loading="lazy" frameborder="0" allowfullscreen></iframe></p>
 
 
-I also had a desire to visualize trajectories generated from the ProMP policies. This was a sanity check since they were going to be executed on the real robot, and they're probabilistic in nature, I wanted to ensure that samples from the trajectory distribution weren't going to do anything crazy on the robot. I used Markers again together with a [RobotModel](http://wiki.ros.org/rviz/DisplayTypes/RobotModel) in rviz to generate trajectory previews overlayed on the real camera feed. This gave me confidence that when I execute a trajectory, it's not going to collide with the table or the object, or do anything else unexpected.
+I also had a desire to visualize trajectories generated from the ProMP policies. This was a sanity check since they were going to be executed on the real robot, and they're probabilistic in nature, I wanted to ensure that samples from the trajectory distribution weren't going to do anything crazy on the robot. I used Markers again together with a [RobotModel](http://wiki.ros.org/rviz/DisplayTypes/RobotModel) in rviz to generate trajectory previews overlayed on the real camera feed. This gave me confidence that when I executed a trajectory, it wasn't going to collide with the table or the object, or do anything else unexpected.
 
 
 <p><iframe src="https://www.youtube.com/embed/CW9NLlCiT2Y?si=XlURKsIzGNMjK_ts" loading="lazy" frameborder="0" allowfullscreen></iframe></p>
