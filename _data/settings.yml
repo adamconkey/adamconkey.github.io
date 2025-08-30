@@ -1,6 +1,6 @@
 #-------------------------------
 # Site Settings
-title: Adam Conkey
+title: Adam Conkey-Pham
 description: ''
 logo: # You can add own logo. For example '/images/logo.png'.
 logo_dark:
@@ -32,7 +32,7 @@ menu_settings:
 #-------------------------------
 # Author Settings
 author:
-  author_name: Adam Conkey
+  author_name: Adam Conkey-Pham
   author_avatar: /images/me.jpg
 
 
@@ -41,7 +41,7 @@ author:
 hero:
   enable: true
   hero_avatar: # /images/me.jpg
-  hero_title: Adam Conkey
+  hero_title: Adam Conkey-Pham
   hero_subtitle: Roboticist - Python Developer - Rust Enthusiast
   hero_description: |
     I am a Senior Software Engineer at [Berkshire Grey](https://www.berkshiregrey.com). I'm passionate about robotics software development, particularly open source software for ROS and Linux. I'm excited about Rust - in my spare time, I am tinkering with implementing [computational geometry algorithms](https://github.com/adamconkey/geometer) from scratch in Rust.

@@ -67,12 +67,12 @@
 
 .hero__title {
   margin-bottom: 12px;
-  font-size: 68px;
+  font-size: 52px;
   line-height: 1;
   color: var(--heading-font-color);
 
   @media (max-width: $wide) {
-    font-size: 56px;
+    font-size: 50px;
   }
 
   @media (max-width: $tablet) {
